@@ -1,0 +1,56 @@
+[2024-11-09T12:28:59.716+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-11-09T12:28:59.838+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline.insert_data_into_data_warehouse manual__2024-11-09T12:28:56.939090+00:00 [queued]>
+[2024-11-09T12:28:59.851+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline.insert_data_into_data_warehouse manual__2024-11-09T12:28:56.939090+00:00 [queued]>
+[2024-11-09T12:28:59.852+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-11-09T12:28:59.867+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): insert_data_into_data_warehouse> on 2024-11-09 12:28:56.939090+00:00
+[2024-11-09T12:28:59.871+0000] {standard_task_runner.py:64} INFO - Started process 471 to run task
+[2024-11-09T12:28:59.873+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'pipeline', 'insert_data_into_data_warehouse', 'manual__2024-11-09T12:28:56.939090+00:00', '--job-id', '229', '--raw', '--subdir', 'DAGS_FOLDER/pipline.py', '--cfg-path', '/tmp/tmpazt9r6fg']
+[2024-11-09T12:28:59.876+0000] {standard_task_runner.py:91} INFO - Job 229: Subtask insert_data_into_data_warehouse
+[2024-11-09T12:28:59.915+0000] {task_command.py:426} INFO - Running <TaskInstance: pipeline.insert_data_into_data_warehouse manual__2024-11-09T12:28:56.939090+00:00 [running]> on host 8fd3e7752d26
+[2024-11-09T12:29:00.020+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipeline' AIRFLOW_CTX_TASK_ID='insert_data_into_data_warehouse' AIRFLOW_CTX_EXECUTION_DATE='2024-11-09T12:28:56.939090+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-09T12:28:56.939090+00:00'
+[2024-11-09T12:29:00.021+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-11-09T12:29:00.030+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T12:29:00.047+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-11-09T12:29:00.048+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/decorators/base.py", line 265, in execute
+    return_value = super().execute(context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/pipline.py", line 171, in insert_data_into_data_warehouse
+    journal_id = get_or_create_journal(journal_main, issn, quartils)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/pipline.py", line 124, in get_or_create_journal
+    conn = mysql_hook.get_conn()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/providers/mysql/hooks/mysql.py", line 196, in get_conn
+    return MySQLdb.connect(**conn_config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/MySQLdb/__init__.py", line 121, in Connect
+    return Connection(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/MySQLdb/connections.py", line 195, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb.OperationalError: (1044, "Access denied for user '***'@'%' to database 'PublicationsDataWarehouse'")
+[2024-11-09T12:29:00.059+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=pipeline, task_id=insert_data_into_data_warehouse, run_id=manual__2024-11-09T12:28:56.939090+00:00, execution_date=20241109T122856, start_date=20241109T122859, end_date=20241109T122900
+[2024-11-09T12:29:00.068+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 229 for task insert_data_into_data_warehouse ((1044, "Access denied for user '***'@'%' to database 'PublicationsDataWarehouse'"); 471)
+[2024-11-09T12:29:00.086+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-11-09T12:29:00.103+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-09T12:29:00.108+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

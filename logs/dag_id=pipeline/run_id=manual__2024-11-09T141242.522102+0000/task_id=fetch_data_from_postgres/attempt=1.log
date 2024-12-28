@@ -1,0 +1,20 @@
+[2024-11-09T14:12:47.858+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-11-09T14:12:47.881+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline.fetch_data_from_postgres manual__2024-11-09T14:12:42.522102+00:00 [queued]>
+[2024-11-09T14:12:47.889+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline.fetch_data_from_postgres manual__2024-11-09T14:12:42.522102+00:00 [queued]>
+[2024-11-09T14:12:47.890+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-11-09T14:12:47.903+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): fetch_data_from_postgres> on 2024-11-09 14:12:42.522102+00:00
+[2024-11-09T14:12:47.907+0000] {standard_task_runner.py:64} INFO - Started process 198 to run task
+[2024-11-09T14:12:47.910+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'pipeline', 'fetch_data_from_postgres', 'manual__2024-11-09T14:12:42.522102+00:00', '--job-id', '320', '--raw', '--subdir', 'DAGS_FOLDER/pipline.py', '--cfg-path', '/tmp/tmpw5ut5a7d']
+[2024-11-09T14:12:47.912+0000] {standard_task_runner.py:91} INFO - Job 320: Subtask fetch_data_from_postgres
+[2024-11-09T14:12:47.951+0000] {task_command.py:426} INFO - Running <TaskInstance: pipeline.fetch_data_from_postgres manual__2024-11-09T14:12:42.522102+00:00 [running]> on host d4a99e8aa829
+[2024-11-09T14:12:48.031+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipeline' AIRFLOW_CTX_TASK_ID='fetch_data_from_postgres' AIRFLOW_CTX_EXECUTION_DATE='2024-11-09T14:12:42.522102+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-09T14:12:42.522102+00:00'
+[2024-11-09T14:12:48.033+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-11-09T14:12:48.042+0000] {base.py:84} INFO - Using connection ID 'postgres_default' for task execution.
+[2024-11-09T14:12:50.078+0000] {logging_mixin.py:188} INFO - Error connecting to PostgreSQL: connection to server at "host.docker.internal" (192.168.65.254), port 5433 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+[2024-11-09T14:12:50.079+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-11-09T14:12:50.080+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-11-09T14:12:50.087+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=pipeline, task_id=fetch_data_from_postgres, run_id=manual__2024-11-09T14:12:42.522102+00:00, execution_date=20241109T141242, start_date=20241109T141247, end_date=20241109T141250
+[2024-11-09T14:12:50.131+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-11-09T14:12:50.153+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-09T14:12:50.155+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

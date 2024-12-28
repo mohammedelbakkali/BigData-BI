@@ -1,0 +1,89 @@
+[2024-11-09T13:29:09.071+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-11-09T13:29:09.095+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline.insert_data_into_data_warehouse manual__2024-11-09T13:29:05.546409+00:00 [queued]>
+[2024-11-09T13:29:09.102+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline.insert_data_into_data_warehouse manual__2024-11-09T13:29:05.546409+00:00 [queued]>
+[2024-11-09T13:29:09.103+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-11-09T13:29:09.113+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): insert_data_into_data_warehouse> on 2024-11-09 13:29:05.546409+00:00
+[2024-11-09T13:29:09.117+0000] {standard_task_runner.py:64} INFO - Started process 196 to run task
+[2024-11-09T13:29:09.120+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'pipeline', 'insert_data_into_data_warehouse', 'manual__2024-11-09T13:29:05.546409+00:00', '--job-id', '282', '--raw', '--subdir', 'DAGS_FOLDER/pipline.py', '--cfg-path', '/tmp/tmp1qtzt65d']
+[2024-11-09T13:29:09.122+0000] {standard_task_runner.py:91} INFO - Job 282: Subtask insert_data_into_data_warehouse
+[2024-11-09T13:29:09.160+0000] {task_command.py:426} INFO - Running <TaskInstance: pipeline.insert_data_into_data_warehouse manual__2024-11-09T13:29:05.546409+00:00 [running]> on host 7c7b4bef75c6
+[2024-11-09T13:29:09.280+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipeline' AIRFLOW_CTX_TASK_ID='insert_data_into_data_warehouse' AIRFLOW_CTX_EXECUTION_DATE='2024-11-09T13:29:05.546409+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-09T13:29:05.546409+00:00'
+[2024-11-09T13:29:09.282+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-11-09T13:29:09.289+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.320+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.329+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication Assessing Trustworthy AI in Times of COVID-19: Deep Learning for Predicting a Multiregional Score Conveying the Degree of Lung Compromise in COVID-19 Patients: string indices must be integers, not 'str'
+[2024-11-09T13:29:09.334+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.365+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.374+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication It is Not “Accuracy vs. Explainability”—We Need Both for Trustworthy AI Systems: string indices must be integers, not 'str'
+[2024-11-09T13:29:09.378+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.394+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.426+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication The Generative AI Landscape in Education: Mapping the Terrain of Opportunities, Challenges, and Student Perception: string indices must be integers, not 'str'
+[2024-11-09T13:29:09.431+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.446+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.454+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication SmartQuant: CXL-Based AI Model Store in Support of Runtime Configurable Weight Quantization: string indices must be integers, not 'str'
+[2024-11-09T13:29:09.459+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.474+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.482+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication mTREE: A Customized Multicast-Enabled Tree-Based Network on Chip for AI Chips: string indices must be integers, not 'str'
+[2024-11-09T13:29:09.487+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.502+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.524+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication A Survey of Real-Time Strategy Game AI Research and Competition in StarCraft: string indices must be integers, not 'str'
+[2024-11-09T13:29:09.529+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.543+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.564+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication Unraveling ML Models of Emotion With NOVA: Multi-Level Explainable AI for Non-Experts: string indices must be integers, not 'str'
+[2024-11-09T13:29:09.569+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.585+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.635+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication AIS-PVT: Long-Time AIS Data Assisted Pyramid Vision Transformer for Sea-Land Segmentation in Dual-Polarization SAR Imagery: string indices must be integers, not 'str'
+[2024-11-09T13:29:09.640+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.655+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.675+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication Explainable AI for Cheating Detection and Churn Prediction in Online Games: string indices must be integers, not 'str'
+[2024-11-09T13:29:09.680+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.695+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.717+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication Towards Measuring Fairness in AI: The Casual Conversations Dataset: string indices must be integers, not 'str'
+[2024-11-09T13:29:09.723+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.738+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.759+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication Personas for Artificial Intelligence (AI) an Open Source Toolbox: string indices must be integers, not 'str'
+[2024-11-09T13:29:09.764+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.780+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.801+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication A Game AI Competition to Foster Collaborative AI Research and Development: string indices must be integers, not 'str'
+[2024-11-09T13:29:09.806+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.821+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.830+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication Toward a Policy Approach to Normative Artificial Intelligence Governance: Implications for AI Ethics Education: string indices must be integers, not 'str'
+[2024-11-09T13:29:09.834+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.849+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.870+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication XAI-IoT: An Explainable AI Framework for Enhancing Anomaly Detection in IoT Systems: string indices must be integers, not 'str'
+[2024-11-09T13:29:09.875+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.891+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.927+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication Human-Centered AI in Smart Farming: Toward Agriculture 5.0: string indices must be integers, not 'str'
+[2024-11-09T13:29:09.932+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:09.947+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:10.001+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication An Area-Efficient Systolic Array Redundancy Architecture for Reliable AI Accelerator: string indices must be integers, not 'str'
+[2024-11-09T13:29:10.008+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:10.027+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:10.053+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication Unleashing the Power of Edge-Cloud Generative AI in Mobile Networks: A Survey of AIGC Services: string indices must be integers, not 'str'
+[2024-11-09T13:29:10.059+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:10.077+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:10.133+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication Exploring the Effect of Generative AI on Social Sustainability Through Integrating AI Attributes, TPB, and T-EESST: A Deep Learning-Based Hybrid SEM-ANN Approach: string indices must be integers, not 'str'
+[2024-11-09T13:29:10.139+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:10.155+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:10.269+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication The Ethics of AI in Games: string indices must be integers, not 'str'
+[2024-11-09T13:29:10.274+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:10.296+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:10.315+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication E-XAI: Evaluating Black-Box Explainable AI Frameworks for Network Intrusion Detection: string indices must be integers, not 'str'
+[2024-11-09T13:29:10.321+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:10.336+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:10.358+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication Demystifying Defects: Federated Learning and Explainable AI for Semiconductor Fault Detection: string indices must be integers, not 'str'
+[2024-11-09T13:29:10.363+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:10.377+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:10.401+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication Developing a Transparent Diagnosis Model for Diabetic Retinopathy Using Explainable AI: string indices must be integers, not 'str'
+[2024-11-09T13:29:10.406+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:10.421+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:10.441+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication AI and Security, From an Information Security and Risk Manager Standpoint: string indices must be integers, not 'str'
+[2024-11-09T13:29:10.446+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:10.461+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:29:10.485+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication Empirical Evaluations of Framework for Adaptive Trust Calibration in Human-AI Cooperation: string indices must be integers, not 'str'
+[2024-11-09T13:29:10.486+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-11-09T13:29:10.487+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-11-09T13:29:10.494+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=pipeline, task_id=insert_data_into_data_warehouse, run_id=manual__2024-11-09T13:29:05.546409+00:00, execution_date=20241109T132905, start_date=20241109T132909, end_date=20241109T132910
+[2024-11-09T13:29:10.542+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-11-09T13:29:10.564+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-09T13:29:10.575+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

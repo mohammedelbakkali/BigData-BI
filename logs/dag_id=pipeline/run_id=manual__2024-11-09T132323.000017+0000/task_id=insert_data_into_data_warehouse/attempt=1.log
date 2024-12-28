@@ -1,0 +1,65 @@
+[2024-11-09T13:23:26.099+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-11-09T13:23:26.123+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline.insert_data_into_data_warehouse manual__2024-11-09T13:23:23.000017+00:00 [queued]>
+[2024-11-09T13:23:26.130+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline.insert_data_into_data_warehouse manual__2024-11-09T13:23:23.000017+00:00 [queued]>
+[2024-11-09T13:23:26.131+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-11-09T13:23:26.143+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): insert_data_into_data_warehouse> on 2024-11-09 13:23:23.000017+00:00
+[2024-11-09T13:23:26.147+0000] {standard_task_runner.py:64} INFO - Started process 196 to run task
+[2024-11-09T13:23:26.150+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'pipeline', 'insert_data_into_data_warehouse', 'manual__2024-11-09T13:23:23.000017+00:00', '--job-id', '273', '--raw', '--subdir', 'DAGS_FOLDER/pipline.py', '--cfg-path', '/tmp/tmpk01gh53r']
+[2024-11-09T13:23:26.152+0000] {standard_task_runner.py:91} INFO - Job 273: Subtask insert_data_into_data_warehouse
+[2024-11-09T13:23:26.189+0000] {task_command.py:426} INFO - Running <TaskInstance: pipeline.insert_data_into_data_warehouse manual__2024-11-09T13:23:23.000017+00:00 [running]> on host 27cc6b23a47d
+[2024-11-09T13:23:26.290+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipeline' AIRFLOW_CTX_TASK_ID='insert_data_into_data_warehouse' AIRFLOW_CTX_EXECUTION_DATE='2024-11-09T13:23:23.000017+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-09T13:23:23.000017+00:00'
+[2024-11-09T13:23:26.291+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-11-09T13:23:26.298+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:23:26.339+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication Assessing Trustworthy AI in Times of COVID-19: Deep Learning for Predicting a Multiregional Score Conveying the Degree of Lung Compromise in COVID-19 Patients: time data 'Date of Publication: 29 July 2022' does not match format '%d %B %Y'
+[2024-11-09T13:23:26.343+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:23:26.364+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication It is Not “Accuracy vs. Explainability”—We Need Both for Trustworthy AI Systems: time data 'Date of Publication: 30 January 2023' does not match format '%d %B %Y'
+[2024-11-09T13:23:26.369+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:23:26.378+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication The Generative AI Landscape in Education: Mapping the Terrain of Opportunities, Challenges, and Student Perception: time data 'Date of Publication: 16 September 2024' does not match format '%d %B %Y'
+[2024-11-09T13:23:26.384+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:23:26.414+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication SmartQuant: CXL-Based AI Model Store in Support of Runtime Configurable Weight Quantization: time data 'Date of Publication: 02 September 2024' does not match format '%d %B %Y'
+[2024-11-09T13:23:26.419+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:23:26.445+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication mTREE: A Customized Multicast-Enabled Tree-Based Network on Chip for AI Chips: time data 'Date of Publication: 18 January 2022' does not match format '%d %B %Y'
+[2024-11-09T13:23:26.450+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:23:26.460+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication A Survey of Real-Time Strategy Game AI Research and Competition in StarCraft: time data 'Date of Publication: 18 October 2013' does not match format '%d %B %Y'
+[2024-11-09T13:23:26.465+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:23:26.476+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication Unraveling ML Models of Emotion With NOVA: Multi-Level Explainable AI for Non-Experts: time data 'Date of Publication: 09 December 2020' does not match format '%d %B %Y'
+[2024-11-09T13:23:26.481+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:23:26.491+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication AIS-PVT: Long-Time AIS Data Assisted Pyramid Vision Transformer for Sea-Land Segmentation in Dual-Polarization SAR Imagery: time data 'Date of Publication: 26 August 2024' does not match format '%d %B %Y'
+[2024-11-09T13:23:26.497+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:23:26.507+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication Explainable AI for Cheating Detection and Churn Prediction in Online Games: time data 'Date of Publication: 10 May 2022' does not match format '%d %B %Y'
+[2024-11-09T13:23:26.512+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:23:26.522+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication Towards Measuring Fairness in AI: The Casual Conversations Dataset: time data 'Date of Publication: 03 December 2021' does not match format '%d %B %Y'
+[2024-11-09T13:23:26.529+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:23:26.545+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication Personas for Artificial Intelligence (AI) an Open Source Toolbox: time data 'Date of Publication: 25 February 2022' does not match format '%d %B %Y'
+[2024-11-09T13:23:26.552+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:23:26.606+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication A Game AI Competition to Foster Collaborative AI Research and Development: time data 'Date of Publication: 15 September 2020' does not match format '%d %B %Y'
+[2024-11-09T13:23:26.613+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:23:26.637+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication Toward a Policy Approach to Normative Artificial Intelligence Governance: Implications for AI Ethics Education: time data 'Date of Publication: 29 July 2024' does not match format '%d %B %Y'
+[2024-11-09T13:23:26.643+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:23:26.657+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication XAI-IoT: An Explainable AI Framework for Enhancing Anomaly Detection in IoT Systems: time data 'Date of Publication: 17 May 2024' does not match format '%d %B %Y'
+[2024-11-09T13:23:26.663+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:23:26.674+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication Human-Centered AI in Smart Farming: Toward Agriculture 5.0: time data 'Date of Publication: 30 April 2024' does not match format '%d %B %Y'
+[2024-11-09T13:23:26.679+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:23:26.689+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication An Area-Efficient Systolic Array Redundancy Architecture for Reliable AI Accelerator: time data 'Date of Publication: 08 July 2024' does not match format '%d %B %Y'
+[2024-11-09T13:23:26.694+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:23:26.703+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication Unleashing the Power of Edge-Cloud Generative AI in Mobile Networks: A Survey of AIGC Services: time data 'Date of Publication: 12 January 2024' does not match format '%d %B %Y'
+[2024-11-09T13:23:26.709+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:23:26.718+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication Exploring the Effect of Generative AI on Social Sustainability Through Integrating AI Attributes, TPB, and T-EESST: A Deep Learning-Based Hybrid SEM-ANN Approach: time data 'Date of Publication: 10 September 2024' does not match format '%d %B %Y'
+[2024-11-09T13:23:26.723+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:23:26.733+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication The Ethics of AI in Games: time data 'Date of Publication: 16 May 2023' does not match format '%d %B %Y'
+[2024-11-09T13:23:26.738+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:23:26.748+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication E-XAI: Evaluating Black-Box Explainable AI Frameworks for Network Intrusion Detection: time data 'Date of Publication: 12 February 2024' does not match format '%d %B %Y'
+[2024-11-09T13:23:26.753+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:23:26.762+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication Demystifying Defects: Federated Learning and Explainable AI for Semiconductor Fault Detection: time data 'Date of Publication: 08 July 2024' does not match format '%d %B %Y'
+[2024-11-09T13:23:26.768+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:23:26.778+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication Developing a Transparent Diagnosis Model for Diabetic Retinopathy Using Explainable AI: time data 'Date of Publication: 07 October 2024' does not match format '%d %B %Y'
+[2024-11-09T13:23:26.783+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:23:26.794+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication AI and Security, From an Information Security and Risk Manager Standpoint: time data 'Date of Publication: 31 May 2024' does not match format '%d %B %Y'
+[2024-11-09T13:23:26.799+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T13:23:26.810+0000] {logging_mixin.py:188} INFO - Erreur lors de l'insertion de la publication Empirical Evaluations of Framework for Adaptive Trust Calibration in Human-AI Cooperation: time data 'Date of Publication: 04 December 2020' does not match format '%d %B %Y'
+[2024-11-09T13:23:26.811+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-11-09T13:23:26.811+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-11-09T13:23:26.818+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=pipeline, task_id=insert_data_into_data_warehouse, run_id=manual__2024-11-09T13:23:23.000017+00:00, execution_date=20241109T132323, start_date=20241109T132326, end_date=20241109T132326
+[2024-11-09T13:23:26.844+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-11-09T13:23:26.862+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-09T13:23:26.867+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

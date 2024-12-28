@@ -1,0 +1,20 @@
+[2024-12-28T15:45:40.865+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-12-28T15:45:40.888+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline.test_insert_static_with_params manual__2024-12-28T15:45:39.591077+00:00 [queued]>
+[2024-12-28T15:45:40.895+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline.test_insert_static_with_params manual__2024-12-28T15:45:39.591077+00:00 [queued]>
+[2024-12-28T15:45:40.896+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-12-28T15:45:40.906+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): test_insert_static_with_params> on 2024-12-28 15:45:39.591077+00:00
+[2024-12-28T15:45:40.910+0000] {standard_task_runner.py:64} INFO - Started process 199 to run task
+[2024-12-28T15:45:40.913+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'pipeline', 'test_insert_static_with_params', 'manual__2024-12-28T15:45:39.591077+00:00', '--job-id', '1071', '--raw', '--subdir', 'DAGS_FOLDER/pipline.py', '--cfg-path', '/tmp/tmpkbnkdlg1']
+[2024-12-28T15:45:40.915+0000] {standard_task_runner.py:91} INFO - Job 1071: Subtask test_insert_static_with_params
+[2024-12-28T15:45:40.954+0000] {task_command.py:426} INFO - Running <TaskInstance: pipeline.test_insert_static_with_params manual__2024-12-28T15:45:39.591077+00:00 [running]> on host 7f22350fc6f3
+[2024-12-28T15:45:41.029+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipeline' AIRFLOW_CTX_TASK_ID='test_insert_static_with_params' AIRFLOW_CTX_EXECUTION_DATE='2024-12-28T15:45:39.591077+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-28T15:45:39.591077+00:00'
+[2024-12-28T15:45:41.030+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-12-28T15:45:41.037+0000] {base.py:84} INFO - Using connection ID 'mssql_default' for task execution.
+[2024-12-28T15:45:42.168+0000] {pipline.py:644} INFO - Parameters to insert: JournalMain=Test Journal Static with Params, ISSN=5678-1234, Quartils=indexe
+[2024-12-28T15:45:42.364+0000] {pipline.py:659} INFO - Static journal inserted successfully with ID 4.
+[2024-12-28T15:45:42.366+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-12-28T15:45:42.366+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-12-28T15:45:42.375+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=pipeline, task_id=test_insert_static_with_params, run_id=manual__2024-12-28T15:45:39.591077+00:00, execution_date=20241228T154539, start_date=20241228T154540, end_date=20241228T154542
+[2024-12-28T15:45:42.410+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-12-28T15:45:42.429+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-28T15:45:42.432+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,21 @@
+[2024-12-28T15:02:52.431+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-12-28T15:02:52.461+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline.test_sql manual__2024-12-28T15:02:48.257857+00:00 [queued]>
+[2024-12-28T15:02:52.469+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline.test_sql manual__2024-12-28T15:02:48.257857+00:00 [queued]>
+[2024-12-28T15:02:52.470+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-12-28T15:02:52.484+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): test_sql> on 2024-12-28 15:02:48.257857+00:00
+[2024-12-28T15:02:52.489+0000] {standard_task_runner.py:64} INFO - Started process 208 to run task
+[2024-12-28T15:02:52.493+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'pipeline', 'test_sql', 'manual__2024-12-28T15:02:48.257857+00:00', '--job-id', '1049', '--raw', '--subdir', 'DAGS_FOLDER/pipline.py', '--cfg-path', '/tmp/tmpcofqj51e']
+[2024-12-28T15:02:52.496+0000] {standard_task_runner.py:91} INFO - Job 1049: Subtask test_sql
+[2024-12-28T15:02:52.550+0000] {task_command.py:426} INFO - Running <TaskInstance: pipeline.test_sql manual__2024-12-28T15:02:48.257857+00:00 [running]> on host 7f22350fc6f3
+[2024-12-28T15:02:52.664+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipeline' AIRFLOW_CTX_TASK_ID='test_sql' AIRFLOW_CTX_EXECUTION_DATE='2024-12-28T15:02:48.257857+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-28T15:02:48.257857+00:00'
+[2024-12-28T15:02:52.665+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-12-28T15:02:52.674+0000] {base.py:84} INFO - Using connection ID 'mssql_default' for task execution.
+[2024-12-28T15:02:53.320+0000] {logging_mixin.py:188} INFO - (1, 'John Doe', 'Harvard University', 'USA')
+[2024-12-28T15:02:53.321+0000] {logging_mixin.py:188} INFO - (2, 'Jane Smith', 'Oxford University', 'UK')
+[2024-12-28T15:02:53.321+0000] {logging_mixin.py:188} INFO - (3, 'Ali Hassan', 'Cairo University', 'Egypt')
+[2024-12-28T15:02:53.322+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-12-28T15:02:53.322+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-12-28T15:02:53.331+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=pipeline, task_id=test_sql, run_id=manual__2024-12-28T15:02:48.257857+00:00, execution_date=20241228T150248, start_date=20241228T150252, end_date=20241228T150253
+[2024-12-28T15:02:53.347+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-12-28T15:02:53.364+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-28T15:02:53.367+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

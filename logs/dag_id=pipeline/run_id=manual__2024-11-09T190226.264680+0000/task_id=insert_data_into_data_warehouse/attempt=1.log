@@ -1,0 +1,95 @@
+[2024-11-09T19:02:31.371+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-11-09T19:02:31.486+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline.insert_data_into_data_warehouse manual__2024-11-09T19:02:26.264680+00:00 [queued]>
+[2024-11-09T19:02:31.521+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline.insert_data_into_data_warehouse manual__2024-11-09T19:02:26.264680+00:00 [queued]>
+[2024-11-09T19:02:31.542+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-11-09T19:02:31.589+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): insert_data_into_data_warehouse> on 2024-11-09 19:02:26.264680+00:00
+[2024-11-09T19:02:31.603+0000] {standard_task_runner.py:64} INFO - Started process 718 to run task
+[2024-11-09T19:02:31.618+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'pipeline', 'insert_data_into_data_warehouse', 'manual__2024-11-09T19:02:26.264680+00:00', '--job-id', '424', '--raw', '--subdir', 'DAGS_FOLDER/pipline.py', '--cfg-path', '/tmp/tmpwtpbo5pn']
+[2024-11-09T19:02:31.628+0000] {standard_task_runner.py:91} INFO - Job 424: Subtask insert_data_into_data_warehouse
+[2024-11-09T19:02:31.797+0000] {task_command.py:426} INFO - Running <TaskInstance: pipeline.insert_data_into_data_warehouse manual__2024-11-09T19:02:26.264680+00:00 [running]> on host 720c13b76b76
+[2024-11-09T19:02:32.295+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipeline' AIRFLOW_CTX_TASK_ID='insert_data_into_data_warehouse' AIRFLOW_CTX_EXECUTION_DATE='2024-11-09T19:02:26.264680+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-09T19:02:26.264680+00:00'
+[2024-11-09T19:02:32.299+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-11-09T19:02:32.351+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:32.439+0000] {pipline.py:151} ERROR - Error creating or retrieving journal 'Published in: IEEE Transactions on Technology and Society ( Volume: 3, Issue: 4, December 2022)': string indices must be integers, not 'str'
+[2024-11-09T19:02:32.441+0000] {pipline.py:188} WARNING - Journal 'Published in: IEEE Transactions on Technology and Society ( Volume: 3, Issue: 4, December 2022)' was not inserted.
+[2024-11-09T19:02:32.466+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:32.517+0000] {pipline.py:151} ERROR - Error creating or retrieving journal 'Published in: IEEE Transactions on Technology and Society ( Volume: 4, Issue: 1, March 2023)': string indices must be integers, not 'str'
+[2024-11-09T19:02:32.520+0000] {pipline.py:188} WARNING - Journal 'Published in: IEEE Transactions on Technology and Society ( Volume: 4, Issue: 1, March 2023)' was not inserted.
+[2024-11-09T19:02:32.540+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:32.749+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:32.834+0000] {pipline.py:167} INFO - Publication 'The Generative AI Landscape in Education: Mapping the Terrain of Opportunities, Challenges, and Student Perception' inserted successfully.
+[2024-11-09T19:02:32.857+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:32.898+0000] {pipline.py:151} ERROR - Error creating or retrieving journal 'Published in: IEEE Computer Architecture Letters ( Volume: 23, Issue: 2, July-Dec. 2024)': string indices must be integers, not 'str'
+[2024-11-09T19:02:32.902+0000] {pipline.py:188} WARNING - Journal 'Published in: IEEE Computer Architecture Letters ( Volume: 23, Issue: 2, July-Dec. 2024)' was not inserted.
+[2024-11-09T19:02:32.923+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:32.966+0000] {pipline.py:151} ERROR - Error creating or retrieving journal 'Published in: IEEE Embedded Systems Letters ( Volume: 14, Issue: 3, September 2022)': string indices must be integers, not 'str'
+[2024-11-09T19:02:32.969+0000] {pipline.py:188} WARNING - Journal 'Published in: IEEE Embedded Systems Letters ( Volume: 14, Issue: 3, September 2022)' was not inserted.
+[2024-11-09T19:02:32.991+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.106+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.180+0000] {pipline.py:167} INFO - Publication 'A Survey of Real-Time Strategy Game AI Research and Competition in StarCraft' inserted successfully.
+[2024-11-09T19:02:33.192+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.239+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.267+0000] {pipline.py:167} INFO - Publication 'Unraveling ML Models of Emotion With NOVA: Multi-Level Explainable AI for Non-Experts' inserted successfully.
+[2024-11-09T19:02:33.273+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.305+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.334+0000] {pipline.py:167} INFO - Publication 'AIS-PVT: Long-Time AIS Data Assisted Pyramid Vision Transformer for Sea-Land Segmentation in Dual-Polarization SAR Imagery' inserted successfully.
+[2024-11-09T19:02:33.341+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.373+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.396+0000] {pipline.py:167} INFO - Publication 'Explainable AI for Cheating Detection and Churn Prediction in Online Games' inserted successfully.
+[2024-11-09T19:02:33.403+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.430+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.452+0000] {pipline.py:167} INFO - Publication 'Towards Measuring Fairness in AI: The Casual Conversations Dataset' inserted successfully.
+[2024-11-09T19:02:33.459+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.491+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.512+0000] {pipline.py:167} INFO - Publication 'Personas for Artificial Intelligence (AI) an Open Source Toolbox' inserted successfully.
+[2024-11-09T19:02:33.518+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.550+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.569+0000] {pipline.py:167} INFO - Publication 'A Game AI Competition to Foster Collaborative AI Research and Development' inserted successfully.
+[2024-11-09T19:02:33.576+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.586+0000] {pipline.py:151} ERROR - Error creating or retrieving journal 'Published in: IEEE Transactions on Technology and Society ( Volume: 5, Issue: 3, September 2024)': string indices must be integers, not 'str'
+[2024-11-09T19:02:33.587+0000] {pipline.py:188} WARNING - Journal 'Published in: IEEE Transactions on Technology and Society ( Volume: 5, Issue: 3, September 2024)' was not inserted.
+[2024-11-09T19:02:33.593+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.610+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.633+0000] {pipline.py:167} INFO - Publication 'XAI-IoT: An Explainable AI Framework for Enhancing Anomaly Detection in IoT Systems' inserted successfully.
+[2024-11-09T19:02:33.639+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.656+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.684+0000] {pipline.py:167} INFO - Publication 'Human-Centered AI in Smart Farming: Toward Agriculture 5.0' inserted successfully.
+[2024-11-09T19:02:33.690+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.721+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.742+0000] {pipline.py:167} INFO - Publication 'An Area-Efficient Systolic Array Redundancy Architecture for Reliable AI Accelerator' inserted successfully.
+[2024-11-09T19:02:33.748+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.779+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.800+0000] {pipline.py:167} INFO - Publication 'Unleashing the Power of Edge-Cloud Generative AI in Mobile Networks: A Survey of AIGC Services' inserted successfully.
+[2024-11-09T19:02:33.806+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.836+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.857+0000] {pipline.py:167} INFO - Publication 'Exploring the Effect of Generative AI on Social Sustainability Through Integrating AI Attributes, TPB, and T-EESST: A Deep Learning-Based Hybrid SEM-ANN Approach' inserted successfully.
+[2024-11-09T19:02:33.863+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.892+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.919+0000] {pipline.py:167} INFO - Publication 'The Ethics of AI in Games' inserted successfully.
+[2024-11-09T19:02:33.926+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.944+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.965+0000] {pipline.py:167} INFO - Publication 'E-XAI: Evaluating Black-Box Explainable AI Frameworks for Network Intrusion Detection' inserted successfully.
+[2024-11-09T19:02:33.971+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:33.989+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:34.013+0000] {pipline.py:167} INFO - Publication 'Demystifying Defects: Federated Learning and Explainable AI for Semiconductor Fault Detection' inserted successfully.
+[2024-11-09T19:02:34.019+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:34.038+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:34.069+0000] {pipline.py:167} INFO - Publication 'Developing a Transparent Diagnosis Model for Diabetic Retinopathy Using Explainable AI' inserted successfully.
+[2024-11-09T19:02:34.076+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:34.100+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:34.130+0000] {pipline.py:167} INFO - Publication 'AI and Security, From an Information Security and Risk Manager Standpoint' inserted successfully.
+[2024-11-09T19:02:34.137+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:34.176+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:34.202+0000] {pipline.py:167} INFO - Publication 'Empirical Evaluations of Framework for Adaptive Trust Calibration in Human-AI Cooperation' inserted successfully.
+[2024-11-09T19:02:34.210+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:34.225+0000] {pipline.py:151} ERROR - Error creating or retrieving journal 'Published in: IEEE Transactions on Technology and Society ( Volume: 3, Issue: 4, December 2022)': string indices must be integers, not 'str'
+[2024-11-09T19:02:34.225+0000] {pipline.py:188} WARNING - Journal 'Published in: IEEE Transactions on Technology and Society ( Volume: 3, Issue: 4, December 2022)' was not inserted.
+[2024-11-09T19:02:34.233+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T19:02:34.246+0000] {pipline.py:151} ERROR - Error creating or retrieving journal 'Published in: IEEE Transactions on Technology and Society ( Volume: 4, Issue: 1, March 2023)': string indices must be integers, not 'str'
+[2024-11-09T19:02:34.247+0000] {pipline.py:188} WARNING - Journal 'Published in: IEEE Transactions on Technology and Society ( Volume: 4, Issue: 1, March 2023)' was not inserted.
+[2024-11-09T19:02:34.248+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-11-09T19:02:34.249+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-11-09T19:02:34.258+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=pipeline, task_id=insert_data_into_data_warehouse, run_id=manual__2024-11-09T19:02:26.264680+00:00, execution_date=20241109T190226, start_date=20241109T190231, end_date=20241109T190234
+[2024-11-09T19:02:34.283+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-11-09T19:02:34.313+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-09T19:02:34.318+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

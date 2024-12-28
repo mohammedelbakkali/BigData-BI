@@ -1,0 +1,50 @@
+[2024-12-22T15:45:31.166+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-12-22T15:45:31.210+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline.fetch_data_from_csv manual__2024-12-22T15:45:26.829031+00:00 [queued]>
+[2024-12-22T15:45:31.223+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline.fetch_data_from_csv manual__2024-12-22T15:45:26.829031+00:00 [queued]>
+[2024-12-22T15:45:31.224+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-12-22T15:45:31.244+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): fetch_data_from_csv> on 2024-12-22 15:45:26.829031+00:00
+[2024-12-22T15:45:31.253+0000] {standard_task_runner.py:64} INFO - Started process 238 to run task
+[2024-12-22T15:45:31.256+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'pipeline', 'fetch_data_from_csv', 'manual__2024-12-22T15:45:26.829031+00:00', '--job-id', '700', '--raw', '--subdir', 'DAGS_FOLDER/pipline.py', '--cfg-path', '/tmp/tmpmgyae3x7']
+[2024-12-22T15:45:31.260+0000] {standard_task_runner.py:91} INFO - Job 700: Subtask fetch_data_from_csv
+[2024-12-22T15:45:31.335+0000] {task_command.py:426} INFO - Running <TaskInstance: pipeline.fetch_data_from_csv manual__2024-12-22T15:45:26.829031+00:00 [running]> on host 0c2b2773610c
+[2024-12-22T15:45:31.482+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipeline' AIRFLOW_CTX_TASK_ID='fetch_data_from_csv' AIRFLOW_CTX_EXECUTION_DATE='2024-12-22T15:45:26.829031+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-22T15:45:26.829031+00:00'
+[2024-12-22T15:45:31.485+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-12-22T15:45:50.520+0000] {logging_mixin.py:188} INFO - +-----+---+
+| Name|Age|
++-----+---+
+|Alice| 34|
+|  Bob| 45|
++-----+---+
+[2024-12-22T15:45:50.736+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-12-22T15:45:50.737+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/decorators/base.py", line 265, in execute
+    return_value = super().execute(context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.11/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/pipline.py", line 122, in fetch_data_from_csv
+    filtered_df = df.filter(col("Age") > 30)
+                            ^^^
+NameError: name 'col' is not defined
+[2024-12-22T15:45:50.749+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=pipeline, task_id=fetch_data_from_csv, run_id=manual__2024-12-22T15:45:26.829031+00:00, execution_date=20241222T154526, start_date=20241222T154531, end_date=20241222T154550
+[2024-12-22T15:45:50.772+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 700 for task fetch_data_from_csv (name 'col' is not defined; 238)
+[2024-12-22T15:45:50.801+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2024-12-22T15:45:50.827+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-12-22T15:45:50.830+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

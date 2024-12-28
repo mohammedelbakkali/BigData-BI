@@ -1,0 +1,15 @@
+kafka-python
+# minio
+pandas
+pyodbc
+apache-airflow-providers-microsoft-mssql==3.1.0
+apache-airflow-providers-mongo
+apache-airflow-providers-postgres
+apache-airflow-providers-mysql
+apache-airflow-providers-sqlite
+# pyspark==3.5.0
+apache-airflow
+apache-airflow-providers-apache-spark
+elasticsearch
+
+apache-airflow-providers-microsoft-azure

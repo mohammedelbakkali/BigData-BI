@@ -1,0 +1,18 @@
+[2024-11-10T12:45:56.712+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-11-10T12:45:56.756+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline.fetch_data_from_json manual__2024-11-10T12:45:39.052609+00:00 [queued]>
+[2024-11-10T12:45:56.769+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline.fetch_data_from_json manual__2024-11-10T12:45:39.052609+00:00 [queued]>
+[2024-11-10T12:45:56.770+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-11-10T12:45:56.787+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): fetch_data_from_json> on 2024-11-10 12:45:39.052609+00:00
+[2024-11-10T12:45:56.794+0000] {standard_task_runner.py:64} INFO - Started process 497 to run task
+[2024-11-10T12:45:56.798+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'pipeline', 'fetch_data_from_json', 'manual__2024-11-10T12:45:39.052609+00:00', '--job-id', '512', '--raw', '--subdir', 'DAGS_FOLDER/pipline.py', '--cfg-path', '/tmp/tmpnspkwdnv']
+[2024-11-10T12:45:56.802+0000] {standard_task_runner.py:91} INFO - Job 512: Subtask fetch_data_from_json
+[2024-11-10T12:45:56.967+0000] {task_command.py:426} INFO - Running <TaskInstance: pipeline.fetch_data_from_json manual__2024-11-10T12:45:39.052609+00:00 [running]> on host 945019f7a6f8
+[2024-11-10T12:45:57.339+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipeline' AIRFLOW_CTX_TASK_ID='fetch_data_from_json' AIRFLOW_CTX_EXECUTION_DATE='2024-11-10T12:45:39.052609+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-10T12:45:39.052609+00:00'
+[2024-11-10T12:45:57.343+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-11-10T12:45:57.347+0000] {logging_mixin.py:188} INFO - Error reading JSON file: [Errno 2] No such file or directory: 'C:/Users/mohammed/Desktop/Airflow/Data-Engineering-Pipeline/***/data_set/journals.json'
+[2024-11-10T12:45:57.350+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-11-10T12:45:57.354+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-11-10T12:45:57.389+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=pipeline, task_id=fetch_data_from_json, run_id=manual__2024-11-10T12:45:39.052609+00:00, execution_date=20241110T124539, start_date=20241110T124556, end_date=20241110T124557
+[2024-11-10T12:45:57.456+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-11-10T12:45:57.528+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-10T12:45:57.531+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

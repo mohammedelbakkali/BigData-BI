@@ -1,0 +1,229 @@
+[2024-11-10T02:30:26.855+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-11-10T02:30:26.971+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline.insert_data_into_data_warehouse manual__2024-11-10T02:30:22.549862+00:00 [queued]>
+[2024-11-10T02:30:27.002+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline.insert_data_into_data_warehouse manual__2024-11-10T02:30:22.549862+00:00 [queued]>
+[2024-11-10T02:30:27.006+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-11-10T02:30:27.053+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): insert_data_into_data_warehouse> on 2024-11-10 02:30:22.549862+00:00
+[2024-11-10T02:30:27.069+0000] {standard_task_runner.py:64} INFO - Started process 196 to run task
+[2024-11-10T02:30:27.079+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'pipeline', 'insert_data_into_data_warehouse', 'manual__2024-11-10T02:30:22.549862+00:00', '--job-id', '493', '--raw', '--subdir', 'DAGS_FOLDER/pipline.py', '--cfg-path', '/tmp/tmp2697k0md']
+[2024-11-10T02:30:27.090+0000] {standard_task_runner.py:91} INFO - Job 493: Subtask insert_data_into_data_warehouse
+[2024-11-10T02:30:27.283+0000] {task_command.py:426} INFO - Running <TaskInstance: pipeline.insert_data_into_data_warehouse manual__2024-11-10T02:30:22.549862+00:00 [running]> on host f5f00d758335
+[2024-11-10T02:30:27.430+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipeline' AIRFLOW_CTX_TASK_ID='insert_data_into_data_warehouse' AIRFLOW_CTX_EXECUTION_DATE='2024-11-10T02:30:22.549862+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-10T02:30:22.549862+00:00'
+[2024-11-10T02:30:27.432+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-11-10T02:30:27.442+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:27.493+0000] {pipline.py:156} INFO - Author 'Himanshi Allahabadi' added with ID 1.
+[2024-11-10T02:30:27.538+0000] {pipline.py:156} INFO - Author 'Julia Amann' added with ID 2.
+[2024-11-10T02:30:27.557+0000] {pipline.py:156} INFO - Author 'Isabelle Balot' added with ID 3.
+[2024-11-10T02:30:27.586+0000] {pipline.py:156} INFO - Author 'Andrea Beretta' added with ID 4.
+[2024-11-10T02:30:27.603+0000] {pipline.py:156} INFO - Author 'Charles Binkley' added with ID 5.
+[2024-11-10T02:30:27.616+0000] {pipline.py:156} INFO - Author 'Jonas Bozenhard' added with ID 6.
+[2024-11-10T02:30:27.629+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:27.644+0000] {pipline.py:261} ERROR - Error processing publication 'Assessing Trustworthy AI in Times of COVID-19: Deep Learning for Predicting a Multiregional Score Conveying the Degree of Lung Compromise in COVID-19 Patients': 'str' object has no attribute 'get'
+[2024-11-10T02:30:27.651+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:27.680+0000] {pipline.py:156} INFO - Author 'Dragutin Petkovic' added with ID 7.
+[2024-11-10T02:30:27.686+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:27.701+0000] {pipline.py:261} ERROR - Error processing publication 'It is Not “Accuracy vs. Explainability”—We Need Both for Trustworthy AI Systems': 'str' object has no attribute 'get'
+[2024-11-10T02:30:27.708+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:27.737+0000] {pipline.py:156} INFO - Author 'Zishan Ahmed' added with ID 8.
+[2024-11-10T02:30:27.752+0000] {pipline.py:156} INFO - Author 'Shakib Sadat Shanto' added with ID 9.
+[2024-11-10T02:30:27.767+0000] {pipline.py:156} INFO - Author 'Most. Humayra Khanom Rime' added with ID 10.
+[2024-11-10T02:30:27.780+0000] {pipline.py:156} INFO - Author 'Md. Kishor Morol' added with ID 11.
+[2024-11-10T02:30:27.791+0000] {pipline.py:156} INFO - Author 'Nafiz Fahad' added with ID 12.
+[2024-11-10T02:30:27.803+0000] {pipline.py:156} INFO - Author 'Md. Jakir Hossen' added with ID 13.
+[2024-11-10T02:30:27.809+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:27.826+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:27.849+0000] {pipline.py:230} INFO - Publication 'The Generative AI Landscape in Education: Mapping the Terrain of Opportunities, Challenges, and Student Perception' inserted successfully.
+[2024-11-10T02:30:27.854+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:27.875+0000] {pipline.py:156} INFO - Author 'Rui Xie' added with ID 14.
+[2024-11-10T02:30:27.888+0000] {pipline.py:156} INFO - Author 'Asad Ul Haq' added with ID 15.
+[2024-11-10T02:30:27.900+0000] {pipline.py:156} INFO - Author 'Linsen Ma' added with ID 16.
+[2024-11-10T02:30:27.912+0000] {pipline.py:156} INFO - Author 'Krystal Sun' added with ID 17.
+[2024-11-10T02:30:27.924+0000] {pipline.py:156} INFO - Author 'Sanchari Sen' added with ID 18.
+[2024-11-10T02:30:27.937+0000] {pipline.py:156} INFO - Author 'Swagath Venkataramani' added with ID 19.
+[2024-11-10T02:30:27.943+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:27.954+0000] {pipline.py:261} ERROR - Error processing publication 'SmartQuant: CXL-Based AI Model Store in Support of Runtime Configurable Weight Quantization': 'str' object has no attribute 'get'
+[2024-11-10T02:30:27.960+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:27.981+0000] {pipline.py:156} INFO - Author 'Yong Zheng' added with ID 20.
+[2024-11-10T02:30:27.991+0000] {pipline.py:156} INFO - Author 'Haigang Yang' added with ID 21.
+[2024-11-10T02:30:28.003+0000] {pipline.py:156} INFO - Author 'Yi Shu' added with ID 22.
+[2024-11-10T02:30:28.015+0000] {pipline.py:156} INFO - Author 'Yiping Jia' added with ID 23.
+[2024-11-10T02:30:28.030+0000] {pipline.py:156} INFO - Author 'Zhihong Huang' added with ID 24.
+[2024-11-10T02:30:28.037+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:28.050+0000] {pipline.py:261} ERROR - Error processing publication 'mTREE: A Customized Multicast-Enabled Tree-Based Network on Chip for AI Chips': 'str' object has no attribute 'get'
+[2024-11-10T02:30:28.056+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:28.086+0000] {pipline.py:156} INFO - Author 'Santiago Ontañón' added with ID 25.
+[2024-11-10T02:30:28.102+0000] {pipline.py:156} INFO - Author 'Gabriel Synnaeve' added with ID 26.
+[2024-11-10T02:30:28.116+0000] {pipline.py:156} INFO - Author 'Alberto Uriarte' added with ID 27.
+[2024-11-10T02:30:28.128+0000] {pipline.py:156} INFO - Author 'Florian Richoux' added with ID 28.
+[2024-11-10T02:30:28.140+0000] {pipline.py:156} INFO - Author 'David Churchill' added with ID 29.
+[2024-11-10T02:30:28.153+0000] {pipline.py:156} INFO - Author 'Mike Preuss' added with ID 30.
+[2024-11-10T02:30:28.160+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:28.184+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:28.210+0000] {pipline.py:230} INFO - Publication 'A Survey of Real-Time Strategy Game AI Research and Competition in StarCraft' inserted successfully.
+[2024-11-10T02:30:28.217+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:28.246+0000] {pipline.py:156} INFO - Author 'Alexander Heimerl' added with ID 31.
+[2024-11-10T02:30:28.261+0000] {pipline.py:156} INFO - Author 'Katharina Weitz' added with ID 32.
+[2024-11-10T02:30:28.278+0000] {pipline.py:156} INFO - Author 'Tobias Baur' added with ID 33.
+[2024-11-10T02:30:28.294+0000] {pipline.py:156} INFO - Author 'Elisabeth André' added with ID 34.
+[2024-11-10T02:30:28.302+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:28.326+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:28.358+0000] {pipline.py:230} INFO - Publication 'Unraveling ML Models of Emotion With NOVA: Multi-Level Explainable AI for Non-Experts' inserted successfully.
+[2024-11-10T02:30:28.366+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:28.392+0000] {pipline.py:156} INFO - Author 'Jiaqiu Ai' added with ID 35.
+[2024-11-10T02:30:28.478+0000] {pipline.py:156} INFO - Author 'Weibao Xue' added with ID 36.
+[2024-11-10T02:30:28.494+0000] {pipline.py:156} INFO - Author 'Yanan Zhu' added with ID 37.
+[2024-11-10T02:30:28.507+0000] {pipline.py:156} INFO - Author 'Shuo Zhuang' added with ID 38.
+[2024-11-10T02:30:28.520+0000] {pipline.py:156} INFO - Author 'Congan Xu' added with ID 39.
+[2024-11-10T02:30:28.530+0000] {pipline.py:156} INFO - Author 'Hao Yan' added with ID 40.
+[2024-11-10T02:30:28.536+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:28.553+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:28.575+0000] {pipline.py:230} INFO - Publication 'AIS-PVT: Long-Time AIS Data Assisted Pyramid Vision Transformer for Sea-Land Segmentation in Dual-Polarization SAR Imagery' inserted successfully.
+[2024-11-10T02:30:28.583+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:28.612+0000] {pipline.py:156} INFO - Author 'Jianrong Tao' added with ID 41.
+[2024-11-10T02:30:28.631+0000] {pipline.py:156} INFO - Author 'Yu Xiong' added with ID 42.
+[2024-11-10T02:30:28.646+0000] {pipline.py:156} INFO - Author 'Shiwei Zhao' added with ID 43.
+[2024-11-10T02:30:28.660+0000] {pipline.py:156} INFO - Author 'Runze Wu' added with ID 44.
+[2024-11-10T02:30:28.671+0000] {pipline.py:156} INFO - Author 'Xudong Shen' added with ID 45.
+[2024-11-10T02:30:28.682+0000] {pipline.py:156} INFO - Author 'Tangjie Lyu' added with ID 46.
+[2024-11-10T02:30:28.688+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:28.705+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:28.727+0000] {pipline.py:230} INFO - Publication 'Explainable AI for Cheating Detection and Churn Prediction in Online Games' inserted successfully.
+[2024-11-10T02:30:28.734+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:28.756+0000] {pipline.py:156} INFO - Author 'Caner Hazirbas' added with ID 47.
+[2024-11-10T02:30:28.768+0000] {pipline.py:156} INFO - Author 'Joanna Bitton' added with ID 48.
+[2024-11-10T02:30:28.780+0000] {pipline.py:156} INFO - Author 'Brian Dolhansky' added with ID 49.
+[2024-11-10T02:30:28.792+0000] {pipline.py:156} INFO - Author 'Jacqueline Pan' added with ID 50.
+[2024-11-10T02:30:28.805+0000] {pipline.py:156} INFO - Author 'Albert Gordo' added with ID 51.
+[2024-11-10T02:30:28.818+0000] {pipline.py:156} INFO - Author 'Cristian Canton Ferrer' added with ID 52.
+[2024-11-10T02:30:28.824+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:28.841+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:28.864+0000] {pipline.py:230} INFO - Publication 'Towards Measuring Fairness in AI: The Casual Conversations Dataset' inserted successfully.
+[2024-11-10T02:30:28.870+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:28.893+0000] {pipline.py:156} INFO - Author 'Andreas Holzinger' added with ID 53.
+[2024-11-10T02:30:28.907+0000] {pipline.py:156} INFO - Author 'Michaela Kargl' added with ID 54.
+[2024-11-10T02:30:28.918+0000] {pipline.py:156} INFO - Author 'Bettina Kipperer' added with ID 55.
+[2024-11-10T02:30:28.936+0000] {pipline.py:156} INFO - Author 'Peter Regitnig' added with ID 56.
+[2024-11-10T02:30:28.948+0000] {pipline.py:156} INFO - Author 'Markus Plass' added with ID 57.
+[2024-11-10T02:30:28.959+0000] {pipline.py:156} INFO - Author 'Heimo Müller' added with ID 58.
+[2024-11-10T02:30:28.966+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:28.986+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:29.017+0000] {pipline.py:230} INFO - Publication 'Personas for Artificial Intelligence (AI) an Open Source Toolbox' inserted successfully.
+[2024-11-10T02:30:29.024+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:29.053+0000] {pipline.py:156} INFO - Author 'Ana Salta' added with ID 59.
+[2024-11-10T02:30:29.068+0000] {pipline.py:156} INFO - Author 'Rui Prada' added with ID 60.
+[2024-11-10T02:30:29.080+0000] {pipline.py:156} INFO - Author 'Francisco S. Melo' added with ID 61.
+[2024-11-10T02:30:29.086+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:29.103+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:29.126+0000] {pipline.py:230} INFO - Publication 'A Game AI Competition to Foster Collaborative AI Research and Development' inserted successfully.
+[2024-11-10T02:30:29.133+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:29.165+0000] {pipline.py:156} INFO - Author 'Dayoung Kim' added with ID 62.
+[2024-11-10T02:30:29.179+0000] {pipline.py:156} INFO - Author 'Qin Zhu' added with ID 63.
+[2024-11-10T02:30:29.191+0000] {pipline.py:156} INFO - Author 'Hoda Eldardiry' added with ID 64.
+[2024-11-10T02:30:29.198+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:29.209+0000] {pipline.py:261} ERROR - Error processing publication 'Toward a Policy Approach to Normative Artificial Intelligence Governance: Implications for AI Ethics Education': 'str' object has no attribute 'get'
+[2024-11-10T02:30:29.215+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:29.242+0000] {pipline.py:156} INFO - Author 'Anna Namrita Gummadi' added with ID 65.
+[2024-11-10T02:30:29.255+0000] {pipline.py:156} INFO - Author 'Jerry C. Napier' added with ID 66.
+[2024-11-10T02:30:29.268+0000] {pipline.py:156} INFO - Author 'Mustafa Abdallah' added with ID 67.
+[2024-11-10T02:30:29.275+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:29.292+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:29.323+0000] {pipline.py:230} INFO - Publication 'XAI-IoT: An Explainable AI Framework for Enhancing Anomaly Detection in IoT Systems' inserted successfully.
+[2024-11-10T02:30:29.333+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:29.350+0000] {pipline.py:144} INFO - Author 'Andreas Holzinger' already exists with ID 53.
+[2024-11-10T02:30:29.369+0000] {pipline.py:156} INFO - Author 'Iztok Fister' added with ID 68.
+[2024-11-10T02:30:29.373+0000] {pipline.py:144} INFO - Author 'Iztok Fister' already exists with ID 68.
+[2024-11-10T02:30:29.391+0000] {pipline.py:156} INFO - Author 'Hans-Peter Kaul' added with ID 69.
+[2024-11-10T02:30:29.410+0000] {pipline.py:156} INFO - Author 'Senthold Asseng' added with ID 70.
+[2024-11-10T02:30:29.418+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:29.442+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:29.471+0000] {pipline.py:230} INFO - Publication 'Human-Centered AI in Smart Farming: Toward Agriculture 5.0' inserted successfully.
+[2024-11-10T02:30:29.477+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:29.505+0000] {pipline.py:156} INFO - Author 'Hayoung Lee' added with ID 71.
+[2024-11-10T02:30:29.517+0000] {pipline.py:156} INFO - Author 'Jongho Park' added with ID 72.
+[2024-11-10T02:30:29.532+0000] {pipline.py:156} INFO - Author 'Sungho Kang' added with ID 73.
+[2024-11-10T02:30:29.538+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:29.555+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:29.576+0000] {pipline.py:230} INFO - Publication 'An Area-Efficient Systolic Array Redundancy Architecture for Reliable AI Accelerator' inserted successfully.
+[2024-11-10T02:30:29.582+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:29.608+0000] {pipline.py:156} INFO - Author 'Minrui Xu' added with ID 74.
+[2024-11-10T02:30:29.620+0000] {pipline.py:156} INFO - Author 'Hongyang Du' added with ID 75.
+[2024-11-10T02:30:29.634+0000] {pipline.py:156} INFO - Author 'Dusit Niyato' added with ID 76.
+[2024-11-10T02:30:29.647+0000] {pipline.py:156} INFO - Author 'Jiawen Kang' added with ID 77.
+[2024-11-10T02:30:29.660+0000] {pipline.py:156} INFO - Author 'Zehui Xiong' added with ID 78.
+[2024-11-10T02:30:29.671+0000] {pipline.py:156} INFO - Author 'Shiwen Mao' added with ID 79.
+[2024-11-10T02:30:29.677+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:29.695+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:29.717+0000] {pipline.py:230} INFO - Publication 'Unleashing the Power of Edge-Cloud Generative AI in Mobile Networks: A Survey of AIGC Services' inserted successfully.
+[2024-11-10T02:30:29.723+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:29.763+0000] {pipline.py:156} INFO - Author 'Mostafa Al-Emran' added with ID 80.
+[2024-11-10T02:30:29.777+0000] {pipline.py:156} INFO - Author 'Bassam Abu-Hijleh' added with ID 81.
+[2024-11-10T02:30:29.792+0000] {pipline.py:156} INFO - Author 'AbdulRahman A. Alsewari' added with ID 82.
+[2024-11-10T02:30:29.799+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:29.823+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:29.851+0000] {pipline.py:230} INFO - Publication 'Exploring the Effect of Generative AI on Social Sustainability Through Integrating AI Attributes, TPB, and T-EESST: A Deep Learning-Based Hybrid SEM-ANN Approach' inserted successfully.
+[2024-11-10T02:30:29.859+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:29.897+0000] {pipline.py:156} INFO - Author 'David Melhart' added with ID 83.
+[2024-11-10T02:30:29.915+0000] {pipline.py:156} INFO - Author 'Julian Togelius' added with ID 84.
+[2024-11-10T02:30:29.934+0000] {pipline.py:156} INFO - Author 'Benedikte Mikkelsen' added with ID 85.
+[2024-11-10T02:30:29.951+0000] {pipline.py:156} INFO - Author 'Christoffer Holmgård' added with ID 86.
+[2024-11-10T02:30:29.974+0000] {pipline.py:156} INFO - Author 'Georgios N. Yannakakis' added with ID 87.
+[2024-11-10T02:30:29.982+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:30.007+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:30.033+0000] {pipline.py:230} INFO - Publication 'The Ethics of AI in Games' inserted successfully.
+[2024-11-10T02:30:30.042+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:30.072+0000] {pipline.py:156} INFO - Author 'Osvaldo Arreche' added with ID 88.
+[2024-11-10T02:30:30.090+0000] {pipline.py:156} INFO - Author 'Tanish R. Guntur' added with ID 89.
+[2024-11-10T02:30:30.108+0000] {pipline.py:156} INFO - Author 'Jack W. Roberts' added with ID 90.
+[2024-11-10T02:30:30.111+0000] {pipline.py:144} INFO - Author 'Mustafa Abdallah' already exists with ID 67.
+[2024-11-10T02:30:30.118+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:30.142+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:30.171+0000] {pipline.py:230} INFO - Publication 'E-XAI: Evaluating Black-Box Explainable AI Frameworks for Network Intrusion Detection' inserted successfully.
+[2024-11-10T02:30:30.178+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:30.206+0000] {pipline.py:156} INFO - Author 'Tanish Patel' added with ID 91.
+[2024-11-10T02:30:30.218+0000] {pipline.py:156} INFO - Author 'Ramalingam Murugan' added with ID 92.
+[2024-11-10T02:30:30.229+0000] {pipline.py:156} INFO - Author 'Gokul Yenduri' added with ID 93.
+[2024-11-10T02:30:30.242+0000] {pipline.py:156} INFO - Author 'Rutvij H. Jhaveri' added with ID 94.
+[2024-11-10T02:30:30.256+0000] {pipline.py:156} INFO - Author 'Hichem Snoussi' added with ID 95.
+[2024-11-10T02:30:30.270+0000] {pipline.py:156} INFO - Author 'Tarek Gaber' added with ID 96.
+[2024-11-10T02:30:30.276+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:30.292+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:30.317+0000] {pipline.py:230} INFO - Publication 'Demystifying Defects: Federated Learning and Explainable AI for Semiconductor Fault Detection' inserted successfully.
+[2024-11-10T02:30:30.324+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:30.350+0000] {pipline.py:156} INFO - Author 'Tariq Shahzad' added with ID 97.
+[2024-11-10T02:30:30.361+0000] {pipline.py:156} INFO - Author 'Muhammad Saleem' added with ID 98.
+[2024-11-10T02:30:30.373+0000] {pipline.py:156} INFO - Author 'Muhammad Sajid Farooq' added with ID 99.
+[2024-11-10T02:30:30.384+0000] {pipline.py:156} INFO - Author 'Sagheer Abbas' added with ID 100.
+[2024-11-10T02:30:30.399+0000] {pipline.py:156} INFO - Author 'Muhammad Adnan Khan' added with ID 101.
+[2024-11-10T02:30:30.410+0000] {pipline.py:156} INFO - Author 'Khmaies Ouahada' added with ID 102.
+[2024-11-10T02:30:30.416+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:30.437+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:30.464+0000] {pipline.py:230} INFO - Publication 'Developing a Transparent Diagnosis Model for Diabetic Retinopathy Using Explainable AI' inserted successfully.
+[2024-11-10T02:30:30.470+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:30.492+0000] {pipline.py:156} INFO - Author 'Pranith Shetty' added with ID 103.
+[2024-11-10T02:30:30.498+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:30.516+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:30.541+0000] {pipline.py:230} INFO - Publication 'AI and Security, From an Information Security and Risk Manager Standpoint' inserted successfully.
+[2024-11-10T02:30:30.548+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:30.572+0000] {pipline.py:156} INFO - Author 'Kazuo Okamura' added with ID 104.
+[2024-11-10T02:30:30.589+0000] {pipline.py:156} INFO - Author 'Seiji Yamada' added with ID 105.
+[2024-11-10T02:30:30.596+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:30.613+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:30.633+0000] {pipline.py:230} INFO - Publication 'Empirical Evaluations of Framework for Adaptive Trust Calibration in Human-AI Cooperation' inserted successfully.
+[2024-11-10T02:30:30.640+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:30.652+0000] {pipline.py:144} INFO - Author 'Himanshi Allahabadi' already exists with ID 1.
+[2024-11-10T02:30:30.655+0000] {pipline.py:144} INFO - Author 'Julia Amann' already exists with ID 2.
+[2024-11-10T02:30:30.657+0000] {pipline.py:144} INFO - Author 'Isabelle Balot' already exists with ID 3.
+[2024-11-10T02:30:30.659+0000] {pipline.py:144} INFO - Author 'Andrea Beretta' already exists with ID 4.
+[2024-11-10T02:30:30.662+0000] {pipline.py:144} INFO - Author 'Charles Binkley' already exists with ID 5.
+[2024-11-10T02:30:30.664+0000] {pipline.py:144} INFO - Author 'Jonas Bozenhard' already exists with ID 6.
+[2024-11-10T02:30:30.670+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:30.681+0000] {pipline.py:261} ERROR - Error processing publication 'Assessing Trustworthy AI in Times of COVID-19: Deep Learning for Predicting a Multiregional Score Conveying the Degree of Lung Compromise in COVID-19 Patients': 'str' object has no attribute 'get'
+[2024-11-10T02:30:30.687+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:30.699+0000] {pipline.py:144} INFO - Author 'Dragutin Petkovic' already exists with ID 7.
+[2024-11-10T02:30:30.706+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T02:30:30.717+0000] {pipline.py:261} ERROR - Error processing publication 'It is Not “Accuracy vs. Explainability”—We Need Both for Trustworthy AI Systems': 'str' object has no attribute 'get'
+[2024-11-10T02:30:30.718+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-11-10T02:30:30.718+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-11-10T02:30:30.726+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=pipeline, task_id=insert_data_into_data_warehouse, run_id=manual__2024-11-10T02:30:22.549862+00:00, execution_date=20241110T023022, start_date=20241110T023026, end_date=20241110T023030
+[2024-11-10T02:30:30.752+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-11-10T02:30:30.777+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-10T02:30:30.781+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

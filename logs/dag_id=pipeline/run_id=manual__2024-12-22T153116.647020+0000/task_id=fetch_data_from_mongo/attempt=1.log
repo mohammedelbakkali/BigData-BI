@@ -1,0 +1,23 @@
+[2024-12-22T15:31:18.649+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-12-22T15:31:18.701+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline.fetch_data_from_mongo manual__2024-12-22T15:31:16.647020+00:00 [queued]>
+[2024-12-22T15:31:18.716+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline.fetch_data_from_mongo manual__2024-12-22T15:31:16.647020+00:00 [queued]>
+[2024-12-22T15:31:18.719+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-12-22T15:31:18.746+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): fetch_data_from_mongo> on 2024-12-22 15:31:16.647020+00:00
+[2024-12-22T15:31:18.753+0000] {standard_task_runner.py:64} INFO - Started process 209 to run task
+[2024-12-22T15:31:18.763+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'pipeline', 'fetch_data_from_mongo', 'manual__2024-12-22T15:31:16.647020+00:00', '--job-id', '691', '--raw', '--subdir', 'DAGS_FOLDER/pipline.py', '--cfg-path', '/tmp/tmpxcjn9nn5']
+[2024-12-22T15:31:18.765+0000] {standard_task_runner.py:91} INFO - Job 691: Subtask fetch_data_from_mongo
+[2024-12-22T15:31:18.949+0000] {task_command.py:426} INFO - Running <TaskInstance: pipeline.fetch_data_from_mongo manual__2024-12-22T15:31:16.647020+00:00 [running]> on host 8dff7047e9ba
+[2024-12-22T15:31:19.089+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipeline' AIRFLOW_CTX_TASK_ID='fetch_data_from_mongo' AIRFLOW_CTX_EXECUTION_DATE='2024-12-22T15:31:16.647020+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-22T15:31:16.647020+00:00'
+[2024-12-22T15:31:19.090+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-12-22T15:31:38.331+0000] {logging_mixin.py:188} INFO - +-----+---+
+| Name|Age|
++-----+---+
+|Alice| 34|
+|  Bob| 45|
++-----+---+
+[2024-12-22T15:31:38.858+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-12-22T15:31:38.859+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-12-22T15:31:38.868+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=pipeline, task_id=fetch_data_from_mongo, run_id=manual__2024-12-22T15:31:16.647020+00:00, execution_date=20241222T153116, start_date=20241222T153118, end_date=20241222T153138
+[2024-12-22T15:31:38.924+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-12-22T15:31:38.952+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-12-22T15:31:38.955+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

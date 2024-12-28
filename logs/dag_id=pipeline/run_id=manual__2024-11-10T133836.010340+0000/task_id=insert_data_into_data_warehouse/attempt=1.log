@@ -1,0 +1,1125 @@
+[2024-11-10T13:38:41.673+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-11-10T13:38:41.752+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline.insert_data_into_data_warehouse manual__2024-11-10T13:38:36.010340+00:00 [queued]>
+[2024-11-10T13:38:41.776+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline.insert_data_into_data_warehouse manual__2024-11-10T13:38:36.010340+00:00 [queued]>
+[2024-11-10T13:38:41.782+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-11-10T13:38:41.821+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): insert_data_into_data_warehouse> on 2024-11-10 13:38:36.010340+00:00
+[2024-11-10T13:38:41.835+0000] {standard_task_runner.py:64} INFO - Started process 209 to run task
+[2024-11-10T13:38:41.841+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'pipeline', 'insert_data_into_data_warehouse', 'manual__2024-11-10T13:38:36.010340+00:00', '--job-id', '560', '--raw', '--subdir', 'DAGS_FOLDER/pipline.py', '--cfg-path', '/tmp/tmpqafejj36']
+[2024-11-10T13:38:41.847+0000] {standard_task_runner.py:91} INFO - Job 560: Subtask insert_data_into_data_warehouse
+[2024-11-10T13:38:41.912+0000] {task_command.py:426} INFO - Running <TaskInstance: pipeline.insert_data_into_data_warehouse manual__2024-11-10T13:38:36.010340+00:00 [running]> on host 90d9f53b7a2d
+[2024-11-10T13:38:42.187+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipeline' AIRFLOW_CTX_TASK_ID='insert_data_into_data_warehouse' AIRFLOW_CTX_EXECUTION_DATE='2024-11-10T13:38:36.010340+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-10T13:38:36.010340+00:00'
+[2024-11-10T13:38:42.189+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-11-10T13:38:42.200+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:42.241+0000] {pipline.py:156} INFO - Author 'Himanshi Allahabadi' added with ID 1279.
+[2024-11-10T13:38:42.256+0000] {pipline.py:156} INFO - Author 'Julia Amann' added with ID 1280.
+[2024-11-10T13:38:42.268+0000] {pipline.py:156} INFO - Author 'Isabelle Balot' added with ID 1281.
+[2024-11-10T13:38:42.283+0000] {pipline.py:156} INFO - Author 'Andrea Beretta' added with ID 1282.
+[2024-11-10T13:38:42.295+0000] {pipline.py:156} INFO - Author 'Charles Binkley' added with ID 1283.
+[2024-11-10T13:38:42.308+0000] {pipline.py:156} INFO - Author 'Jonas Bozenhard' added with ID 1284.
+[2024-11-10T13:38:42.319+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:42.331+0000] {logging_mixin.py:188} INFO - quartils est une chaîne de caractères
+[2024-11-10T13:38:42.342+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Technology and Society': 'str' object has no attribute 'get'
+[2024-11-10T13:38:42.343+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T13:38:42.349+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:42.372+0000] {pipline.py:156} INFO - Author 'Dragutin Petkovic' added with ID 1285.
+[2024-11-10T13:38:42.378+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:42.390+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Technology and Society': 'str' object has no attribute 'get'
+[2024-11-10T13:38:42.391+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T13:38:42.397+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:42.418+0000] {pipline.py:156} INFO - Author 'Zishan Ahmed' added with ID 1286.
+[2024-11-10T13:38:42.428+0000] {pipline.py:156} INFO - Author 'Shakib Sadat Shanto' added with ID 1287.
+[2024-11-10T13:38:42.439+0000] {pipline.py:156} INFO - Author 'Most. Humayra Khanom Rime' added with ID 1288.
+[2024-11-10T13:38:42.453+0000] {pipline.py:156} INFO - Author 'Md. Kishor Morol' added with ID 1289.
+[2024-11-10T13:38:42.473+0000] {pipline.py:156} INFO - Author 'Nafiz Fahad' added with ID 1290.
+[2024-11-10T13:38:42.485+0000] {pipline.py:156} INFO - Author 'Md. Jakir Hossen' added with ID 1291.
+[2024-11-10T13:38:42.491+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:42.502+0000] {logging_mixin.py:188} INFO - quartils est une liste
+[2024-11-10T13:38:42.515+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:42.515+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:42.521+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:42.541+0000] {pipline.py:156} INFO - Author 'Rui Xie' added with ID 1292.
+[2024-11-10T13:38:42.554+0000] {pipline.py:156} INFO - Author 'Asad Ul Haq' added with ID 1293.
+[2024-11-10T13:38:42.567+0000] {pipline.py:156} INFO - Author 'Linsen Ma' added with ID 1294.
+[2024-11-10T13:38:42.582+0000] {pipline.py:156} INFO - Author 'Krystal Sun' added with ID 1295.
+[2024-11-10T13:38:42.604+0000] {pipline.py:156} INFO - Author 'Sanchari Sen' added with ID 1296.
+[2024-11-10T13:38:42.619+0000] {pipline.py:156} INFO - Author 'Swagath Venkataramani' added with ID 1297.
+[2024-11-10T13:38:42.625+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:42.636+0000] {logging_mixin.py:188} INFO - quartils est une chaîne de caractères
+[2024-11-10T13:38:42.647+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Computer Architecture Letters': 'str' object has no attribute 'get'
+[2024-11-10T13:38:42.648+0000] {pipline.py:279} WARNING - Journal 'IEEE Computer Architecture Letters' was not inserted.
+[2024-11-10T13:38:42.654+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:42.679+0000] {pipline.py:156} INFO - Author 'Yong Zheng' added with ID 1298.
+[2024-11-10T13:38:42.691+0000] {pipline.py:156} INFO - Author 'Haigang Yang' added with ID 1299.
+[2024-11-10T13:38:42.705+0000] {pipline.py:156} INFO - Author 'Yi Shu' added with ID 1300.
+[2024-11-10T13:38:42.720+0000] {pipline.py:156} INFO - Author 'Yiping Jia' added with ID 1301.
+[2024-11-10T13:38:42.732+0000] {pipline.py:156} INFO - Author 'Zhihong Huang' added with ID 1302.
+[2024-11-10T13:38:42.739+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:42.750+0000] {logging_mixin.py:188} INFO - quartils est une chaîne de caractères
+[2024-11-10T13:38:42.761+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Embedded Systems Letters': 'str' object has no attribute 'get'
+[2024-11-10T13:38:42.762+0000] {pipline.py:279} WARNING - Journal 'IEEE Embedded Systems Letters' was not inserted.
+[2024-11-10T13:38:42.767+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:42.790+0000] {pipline.py:156} INFO - Author 'Santiago Ontañón' added with ID 1303.
+[2024-11-10T13:38:42.811+0000] {pipline.py:156} INFO - Author 'Gabriel Synnaeve' added with ID 1304.
+[2024-11-10T13:38:42.826+0000] {pipline.py:156} INFO - Author 'Alberto Uriarte' added with ID 1305.
+[2024-11-10T13:38:42.838+0000] {pipline.py:156} INFO - Author 'Florian Richoux' added with ID 1306.
+[2024-11-10T13:38:42.850+0000] {pipline.py:156} INFO - Author 'David Churchill' added with ID 1307.
+[2024-11-10T13:38:42.869+0000] {pipline.py:156} INFO - Author 'Mike Preuss' added with ID 1308.
+[2024-11-10T13:38:42.875+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:42.891+0000] {logging_mixin.py:188} INFO - quartils est une liste
+[2024-11-10T13:38:42.907+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Computational Intelligence and AI in Games': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:42.908+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Computational Intelligence and AI in Games' was not inserted.
+[2024-11-10T13:38:42.916+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:42.948+0000] {pipline.py:156} INFO - Author 'Alexander Heimerl' added with ID 1309.
+[2024-11-10T13:38:42.962+0000] {pipline.py:156} INFO - Author 'Katharina Weitz' added with ID 1310.
+[2024-11-10T13:38:42.977+0000] {pipline.py:156} INFO - Author 'Tobias Baur' added with ID 1311.
+[2024-11-10T13:38:42.990+0000] {pipline.py:156} INFO - Author 'Elisabeth André' added with ID 1312.
+[2024-11-10T13:38:42.998+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:43.015+0000] {logging_mixin.py:188} INFO - quartils est une liste
+[2024-11-10T13:38:43.034+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Affective Computing': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:43.035+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Affective Computing' was not inserted.
+[2024-11-10T13:38:43.043+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:43.089+0000] {pipline.py:156} INFO - Author 'Jiaqiu Ai' added with ID 1313.
+[2024-11-10T13:38:43.116+0000] {pipline.py:156} INFO - Author 'Weibao Xue' added with ID 1314.
+[2024-11-10T13:38:43.135+0000] {pipline.py:156} INFO - Author 'Yanan Zhu' added with ID 1315.
+[2024-11-10T13:38:43.159+0000] {pipline.py:156} INFO - Author 'Shuo Zhuang' added with ID 1316.
+[2024-11-10T13:38:43.571+0000] {pipline.py:156} INFO - Author 'Congan Xu' added with ID 1317.
+[2024-11-10T13:38:43.607+0000] {pipline.py:156} INFO - Author 'Hao Yan' added with ID 1318.
+[2024-11-10T13:38:43.631+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:43.663+0000] {logging_mixin.py:188} INFO - quartils est une liste
+[2024-11-10T13:38:43.685+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Geoscience and Remote Sensing': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:43.686+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Geoscience and Remote Sensing' was not inserted.
+[2024-11-10T13:38:43.695+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:43.728+0000] {pipline.py:156} INFO - Author 'Jianrong Tao' added with ID 1319.
+[2024-11-10T13:38:43.740+0000] {pipline.py:156} INFO - Author 'Yu Xiong' added with ID 1320.
+[2024-11-10T13:38:43.766+0000] {pipline.py:156} INFO - Author 'Shiwei Zhao' added with ID 1321.
+[2024-11-10T13:38:43.782+0000] {pipline.py:156} INFO - Author 'Runze Wu' added with ID 1322.
+[2024-11-10T13:38:43.802+0000] {pipline.py:156} INFO - Author 'Xudong Shen' added with ID 1323.
+[2024-11-10T13:38:43.817+0000] {pipline.py:156} INFO - Author 'Tangjie Lyu' added with ID 1324.
+[2024-11-10T13:38:43.825+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:43.843+0000] {logging_mixin.py:188} INFO - quartils est une liste
+[2024-11-10T13:38:43.865+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Games': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:43.866+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Games' was not inserted.
+[2024-11-10T13:38:43.873+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:43.900+0000] {pipline.py:156} INFO - Author 'Caner Hazirbas' added with ID 1325.
+[2024-11-10T13:38:43.917+0000] {pipline.py:156} INFO - Author 'Joanna Bitton' added with ID 1326.
+[2024-11-10T13:38:43.934+0000] {pipline.py:156} INFO - Author 'Brian Dolhansky' added with ID 1327.
+[2024-11-10T13:38:43.957+0000] {pipline.py:156} INFO - Author 'Jacqueline Pan' added with ID 1328.
+[2024-11-10T13:38:43.970+0000] {pipline.py:156} INFO - Author 'Albert Gordo' added with ID 1329.
+[2024-11-10T13:38:43.983+0000] {pipline.py:156} INFO - Author 'Cristian Canton Ferrer' added with ID 1330.
+[2024-11-10T13:38:43.990+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:44.007+0000] {logging_mixin.py:188} INFO - quartils est une liste
+[2024-11-10T13:38:44.022+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Biometrics, Behavior, and Identity Science': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:44.023+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Biometrics, Behavior, and Identity Science' was not inserted.
+[2024-11-10T13:38:44.032+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:44.061+0000] {pipline.py:156} INFO - Author 'Andreas Holzinger' added with ID 1331.
+[2024-11-10T13:38:44.074+0000] {pipline.py:156} INFO - Author 'Michaela Kargl' added with ID 1332.
+[2024-11-10T13:38:44.096+0000] {pipline.py:156} INFO - Author 'Bettina Kipperer' added with ID 1333.
+[2024-11-10T13:38:44.112+0000] {pipline.py:156} INFO - Author 'Peter Regitnig' added with ID 1334.
+[2024-11-10T13:38:44.125+0000] {pipline.py:156} INFO - Author 'Markus Plass' added with ID 1335.
+[2024-11-10T13:38:44.140+0000] {pipline.py:156} INFO - Author 'Heimo Müller' added with ID 1336.
+[2024-11-10T13:38:44.147+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:44.160+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:44.161+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:44.166+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:44.189+0000] {pipline.py:156} INFO - Author 'Ana Salta' added with ID 1337.
+[2024-11-10T13:38:44.203+0000] {pipline.py:156} INFO - Author 'Rui Prada' added with ID 1338.
+[2024-11-10T13:38:44.219+0000] {pipline.py:156} INFO - Author 'Francisco S. Melo' added with ID 1339.
+[2024-11-10T13:38:44.225+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:44.238+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Games': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:44.239+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Games' was not inserted.
+[2024-11-10T13:38:44.246+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:44.271+0000] {pipline.py:156} INFO - Author 'Dayoung Kim' added with ID 1340.
+[2024-11-10T13:38:44.291+0000] {pipline.py:156} INFO - Author 'Qin Zhu' added with ID 1341.
+[2024-11-10T13:38:44.306+0000] {pipline.py:156} INFO - Author 'Hoda Eldardiry' added with ID 1342.
+[2024-11-10T13:38:44.313+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:44.326+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Technology and Society': 'str' object has no attribute 'get'
+[2024-11-10T13:38:44.327+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T13:38:44.333+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:44.356+0000] {pipline.py:156} INFO - Author 'Anna Namrita Gummadi' added with ID 1343.
+[2024-11-10T13:38:44.368+0000] {pipline.py:156} INFO - Author 'Jerry C. Napier' added with ID 1344.
+[2024-11-10T13:38:44.380+0000] {pipline.py:156} INFO - Author 'Mustafa Abdallah' added with ID 1345.
+[2024-11-10T13:38:44.386+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:44.397+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:44.397+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:44.403+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:44.414+0000] {pipline.py:144} INFO - Author 'Andreas Holzinger' already exists with ID 1331.
+[2024-11-10T13:38:44.426+0000] {pipline.py:156} INFO - Author 'Iztok Fister' added with ID 1346.
+[2024-11-10T13:38:44.428+0000] {pipline.py:144} INFO - Author 'Iztok Fister' already exists with ID 1346.
+[2024-11-10T13:38:44.440+0000] {pipline.py:156} INFO - Author 'Hans-Peter Kaul' added with ID 1347.
+[2024-11-10T13:38:44.451+0000] {pipline.py:156} INFO - Author 'Senthold Asseng' added with ID 1348.
+[2024-11-10T13:38:44.457+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:44.468+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:44.469+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:44.474+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:44.502+0000] {pipline.py:156} INFO - Author 'Hayoung Lee' added with ID 1349.
+[2024-11-10T13:38:44.515+0000] {pipline.py:156} INFO - Author 'Jongho Park' added with ID 1350.
+[2024-11-10T13:38:44.530+0000] {pipline.py:156} INFO - Author 'Sungho Kang' added with ID 1351.
+[2024-11-10T13:38:44.536+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:44.548+0000] {logging_mixin.py:188} INFO - quartils est une liste
+[2024-11-10T13:38:44.558+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Very Large Scale Integration': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:44.559+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Very Large Scale Integration' was not inserted.
+[2024-11-10T13:38:44.565+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:44.591+0000] {pipline.py:156} INFO - Author 'Minrui Xu' added with ID 1352.
+[2024-11-10T13:38:44.606+0000] {pipline.py:156} INFO - Author 'Hongyang Du' added with ID 1353.
+[2024-11-10T13:38:44.619+0000] {pipline.py:156} INFO - Author 'Dusit Niyato' added with ID 1354.
+[2024-11-10T13:38:44.629+0000] {pipline.py:156} INFO - Author 'Jiawen Kang' added with ID 1355.
+[2024-11-10T13:38:44.640+0000] {pipline.py:156} INFO - Author 'Zehui Xiong' added with ID 1356.
+[2024-11-10T13:38:44.652+0000] {pipline.py:156} INFO - Author 'Shiwen Mao' added with ID 1357.
+[2024-11-10T13:38:44.658+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:44.670+0000] {logging_mixin.py:188} INFO - quartils est une liste
+[2024-11-10T13:38:44.681+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Communications Surveys & Tutorials': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:44.681+0000] {pipline.py:279} WARNING - Journal 'IEEE Communications Surveys & Tutorials' was not inserted.
+[2024-11-10T13:38:44.687+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:44.711+0000] {pipline.py:156} INFO - Author 'Mostafa Al-Emran' added with ID 1358.
+[2024-11-10T13:38:44.721+0000] {pipline.py:156} INFO - Author 'Bassam Abu-Hijleh' added with ID 1359.
+[2024-11-10T13:38:44.739+0000] {pipline.py:156} INFO - Author 'AbdulRahman A. Alsewari' added with ID 1360.
+[2024-11-10T13:38:44.745+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:44.757+0000] {logging_mixin.py:188} INFO - quartils est une liste
+[2024-11-10T13:38:44.771+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Engineering Management': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:44.772+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Engineering Management' was not inserted.
+[2024-11-10T13:38:44.778+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:44.801+0000] {pipline.py:156} INFO - Author 'David Melhart' added with ID 1361.
+[2024-11-10T13:38:44.812+0000] {pipline.py:156} INFO - Author 'Julian Togelius' added with ID 1362.
+[2024-11-10T13:38:44.828+0000] {pipline.py:156} INFO - Author 'Benedikte Mikkelsen' added with ID 1363.
+[2024-11-10T13:38:44.844+0000] {pipline.py:156} INFO - Author 'Christoffer Holmgård' added with ID 1364.
+[2024-11-10T13:38:44.868+0000] {pipline.py:156} INFO - Author 'Georgios N. Yannakakis' added with ID 1365.
+[2024-11-10T13:38:44.875+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:44.894+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Affective Computing': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:44.895+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Affective Computing' was not inserted.
+[2024-11-10T13:38:44.902+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:44.932+0000] {pipline.py:156} INFO - Author 'Osvaldo Arreche' added with ID 1366.
+[2024-11-10T13:38:44.950+0000] {pipline.py:156} INFO - Author 'Tanish R. Guntur' added with ID 1367.
+[2024-11-10T13:38:44.968+0000] {pipline.py:156} INFO - Author 'Jack W. Roberts' added with ID 1368.
+[2024-11-10T13:38:44.971+0000] {pipline.py:144} INFO - Author 'Mustafa Abdallah' already exists with ID 1345.
+[2024-11-10T13:38:44.977+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:44.987+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:44.988+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:44.994+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.025+0000] {pipline.py:156} INFO - Author 'Tanish Patel' added with ID 1369.
+[2024-11-10T13:38:45.038+0000] {pipline.py:156} INFO - Author 'Ramalingam Murugan' added with ID 1370.
+[2024-11-10T13:38:45.050+0000] {pipline.py:156} INFO - Author 'Gokul Yenduri' added with ID 1371.
+[2024-11-10T13:38:45.062+0000] {pipline.py:156} INFO - Author 'Rutvij H. Jhaveri' added with ID 1372.
+[2024-11-10T13:38:45.079+0000] {pipline.py:156} INFO - Author 'Hichem Snoussi' added with ID 1373.
+[2024-11-10T13:38:45.090+0000] {pipline.py:156} INFO - Author 'Tarek Gaber' added with ID 1374.
+[2024-11-10T13:38:45.096+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.110+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:45.111+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:45.118+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.144+0000] {pipline.py:156} INFO - Author 'Tariq Shahzad' added with ID 1375.
+[2024-11-10T13:38:45.163+0000] {pipline.py:156} INFO - Author 'Muhammad Saleem' added with ID 1376.
+[2024-11-10T13:38:45.180+0000] {pipline.py:156} INFO - Author 'Muhammad Sajid Farooq' added with ID 1377.
+[2024-11-10T13:38:45.196+0000] {pipline.py:156} INFO - Author 'Sagheer Abbas' added with ID 1378.
+[2024-11-10T13:38:45.208+0000] {pipline.py:156} INFO - Author 'Muhammad Adnan Khan' added with ID 1379.
+[2024-11-10T13:38:45.220+0000] {pipline.py:156} INFO - Author 'Khmaies Ouahada' added with ID 1380.
+[2024-11-10T13:38:45.231+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.244+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:45.245+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:45.252+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.282+0000] {pipline.py:156} INFO - Author 'Pranith Shetty' added with ID 1381.
+[2024-11-10T13:38:45.289+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.300+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:45.301+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:45.306+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.328+0000] {pipline.py:156} INFO - Author 'Kazuo Okamura' added with ID 1382.
+[2024-11-10T13:38:45.354+0000] {pipline.py:156} INFO - Author 'Seiji Yamada' added with ID 1383.
+[2024-11-10T13:38:45.360+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.371+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:45.372+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:45.378+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.389+0000] {pipline.py:144} INFO - Author 'Himanshi Allahabadi' already exists with ID 1279.
+[2024-11-10T13:38:45.392+0000] {pipline.py:144} INFO - Author 'Julia Amann' already exists with ID 1280.
+[2024-11-10T13:38:45.394+0000] {pipline.py:144} INFO - Author 'Isabelle Balot' already exists with ID 1281.
+[2024-11-10T13:38:45.396+0000] {pipline.py:144} INFO - Author 'Andrea Beretta' already exists with ID 1282.
+[2024-11-10T13:38:45.398+0000] {pipline.py:144} INFO - Author 'Charles Binkley' already exists with ID 1283.
+[2024-11-10T13:38:45.401+0000] {pipline.py:144} INFO - Author 'Jonas Bozenhard' already exists with ID 1284.
+[2024-11-10T13:38:45.407+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.419+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Technology and Society': 'str' object has no attribute 'get'
+[2024-11-10T13:38:45.419+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T13:38:45.425+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.436+0000] {pipline.py:144} INFO - Author 'Dragutin Petkovic' already exists with ID 1285.
+[2024-11-10T13:38:45.441+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.452+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Technology and Society': 'str' object has no attribute 'get'
+[2024-11-10T13:38:45.453+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T13:38:45.458+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.470+0000] {pipline.py:144} INFO - Author 'Himanshi Allahabadi' already exists with ID 1279.
+[2024-11-10T13:38:45.472+0000] {pipline.py:144} INFO - Author 'Julia Amann' already exists with ID 1280.
+[2024-11-10T13:38:45.475+0000] {pipline.py:144} INFO - Author 'Isabelle Balot' already exists with ID 1281.
+[2024-11-10T13:38:45.478+0000] {pipline.py:144} INFO - Author 'Andrea Beretta' already exists with ID 1282.
+[2024-11-10T13:38:45.480+0000] {pipline.py:144} INFO - Author 'Charles Binkley' already exists with ID 1283.
+[2024-11-10T13:38:45.483+0000] {pipline.py:144} INFO - Author 'Jonas Bozenhard' already exists with ID 1284.
+[2024-11-10T13:38:45.489+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.500+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Technology and Society': 'str' object has no attribute 'get'
+[2024-11-10T13:38:45.501+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T13:38:45.506+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.517+0000] {pipline.py:144} INFO - Author 'Dragutin Petkovic' already exists with ID 1285.
+[2024-11-10T13:38:45.523+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.535+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Technology and Society': 'str' object has no attribute 'get'
+[2024-11-10T13:38:45.535+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T13:38:45.541+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.552+0000] {pipline.py:144} INFO - Author 'Zishan Ahmed' already exists with ID 1286.
+[2024-11-10T13:38:45.554+0000] {pipline.py:144} INFO - Author 'Shakib Sadat Shanto' already exists with ID 1287.
+[2024-11-10T13:38:45.556+0000] {pipline.py:144} INFO - Author 'Most. Humayra Khanom Rime' already exists with ID 1288.
+[2024-11-10T13:38:45.559+0000] {pipline.py:144} INFO - Author 'Md. Kishor Morol' already exists with ID 1289.
+[2024-11-10T13:38:45.561+0000] {pipline.py:144} INFO - Author 'Nafiz Fahad' already exists with ID 1290.
+[2024-11-10T13:38:45.563+0000] {pipline.py:144} INFO - Author 'Md. Jakir Hossen' already exists with ID 1291.
+[2024-11-10T13:38:45.568+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.579+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:45.580+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:45.585+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.597+0000] {pipline.py:144} INFO - Author 'Rui Xie' already exists with ID 1292.
+[2024-11-10T13:38:45.599+0000] {pipline.py:144} INFO - Author 'Asad Ul Haq' already exists with ID 1293.
+[2024-11-10T13:38:45.601+0000] {pipline.py:144} INFO - Author 'Linsen Ma' already exists with ID 1294.
+[2024-11-10T13:38:45.603+0000] {pipline.py:144} INFO - Author 'Krystal Sun' already exists with ID 1295.
+[2024-11-10T13:38:45.605+0000] {pipline.py:144} INFO - Author 'Sanchari Sen' already exists with ID 1296.
+[2024-11-10T13:38:45.608+0000] {pipline.py:144} INFO - Author 'Swagath Venkataramani' already exists with ID 1297.
+[2024-11-10T13:38:45.613+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.626+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Computer Architecture Letters': 'str' object has no attribute 'get'
+[2024-11-10T13:38:45.627+0000] {pipline.py:279} WARNING - Journal 'IEEE Computer Architecture Letters' was not inserted.
+[2024-11-10T13:38:45.633+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.650+0000] {pipline.py:144} INFO - Author 'Yong Zheng' already exists with ID 1298.
+[2024-11-10T13:38:45.653+0000] {pipline.py:144} INFO - Author 'Haigang Yang' already exists with ID 1299.
+[2024-11-10T13:38:45.657+0000] {pipline.py:144} INFO - Author 'Yi Shu' already exists with ID 1300.
+[2024-11-10T13:38:45.661+0000] {pipline.py:144} INFO - Author 'Yiping Jia' already exists with ID 1301.
+[2024-11-10T13:38:45.664+0000] {pipline.py:144} INFO - Author 'Zhihong Huang' already exists with ID 1302.
+[2024-11-10T13:38:45.670+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.686+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Embedded Systems Letters': 'str' object has no attribute 'get'
+[2024-11-10T13:38:45.686+0000] {pipline.py:279} WARNING - Journal 'IEEE Embedded Systems Letters' was not inserted.
+[2024-11-10T13:38:45.693+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.706+0000] {pipline.py:144} INFO - Author 'Santiago Ontañón' already exists with ID 1303.
+[2024-11-10T13:38:45.709+0000] {pipline.py:144} INFO - Author 'Gabriel Synnaeve' already exists with ID 1304.
+[2024-11-10T13:38:45.712+0000] {pipline.py:144} INFO - Author 'Alberto Uriarte' already exists with ID 1305.
+[2024-11-10T13:38:45.715+0000] {pipline.py:144} INFO - Author 'Florian Richoux' already exists with ID 1306.
+[2024-11-10T13:38:45.718+0000] {pipline.py:144} INFO - Author 'David Churchill' already exists with ID 1307.
+[2024-11-10T13:38:45.721+0000] {pipline.py:144} INFO - Author 'Mike Preuss' already exists with ID 1308.
+[2024-11-10T13:38:45.728+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.742+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Computational Intelligence and AI in Games': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:45.742+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Computational Intelligence and AI in Games' was not inserted.
+[2024-11-10T13:38:45.748+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.765+0000] {pipline.py:144} INFO - Author 'Alexander Heimerl' already exists with ID 1309.
+[2024-11-10T13:38:45.769+0000] {pipline.py:144} INFO - Author 'Katharina Weitz' already exists with ID 1310.
+[2024-11-10T13:38:45.772+0000] {pipline.py:144} INFO - Author 'Tobias Baur' already exists with ID 1311.
+[2024-11-10T13:38:45.775+0000] {pipline.py:144} INFO - Author 'Elisabeth André' already exists with ID 1312.
+[2024-11-10T13:38:45.782+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.799+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Affective Computing': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:45.800+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Affective Computing' was not inserted.
+[2024-11-10T13:38:45.808+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.832+0000] {pipline.py:144} INFO - Author 'Jiaqiu Ai' already exists with ID 1313.
+[2024-11-10T13:38:45.835+0000] {pipline.py:144} INFO - Author 'Weibao Xue' already exists with ID 1314.
+[2024-11-10T13:38:45.838+0000] {pipline.py:144} INFO - Author 'Yanan Zhu' already exists with ID 1315.
+[2024-11-10T13:38:45.842+0000] {pipline.py:144} INFO - Author 'Shuo Zhuang' already exists with ID 1316.
+[2024-11-10T13:38:45.846+0000] {pipline.py:144} INFO - Author 'Congan Xu' already exists with ID 1317.
+[2024-11-10T13:38:45.849+0000] {pipline.py:144} INFO - Author 'Hao Yan' already exists with ID 1318.
+[2024-11-10T13:38:45.863+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.880+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Geoscience and Remote Sensing': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:45.882+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Geoscience and Remote Sensing' was not inserted.
+[2024-11-10T13:38:45.891+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.908+0000] {pipline.py:144} INFO - Author 'Jianrong Tao' already exists with ID 1319.
+[2024-11-10T13:38:45.910+0000] {pipline.py:144} INFO - Author 'Yu Xiong' already exists with ID 1320.
+[2024-11-10T13:38:45.913+0000] {pipline.py:144} INFO - Author 'Shiwei Zhao' already exists with ID 1321.
+[2024-11-10T13:38:45.917+0000] {pipline.py:144} INFO - Author 'Runze Wu' already exists with ID 1322.
+[2024-11-10T13:38:45.920+0000] {pipline.py:144} INFO - Author 'Xudong Shen' already exists with ID 1323.
+[2024-11-10T13:38:45.923+0000] {pipline.py:144} INFO - Author 'Tangjie Lyu' already exists with ID 1324.
+[2024-11-10T13:38:45.931+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.945+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Games': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:45.946+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Games' was not inserted.
+[2024-11-10T13:38:45.951+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.965+0000] {pipline.py:144} INFO - Author 'Caner Hazirbas' already exists with ID 1325.
+[2024-11-10T13:38:45.968+0000] {pipline.py:144} INFO - Author 'Joanna Bitton' already exists with ID 1326.
+[2024-11-10T13:38:45.970+0000] {pipline.py:144} INFO - Author 'Brian Dolhansky' already exists with ID 1327.
+[2024-11-10T13:38:45.973+0000] {pipline.py:144} INFO - Author 'Jacqueline Pan' already exists with ID 1328.
+[2024-11-10T13:38:45.975+0000] {pipline.py:144} INFO - Author 'Albert Gordo' already exists with ID 1329.
+[2024-11-10T13:38:45.977+0000] {pipline.py:144} INFO - Author 'Cristian Canton Ferrer' already exists with ID 1330.
+[2024-11-10T13:38:45.983+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:45.995+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Biometrics, Behavior, and Identity Science': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:45.995+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Biometrics, Behavior, and Identity Science' was not inserted.
+[2024-11-10T13:38:46.001+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.013+0000] {pipline.py:144} INFO - Author 'Andreas Holzinger' already exists with ID 1331.
+[2024-11-10T13:38:46.016+0000] {pipline.py:144} INFO - Author 'Michaela Kargl' already exists with ID 1332.
+[2024-11-10T13:38:46.019+0000] {pipline.py:144} INFO - Author 'Bettina Kipperer' already exists with ID 1333.
+[2024-11-10T13:38:46.021+0000] {pipline.py:144} INFO - Author 'Peter Regitnig' already exists with ID 1334.
+[2024-11-10T13:38:46.023+0000] {pipline.py:144} INFO - Author 'Markus Plass' already exists with ID 1335.
+[2024-11-10T13:38:46.026+0000] {pipline.py:144} INFO - Author 'Heimo Müller' already exists with ID 1336.
+[2024-11-10T13:38:46.032+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.043+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:46.044+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:46.049+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.060+0000] {pipline.py:144} INFO - Author 'Ana Salta' already exists with ID 1337.
+[2024-11-10T13:38:46.062+0000] {pipline.py:144} INFO - Author 'Rui Prada' already exists with ID 1338.
+[2024-11-10T13:38:46.065+0000] {pipline.py:144} INFO - Author 'Francisco S. Melo' already exists with ID 1339.
+[2024-11-10T13:38:46.071+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.082+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Games': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:46.083+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Games' was not inserted.
+[2024-11-10T13:38:46.088+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.099+0000] {pipline.py:144} INFO - Author 'Dayoung Kim' already exists with ID 1340.
+[2024-11-10T13:38:46.101+0000] {pipline.py:144} INFO - Author 'Qin Zhu' already exists with ID 1341.
+[2024-11-10T13:38:46.103+0000] {pipline.py:144} INFO - Author 'Hoda Eldardiry' already exists with ID 1342.
+[2024-11-10T13:38:46.109+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.121+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Technology and Society': 'str' object has no attribute 'get'
+[2024-11-10T13:38:46.121+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T13:38:46.128+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.138+0000] {pipline.py:144} INFO - Author 'Anna Namrita Gummadi' already exists with ID 1343.
+[2024-11-10T13:38:46.141+0000] {pipline.py:144} INFO - Author 'Jerry C. Napier' already exists with ID 1344.
+[2024-11-10T13:38:46.143+0000] {pipline.py:144} INFO - Author 'Mustafa Abdallah' already exists with ID 1345.
+[2024-11-10T13:38:46.150+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.161+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:46.162+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:46.168+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.180+0000] {pipline.py:144} INFO - Author 'Andreas Holzinger' already exists with ID 1331.
+[2024-11-10T13:38:46.183+0000] {pipline.py:144} INFO - Author 'Iztok Fister' already exists with ID 1346.
+[2024-11-10T13:38:46.185+0000] {pipline.py:144} INFO - Author 'Iztok Fister' already exists with ID 1346.
+[2024-11-10T13:38:46.187+0000] {pipline.py:144} INFO - Author 'Hans-Peter Kaul' already exists with ID 1347.
+[2024-11-10T13:38:46.189+0000] {pipline.py:144} INFO - Author 'Senthold Asseng' already exists with ID 1348.
+[2024-11-10T13:38:46.195+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.206+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:46.207+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:46.212+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.227+0000] {pipline.py:144} INFO - Author 'Hayoung Lee' already exists with ID 1349.
+[2024-11-10T13:38:46.229+0000] {pipline.py:144} INFO - Author 'Jongho Park' already exists with ID 1350.
+[2024-11-10T13:38:46.232+0000] {pipline.py:144} INFO - Author 'Sungho Kang' already exists with ID 1351.
+[2024-11-10T13:38:46.238+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.248+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Very Large Scale Integration': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:46.249+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Very Large Scale Integration' was not inserted.
+[2024-11-10T13:38:46.254+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.265+0000] {pipline.py:144} INFO - Author 'Minrui Xu' already exists with ID 1352.
+[2024-11-10T13:38:46.267+0000] {pipline.py:144} INFO - Author 'Hongyang Du' already exists with ID 1353.
+[2024-11-10T13:38:46.269+0000] {pipline.py:144} INFO - Author 'Dusit Niyato' already exists with ID 1354.
+[2024-11-10T13:38:46.271+0000] {pipline.py:144} INFO - Author 'Jiawen Kang' already exists with ID 1355.
+[2024-11-10T13:38:46.274+0000] {pipline.py:144} INFO - Author 'Zehui Xiong' already exists with ID 1356.
+[2024-11-10T13:38:46.276+0000] {pipline.py:144} INFO - Author 'Shiwen Mao' already exists with ID 1357.
+[2024-11-10T13:38:46.282+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.293+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Communications Surveys & Tutorials': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:46.294+0000] {pipline.py:279} WARNING - Journal 'IEEE Communications Surveys & Tutorials' was not inserted.
+[2024-11-10T13:38:46.299+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.310+0000] {pipline.py:144} INFO - Author 'Mostafa Al-Emran' already exists with ID 1358.
+[2024-11-10T13:38:46.312+0000] {pipline.py:144} INFO - Author 'Bassam Abu-Hijleh' already exists with ID 1359.
+[2024-11-10T13:38:46.314+0000] {pipline.py:144} INFO - Author 'AbdulRahman A. Alsewari' already exists with ID 1360.
+[2024-11-10T13:38:46.320+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.331+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Engineering Management': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:46.332+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Engineering Management' was not inserted.
+[2024-11-10T13:38:46.337+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.348+0000] {pipline.py:144} INFO - Author 'David Melhart' already exists with ID 1361.
+[2024-11-10T13:38:46.351+0000] {pipline.py:144} INFO - Author 'Julian Togelius' already exists with ID 1362.
+[2024-11-10T13:38:46.352+0000] {pipline.py:144} INFO - Author 'Benedikte Mikkelsen' already exists with ID 1363.
+[2024-11-10T13:38:46.354+0000] {pipline.py:144} INFO - Author 'Christoffer Holmgård' already exists with ID 1364.
+[2024-11-10T13:38:46.357+0000] {pipline.py:144} INFO - Author 'Georgios N. Yannakakis' already exists with ID 1365.
+[2024-11-10T13:38:46.364+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.376+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Affective Computing': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:46.377+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Affective Computing' was not inserted.
+[2024-11-10T13:38:46.382+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.395+0000] {pipline.py:144} INFO - Author 'Osvaldo Arreche' already exists with ID 1366.
+[2024-11-10T13:38:46.398+0000] {pipline.py:144} INFO - Author 'Tanish R. Guntur' already exists with ID 1367.
+[2024-11-10T13:38:46.400+0000] {pipline.py:144} INFO - Author 'Jack W. Roberts' already exists with ID 1368.
+[2024-11-10T13:38:46.403+0000] {pipline.py:144} INFO - Author 'Mustafa Abdallah' already exists with ID 1345.
+[2024-11-10T13:38:46.410+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.424+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:46.425+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:46.431+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.444+0000] {pipline.py:144} INFO - Author 'Tanish Patel' already exists with ID 1369.
+[2024-11-10T13:38:46.447+0000] {pipline.py:144} INFO - Author 'Ramalingam Murugan' already exists with ID 1370.
+[2024-11-10T13:38:46.450+0000] {pipline.py:144} INFO - Author 'Gokul Yenduri' already exists with ID 1371.
+[2024-11-10T13:38:46.453+0000] {pipline.py:144} INFO - Author 'Rutvij H. Jhaveri' already exists with ID 1372.
+[2024-11-10T13:38:46.455+0000] {pipline.py:144} INFO - Author 'Hichem Snoussi' already exists with ID 1373.
+[2024-11-10T13:38:46.458+0000] {pipline.py:144} INFO - Author 'Tarek Gaber' already exists with ID 1374.
+[2024-11-10T13:38:46.465+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.479+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:46.479+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:46.485+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.500+0000] {pipline.py:144} INFO - Author 'Tariq Shahzad' already exists with ID 1375.
+[2024-11-10T13:38:46.502+0000] {pipline.py:144} INFO - Author 'Muhammad Saleem' already exists with ID 1376.
+[2024-11-10T13:38:46.504+0000] {pipline.py:144} INFO - Author 'Muhammad Sajid Farooq' already exists with ID 1377.
+[2024-11-10T13:38:46.507+0000] {pipline.py:144} INFO - Author 'Sagheer Abbas' already exists with ID 1378.
+[2024-11-10T13:38:46.511+0000] {pipline.py:144} INFO - Author 'Muhammad Adnan Khan' already exists with ID 1379.
+[2024-11-10T13:38:46.513+0000] {pipline.py:144} INFO - Author 'Khmaies Ouahada' already exists with ID 1380.
+[2024-11-10T13:38:46.519+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.533+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:46.534+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:46.541+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.555+0000] {pipline.py:144} INFO - Author 'Pranith Shetty' already exists with ID 1381.
+[2024-11-10T13:38:46.562+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.575+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:46.575+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:46.581+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.607+0000] {pipline.py:156} INFO - Author 'Sangjun Lee' added with ID 1384.
+[2024-11-10T13:38:46.609+0000] {pipline.py:144} INFO - Author 'Jongho Park' already exists with ID 1350.
+[2024-11-10T13:38:46.621+0000] {pipline.py:156} INFO - Author 'Sungwhan Park' added with ID 1385.
+[2024-11-10T13:38:46.632+0000] {pipline.py:156} INFO - Author 'Hyemin Kim' added with ID 1386.
+[2024-11-10T13:38:46.634+0000] {pipline.py:144} INFO - Author 'Sungho Kang' already exists with ID 1351.
+[2024-11-10T13:38:46.640+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.651+0000] {logging_mixin.py:188} INFO - quartils est une liste
+[2024-11-10T13:38:46.662+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Circuits and Systems II: Express Briefs': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:46.663+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Circuits and Systems II: Express Briefs' was not inserted.
+[2024-11-10T13:38:46.669+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.682+0000] {pipline.py:144} INFO - Author 'Kazuo Okamura' already exists with ID 1382.
+[2024-11-10T13:38:46.684+0000] {pipline.py:144} INFO - Author 'Seiji Yamada' already exists with ID 1383.
+[2024-11-10T13:38:46.691+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.702+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:46.703+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:46.709+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.739+0000] {pipline.py:156} INFO - Author 'Kashif Alam' added with ID 1387.
+[2024-11-10T13:38:46.749+0000] {pipline.py:156} INFO - Author 'Kashif Kifayat' added with ID 1388.
+[2024-11-10T13:38:46.761+0000] {pipline.py:156} INFO - Author 'Gabriel Avelino Sampedro' added with ID 1389.
+[2024-11-10T13:38:46.771+0000] {pipline.py:156} INFO - Author 'Vincent Karovič' added with ID 1390.
+[2024-11-10T13:38:46.782+0000] {pipline.py:156} INFO - Author 'Tariq Naeem' added with ID 1391.
+[2024-11-10T13:38:46.788+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.799+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:46.800+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:46.806+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.832+0000] {pipline.py:156} INFO - Author 'Sunyoung Park' added with ID 1392.
+[2024-11-10T13:38:46.844+0000] {pipline.py:156} INFO - Author 'Hyun K. Kim' added with ID 1393.
+[2024-11-10T13:38:46.856+0000] {pipline.py:156} INFO - Author 'Jaehyun Park' added with ID 1394.
+[2024-11-10T13:38:46.868+0000] {pipline.py:156} INFO - Author 'Yuryeon Lee' added with ID 1395.
+[2024-11-10T13:38:46.875+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.891+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:46.892+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:46.900+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.928+0000] {pipline.py:156} INFO - Author 'S. Shridevi' added with ID 1396.
+[2024-11-10T13:38:46.943+0000] {pipline.py:156} INFO - Author 'Susan Elias' added with ID 1397.
+[2024-11-10T13:38:46.949+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.962+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:46.963+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:46.969+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:46.992+0000] {pipline.py:156} INFO - Author 'Omar Ibrahim Aboulola' added with ID 1398.
+[2024-11-10T13:38:47.019+0000] {pipline.py:156} INFO - Author 'Ebtisam Abdullah Alabdulqader' added with ID 1399.
+[2024-11-10T13:38:47.036+0000] {pipline.py:156} INFO - Author 'Aisha Ahmed AlArfaj' added with ID 1400.
+[2024-11-10T13:38:47.050+0000] {pipline.py:156} INFO - Author 'Shtwai Alsubai' added with ID 1401.
+[2024-11-10T13:38:47.062+0000] {pipline.py:156} INFO - Author 'Tai-Hoon Kim' added with ID 1402.
+[2024-11-10T13:38:47.069+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:47.081+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:47.082+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:47.087+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:47.123+0000] {pipline.py:156} INFO - Author 'Deepak Bhaskar Acharya' added with ID 1403.
+[2024-11-10T13:38:47.137+0000] {pipline.py:156} INFO - Author 'B. Divya' added with ID 1404.
+[2024-11-10T13:38:47.149+0000] {pipline.py:156} INFO - Author 'Karthigeyan Kuppan' added with ID 1405.
+[2024-11-10T13:38:47.156+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:47.168+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:47.169+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:47.175+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:47.201+0000] {pipline.py:156} INFO - Author 'Sin Kit Lo' added with ID 1406.
+[2024-11-10T13:38:47.217+0000] {pipline.py:156} INFO - Author 'Yue Liu' added with ID 1407.
+[2024-11-10T13:38:47.232+0000] {pipline.py:156} INFO - Author 'Qinghua Lu' added with ID 1408.
+[2024-11-10T13:38:47.245+0000] {pipline.py:156} INFO - Author 'Chen Wang' added with ID 1409.
+[2024-11-10T13:38:47.260+0000] {pipline.py:156} INFO - Author 'Xiwei Xu' added with ID 1410.
+[2024-11-10T13:38:47.272+0000] {pipline.py:156} INFO - Author 'Hye-Young Paik' added with ID 1411.
+[2024-11-10T13:38:47.278+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:47.289+0000] {logging_mixin.py:188} INFO - quartils est une liste
+[2024-11-10T13:38:47.305+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Internet of Things Journal': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:47.305+0000] {pipline.py:279} WARNING - Journal 'IEEE Internet of Things Journal' was not inserted.
+[2024-11-10T13:38:47.312+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:47.334+0000] {pipline.py:156} INFO - Author 'Wan Jou She' added with ID 1412.
+[2024-11-10T13:38:47.349+0000] {pipline.py:156} INFO - Author 'Chee Siang Ang' added with ID 1413.
+[2024-11-10T13:38:47.362+0000] {pipline.py:156} INFO - Author 'Robert A. Neimeyer' added with ID 1414.
+[2024-11-10T13:38:47.379+0000] {pipline.py:156} INFO - Author 'Laurie A. Burke' added with ID 1415.
+[2024-11-10T13:38:47.390+0000] {pipline.py:156} INFO - Author 'Yihong Zhang' added with ID 1416.
+[2024-11-10T13:38:47.404+0000] {pipline.py:156} INFO - Author 'Adam Jatowt' added with ID 1417.
+[2024-11-10T13:38:47.410+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:47.423+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:47.424+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:47.429+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:47.450+0000] {pipline.py:156} INFO - Author 'Elias G. Carayannis' added with ID 1418.
+[2024-11-10T13:38:47.461+0000] {pipline.py:156} INFO - Author 'Roman Dumitrescu' added with ID 1419.
+[2024-11-10T13:38:47.476+0000] {pipline.py:156} INFO - Author 'Tommy Falkowski' added with ID 1420.
+[2024-11-10T13:38:47.489+0000] {pipline.py:156} INFO - Author 'Nikos-Rigert Zota' added with ID 1421.
+[2024-11-10T13:38:47.495+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:47.507+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Engineering Management': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:47.508+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Engineering Management' was not inserted.
+[2024-11-10T13:38:47.514+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:47.534+0000] {pipline.py:156} INFO - Author 'Jiyeong Chae' added with ID 1422.
+[2024-11-10T13:38:47.549+0000] {pipline.py:156} INFO - Author 'Sanghoon Lee' added with ID 1423.
+[2024-11-10T13:38:47.566+0000] {pipline.py:156} INFO - Author 'Junhyung Jang' added with ID 1424.
+[2024-11-10T13:38:47.582+0000] {pipline.py:156} INFO - Author 'Seohyung Hong' added with ID 1425.
+[2024-11-10T13:38:47.598+0000] {pipline.py:156} INFO - Author 'Kyung-Joon Park' added with ID 1426.
+[2024-11-10T13:38:47.604+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:47.615+0000] {logging_mixin.py:188} INFO - quartils est une chaîne de caractères
+[2024-11-10T13:38:47.626+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Industrial Cyber-Physical Systems': 'str' object has no attribute 'get'
+[2024-11-10T13:38:47.627+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Industrial Cyber-Physical Systems' was not inserted.
+[2024-11-10T13:38:47.633+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:47.655+0000] {pipline.py:156} INFO - Author 'Vikas Hassija' added with ID 1427.
+[2024-11-10T13:38:47.668+0000] {pipline.py:156} INFO - Author 'Arjab Chakrabarti' added with ID 1428.
+[2024-11-10T13:38:47.683+0000] {pipline.py:156} INFO - Author 'Anushka Singh' added with ID 1429.
+[2024-11-10T13:38:47.696+0000] {pipline.py:156} INFO - Author 'Vinay Chamola' added with ID 1430.
+[2024-11-10T13:38:47.713+0000] {pipline.py:156} INFO - Author 'Biplab Sikdar' added with ID 1431.
+[2024-11-10T13:38:47.719+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:47.730+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:47.731+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:47.736+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:47.757+0000] {pipline.py:156} INFO - Author 'Sander Bakkes' added with ID 1432.
+[2024-11-10T13:38:47.768+0000] {pipline.py:156} INFO - Author 'Pieter Spronck' added with ID 1433.
+[2024-11-10T13:38:47.786+0000] {pipline.py:156} INFO - Author 'Jaap van den Herik' added with ID 1434.
+[2024-11-10T13:38:47.793+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:47.811+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Computational Intelligence and AI in Games': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:47.813+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Computational Intelligence and AI in Games' was not inserted.
+[2024-11-10T13:38:47.822+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:47.857+0000] {pipline.py:156} INFO - Author 'Ronan Hamon' added with ID 1435.
+[2024-11-10T13:38:47.871+0000] {pipline.py:156} INFO - Author 'Henrik Junklewitz' added with ID 1436.
+[2024-11-10T13:38:47.893+0000] {pipline.py:156} INFO - Author 'Josep Soler Garrido' added with ID 1437.
+[2024-11-10T13:38:47.912+0000] {pipline.py:156} INFO - Author 'Ignacio Sanchez' added with ID 1438.
+[2024-11-10T13:38:47.920+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:47.937+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:47.939+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:47.947+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:47.976+0000] {pipline.py:156} INFO - Author 'Nancy Ambritta P.' added with ID 1439.
+[2024-11-10T13:38:47.995+0000] {pipline.py:156} INFO - Author 'Parikshit N. Mahalle' added with ID 1440.
+[2024-11-10T13:38:48.020+0000] {pipline.py:156} INFO - Author 'Rajkumar V. Patil' added with ID 1441.
+[2024-11-10T13:38:48.049+0000] {pipline.py:156} INFO - Author 'Nilanjan Dey' added with ID 1442.
+[2024-11-10T13:38:48.065+0000] {pipline.py:156} INFO - Author 'Rubén González Crespo' added with ID 1443.
+[2024-11-10T13:38:48.082+0000] {pipline.py:156} INFO - Author 'R. Simon Sherratt' added with ID 1444.
+[2024-11-10T13:38:48.089+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:48.101+0000] {logging_mixin.py:188} INFO - quartils est une liste
+[2024-11-10T13:38:48.114+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Computational Social Systems': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:48.115+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Computational Social Systems' was not inserted.
+[2024-11-10T13:38:48.122+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:48.148+0000] {pipline.py:156} INFO - Author 'Volker Bilgram' added with ID 1445.
+[2024-11-10T13:38:48.166+0000] {pipline.py:156} INFO - Author 'Felix Laarmann' added with ID 1446.
+[2024-11-10T13:38:48.173+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:48.187+0000] {logging_mixin.py:188} INFO - quartils est une chaîne de caractères
+[2024-11-10T13:38:48.199+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Engineering Management Review': 'str' object has no attribute 'get'
+[2024-11-10T13:38:48.200+0000] {pipline.py:279} WARNING - Journal 'IEEE Engineering Management Review' was not inserted.
+[2024-11-10T13:38:48.206+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:48.238+0000] {pipline.py:156} INFO - Author 'Arif Ali Khan' added with ID 1447.
+[2024-11-10T13:38:48.248+0000] {pipline.py:156} INFO - Author 'Muhammad Azeem Akbar' added with ID 1448.
+[2024-11-10T13:38:48.261+0000] {pipline.py:156} INFO - Author 'Mahdi Fahmideh' added with ID 1449.
+[2024-11-10T13:38:48.276+0000] {pipline.py:156} INFO - Author 'Peng Liang' added with ID 1450.
+[2024-11-10T13:38:48.289+0000] {pipline.py:156} INFO - Author 'Muhammad Waseem' added with ID 1451.
+[2024-11-10T13:38:48.304+0000] {pipline.py:156} INFO - Author 'Aakash Ahmad' added with ID 1452.
+[2024-11-10T13:38:48.311+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:48.326+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Computational Social Systems': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:48.326+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Computational Social Systems' was not inserted.
+[2024-11-10T13:38:48.333+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:48.358+0000] {pipline.py:156} INFO - Author 'Yosuke Fukuchi' added with ID 1453.
+[2024-11-10T13:38:48.361+0000] {pipline.py:144} INFO - Author 'Seiji Yamada' already exists with ID 1383.
+[2024-11-10T13:38:48.367+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:48.377+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:48.378+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:48.383+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:48.406+0000] {pipline.py:156} INFO - Author 'Aparna Sinha' added with ID 1454.
+[2024-11-10T13:38:48.418+0000] {pipline.py:156} INFO - Author 'Debanjan Das' added with ID 1455.
+[2024-11-10T13:38:48.424+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:48.436+0000] {logging_mixin.py:188} INFO - quartils est une liste
+[2024-11-10T13:38:48.904+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Sensors Letters': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:48.908+0000] {pipline.py:279} WARNING - Journal 'IEEE Sensors Letters' was not inserted.
+[2024-11-10T13:38:48.938+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:49.047+0000] {pipline.py:156} INFO - Author 'Abdulkadir Celik' added with ID 1456.
+[2024-11-10T13:38:49.086+0000] {pipline.py:156} INFO - Author 'Ahmed M. Eltawil' added with ID 1457.
+[2024-11-10T13:38:49.097+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:49.115+0000] {logging_mixin.py:188} INFO - quartils est une liste
+[2024-11-10T13:38:49.131+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Open Journal of the Communications Society': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:49.132+0000] {pipline.py:279} WARNING - Journal 'IEEE Open Journal of the Communications Society' was not inserted.
+[2024-11-10T13:38:49.142+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:49.192+0000] {pipline.py:156} INFO - Author 'Joseph R. Carvalko' added with ID 1458.
+[2024-11-10T13:38:49.201+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:49.220+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Technology and Society': 'str' object has no attribute 'get'
+[2024-11-10T13:38:49.221+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T13:38:49.229+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:49.257+0000] {pipline.py:156} INFO - Author 'Yiyun Wang' added with ID 1459.
+[2024-11-10T13:38:49.271+0000] {pipline.py:156} INFO - Author 'Jin Wu' added with ID 1460.
+[2024-11-10T13:38:49.302+0000] {pipline.py:156} INFO - Author 'Fang Chen' added with ID 1461.
+[2024-11-10T13:38:49.351+0000] {pipline.py:156} INFO - Author 'Zhu Wang' added with ID 1462.
+[2024-11-10T13:38:49.398+0000] {pipline.py:156} INFO - Author 'Jingjing Li' added with ID 1463.
+[2024-11-10T13:38:49.441+0000] {pipline.py:156} INFO - Author 'Liping Wang' added with ID 1464.
+[2024-11-10T13:38:49.466+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:49.519+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:49.521+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:49.544+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:49.631+0000] {pipline.py:156} INFO - Author 'Alex P. James' added with ID 1465.
+[2024-11-10T13:38:49.658+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:49.703+0000] {logging_mixin.py:188} INFO - quartils est une liste
+[2024-11-10T13:38:49.723+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Cognitive and Developmental Systems': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:49.724+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Cognitive and Developmental Systems' was not inserted.
+[2024-11-10T13:38:49.730+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:49.755+0000] {pipline.py:156} INFO - Author 'Deafallah Alsadie' added with ID 1466.
+[2024-11-10T13:38:49.762+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:49.773+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:49.774+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:49.780+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:49.803+0000] {pipline.py:156} INFO - Author 'Liang Ou' added with ID 1467.
+[2024-11-10T13:38:49.816+0000] {pipline.py:156} INFO - Author 'Yu-Chen Chang' added with ID 1468.
+[2024-11-10T13:38:49.831+0000] {pipline.py:156} INFO - Author 'Yu-Kai Wang' added with ID 1469.
+[2024-11-10T13:38:49.845+0000] {pipline.py:156} INFO - Author 'Chin-Teng Lin' added with ID 1470.
+[2024-11-10T13:38:49.851+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:49.862+0000] {logging_mixin.py:188} INFO - quartils est une chaîne de caractères
+[2024-11-10T13:38:49.875+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Fuzzy Systems': 'str' object has no attribute 'get'
+[2024-11-10T13:38:49.876+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Fuzzy Systems' was not inserted.
+[2024-11-10T13:38:49.882+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:49.905+0000] {pipline.py:156} INFO - Author 'Abhishek Kumar' added with ID 1471.
+[2024-11-10T13:38:49.926+0000] {pipline.py:156} INFO - Author 'Upendra K. Singh' added with ID 1472.
+[2024-11-10T13:38:49.942+0000] {pipline.py:156} INFO - Author 'Biswajeet Pradhan' added with ID 1473.
+[2024-11-10T13:38:49.948+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:49.960+0000] {logging_mixin.py:188} INFO - quartils est une chaîne de caractères
+[2024-11-10T13:38:49.971+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Geoscience and Remote Sensing Letters': 'str' object has no attribute 'get'
+[2024-11-10T13:38:49.972+0000] {pipline.py:279} WARNING - Journal 'IEEE Geoscience and Remote Sensing Letters' was not inserted.
+[2024-11-10T13:38:49.978+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:50.004+0000] {pipline.py:156} INFO - Author 'Francisco Maciá-Pérez' added with ID 1474.
+[2024-11-10T13:38:50.027+0000] {pipline.py:156} INFO - Author 'Iren Lorenzo-Fonseca' added with ID 1475.
+[2024-11-10T13:38:50.054+0000] {pipline.py:156} INFO - Author 'José-Vicente Berná-Martínez' added with ID 1476.
+[2024-11-10T13:38:50.060+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:50.071+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Embedded Systems Letters': 'str' object has no attribute 'get'
+[2024-11-10T13:38:50.072+0000] {pipline.py:279} WARNING - Journal 'IEEE Embedded Systems Letters' was not inserted.
+[2024-11-10T13:38:50.078+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:50.105+0000] {pipline.py:156} INFO - Author 'Shen Wang' added with ID 1477.
+[2024-11-10T13:38:50.118+0000] {pipline.py:156} INFO - Author 'M. Atif Qureshi' added with ID 1478.
+[2024-11-10T13:38:50.132+0000] {pipline.py:156} INFO - Author 'Luis Miralles-Pechuán' added with ID 1479.
+[2024-11-10T13:38:50.145+0000] {pipline.py:156} INFO - Author 'Thien Huynh-The' added with ID 1480.
+[2024-11-10T13:38:50.161+0000] {pipline.py:156} INFO - Author 'Thippa Reddy Gadekallu' added with ID 1481.
+[2024-11-10T13:38:50.171+0000] {pipline.py:156} INFO - Author 'Madhusanka Liyanage' added with ID 1482.
+[2024-11-10T13:38:50.177+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:50.189+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Open Journal of the Communications Society': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:50.189+0000] {pipline.py:279} WARNING - Journal 'IEEE Open Journal of the Communications Society' was not inserted.
+[2024-11-10T13:38:50.195+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:50.230+0000] {pipline.py:156} INFO - Author 'Yuyi Mao' added with ID 1483.
+[2024-11-10T13:38:50.243+0000] {pipline.py:156} INFO - Author 'Xianghao Yu' added with ID 1484.
+[2024-11-10T13:38:50.259+0000] {pipline.py:156} INFO - Author 'Kaibin Huang' added with ID 1485.
+[2024-11-10T13:38:50.272+0000] {pipline.py:156} INFO - Author 'Ying-Jun Angela Zhang' added with ID 1486.
+[2024-11-10T13:38:50.288+0000] {pipline.py:156} INFO - Author 'Jun Zhang' added with ID 1487.
+[2024-11-10T13:38:50.295+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:50.306+0000] {logging_mixin.py:188} INFO - quartils est une liste
+[2024-11-10T13:38:50.317+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'Proceedings of the IEEE': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:50.318+0000] {pipline.py:279} WARNING - Journal 'Proceedings of the IEEE' was not inserted.
+[2024-11-10T13:38:50.323+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:50.348+0000] {pipline.py:156} INFO - Author 'Simona Tiribelli' added with ID 1488.
+[2024-11-10T13:38:50.359+0000] {pipline.py:156} INFO - Author 'Sofia Pansoni' added with ID 1489.
+[2024-11-10T13:38:50.370+0000] {pipline.py:156} INFO - Author 'Emanuele Frontoni' added with ID 1490.
+[2024-11-10T13:38:50.385+0000] {pipline.py:156} INFO - Author 'Benedetta Giovanola' added with ID 1491.
+[2024-11-10T13:38:50.391+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:50.402+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Technology and Society': 'str' object has no attribute 'get'
+[2024-11-10T13:38:50.403+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T13:38:50.409+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:50.431+0000] {pipline.py:156} INFO - Author 'Recep Ozalp' added with ID 1492.
+[2024-11-10T13:38:50.444+0000] {pipline.py:156} INFO - Author 'Aysegul Ucar' added with ID 1493.
+[2024-11-10T13:38:50.458+0000] {pipline.py:156} INFO - Author 'Cuneyt Guzelis' added with ID 1494.
+[2024-11-10T13:38:50.464+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:50.476+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:50.477+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:50.482+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:50.504+0000] {pipline.py:156} INFO - Author 'Shaojun Wei' added with ID 1495.
+[2024-11-10T13:38:50.519+0000] {pipline.py:156} INFO - Author 'Xinhan Lin' added with ID 1496.
+[2024-11-10T13:38:50.530+0000] {pipline.py:156} INFO - Author 'Fengbin Tu' added with ID 1497.
+[2024-11-10T13:38:50.541+0000] {pipline.py:156} INFO - Author 'Yang Wang' added with ID 1498.
+[2024-11-10T13:38:50.559+0000] {pipline.py:156} INFO - Author 'Leibo Liu' added with ID 1499.
+[2024-11-10T13:38:50.571+0000] {pipline.py:156} INFO - Author 'Shouyi Yin' added with ID 1500.
+[2024-11-10T13:38:50.577+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:50.588+0000] {logging_mixin.py:188} INFO - quartils est une chaîne de caractères
+[2024-11-10T13:38:50.601+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Circuits and Systems I: Regular Papers': 'str' object has no attribute 'get'
+[2024-11-10T13:38:50.602+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Circuits and Systems I: Regular Papers' was not inserted.
+[2024-11-10T13:38:50.609+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:50.630+0000] {pipline.py:156} INFO - Author 'Giovanna Martínez-Arellano' added with ID 1501.
+[2024-11-10T13:38:50.643+0000] {pipline.py:156} INFO - Author 'Richard Cant' added with ID 1502.
+[2024-11-10T13:38:50.661+0000] {pipline.py:156} INFO - Author 'David Woods' added with ID 1503.
+[2024-11-10T13:38:50.668+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:50.679+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Computational Intelligence and AI in Games': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:50.679+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Computational Intelligence and AI in Games' was not inserted.
+[2024-11-10T13:38:50.685+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:50.706+0000] {pipline.py:156} INFO - Author 'Dongsoo Moon' added with ID 1504.
+[2024-11-10T13:38:50.724+0000] {pipline.py:156} INFO - Author 'Seongjin Ahn' added with ID 1505.
+[2024-11-10T13:38:50.725+0000] {pipline.py:287} ERROR - Error processing publication 'A Study on Functional Requirements and Inspection Items for AI System Change Management and Model Improvement on the Web Platform': time data 'September 2024' does not match format '%d %B %Y'
+[2024-11-10T13:38:50.731+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:50.753+0000] {pipline.py:156} INFO - Author 'Ishaya Gambo' added with ID 1506.
+[2024-11-10T13:38:50.769+0000] {pipline.py:156} INFO - Author 'Rhodes Massenon' added with ID 1507.
+[2024-11-10T13:38:50.780+0000] {pipline.py:156} INFO - Author 'Chia-Chen Lin' added with ID 1508.
+[2024-11-10T13:38:50.793+0000] {pipline.py:156} INFO - Author 'Roseline Oluwaseun Ogundokun' added with ID 1509.
+[2024-11-10T13:38:50.808+0000] {pipline.py:156} INFO - Author 'Saurabh Agarwal' added with ID 1510.
+[2024-11-10T13:38:50.822+0000] {pipline.py:156} INFO - Author 'Wooguil Pak' added with ID 1511.
+[2024-11-10T13:38:50.829+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:50.847+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:50.848+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:50.856+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:50.883+0000] {pipline.py:156} INFO - Author 'Ship Peng Xu' added with ID 1512.
+[2024-11-10T13:38:50.899+0000] {pipline.py:156} INFO - Author 'Ke Wang' added with ID 1513.
+[2024-11-10T13:38:50.915+0000] {pipline.py:156} INFO - Author 'Md. Rafiul Hassan' added with ID 1514.
+[2024-11-10T13:38:50.932+0000] {pipline.py:156} INFO - Author 'Mohammad Mehedi Hassan' added with ID 1515.
+[2024-11-10T13:38:50.947+0000] {pipline.py:156} INFO - Author 'Chien-Ming Chen' added with ID 1516.
+[2024-11-10T13:38:50.954+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:50.968+0000] {logging_mixin.py:188} INFO - quartils est une chaîne de caractères
+[2024-11-10T13:38:50.978+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Industrial Informatics': 'str' object has no attribute 'get'
+[2024-11-10T13:38:50.978+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Industrial Informatics' was not inserted.
+[2024-11-10T13:38:50.984+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:51.018+0000] {pipline.py:156} INFO - Author 'M. Raihan' added with ID 1517.
+[2024-11-10T13:38:51.038+0000] {pipline.py:156} INFO - Author 'Anjan Debnath' added with ID 1518.
+[2024-11-10T13:38:51.066+0000] {pipline.py:156} INFO - Author 'Prokash Chondra Adhikary' added with ID 1519.
+[2024-11-10T13:38:51.083+0000] {pipline.py:156} INFO - Author 'Mehedi Masud' added with ID 1520.
+[2024-11-10T13:38:51.110+0000] {pipline.py:156} INFO - Author 'Hossam Meshref' added with ID 1521.
+[2024-11-10T13:38:51.126+0000] {pipline.py:156} INFO - Author 'Anupam Kumar Bairagi' added with ID 1522.
+[2024-11-10T13:38:51.135+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:51.150+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:51.150+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:51.158+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:51.203+0000] {pipline.py:156} INFO - Author 'Putthiporn Thanathamathee' added with ID 1523.
+[2024-11-10T13:38:51.224+0000] {pipline.py:156} INFO - Author 'Siriporn Sawangarreerak' added with ID 1524.
+[2024-11-10T13:38:51.239+0000] {pipline.py:156} INFO - Author 'Dinna Nina Mohd Nizam' added with ID 1525.
+[2024-11-10T13:38:51.248+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:51.261+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:51.262+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:51.268+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:51.294+0000] {pipline.py:156} INFO - Author 'Jonathan Burton-Barr' added with ID 1526.
+[2024-11-10T13:38:51.306+0000] {pipline.py:156} INFO - Author 'Basura Fernando' added with ID 1527.
+[2024-11-10T13:38:51.318+0000] {pipline.py:156} INFO - Author 'Deepu Rajan' added with ID 1528.
+[2024-11-10T13:38:51.324+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:51.335+0000] {logging_mixin.py:188} INFO - quartils est une liste
+[2024-11-10T13:38:51.346+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Artificial Intelligence': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:51.347+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Artificial Intelligence' was not inserted.
+[2024-11-10T13:38:51.353+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:51.374+0000] {pipline.py:156} INFO - Author 'Nathan J. McNeese' added with ID 1529.
+[2024-11-10T13:38:51.392+0000] {pipline.py:156} INFO - Author 'Beau G. Schelble' added with ID 1530.
+[2024-11-10T13:38:51.406+0000] {pipline.py:156} INFO - Author 'Lorenzo Barberis Canonico' added with ID 1531.
+[2024-11-10T13:38:51.422+0000] {pipline.py:156} INFO - Author 'Mustafa Demir' added with ID 1532.
+[2024-11-10T13:38:51.428+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:51.439+0000] {logging_mixin.py:188} INFO - quartils est une chaîne de caractères
+[2024-11-10T13:38:51.450+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Human-Machine Systems': 'str' object has no attribute 'get'
+[2024-11-10T13:38:51.451+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Human-Machine Systems' was not inserted.
+[2024-11-10T13:38:51.457+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:51.478+0000] {pipline.py:156} INFO - Author 'Deheng Ye' added with ID 1533.
+[2024-11-10T13:38:51.490+0000] {pipline.py:156} INFO - Author 'Guibin Chen' added with ID 1534.
+[2024-11-10T13:38:51.503+0000] {pipline.py:156} INFO - Author 'Peilin Zhao' added with ID 1535.
+[2024-11-10T13:38:51.517+0000] {pipline.py:156} INFO - Author 'Fuhao Qiu' added with ID 1536.
+[2024-11-10T13:38:51.538+0000] {pipline.py:156} INFO - Author 'Bo Yuan' added with ID 1537.
+[2024-11-10T13:38:51.565+0000] {pipline.py:156} INFO - Author 'Wen Zhang' added with ID 1538.
+[2024-11-10T13:38:51.571+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:51.583+0000] {logging_mixin.py:188} INFO - quartils est une liste
+[2024-11-10T13:38:51.593+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Neural Networks and Learning Systems': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:51.594+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Neural Networks and Learning Systems' was not inserted.
+[2024-11-10T13:38:51.600+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:51.621+0000] {pipline.py:156} INFO - Author 'Angelos Kostis' added with ID 1539.
+[2024-11-10T13:38:51.632+0000] {pipline.py:156} INFO - Author 'Johan Lidström' added with ID 1540.
+[2024-11-10T13:38:51.644+0000] {pipline.py:156} INFO - Author 'Sujith Nair' added with ID 1541.
+[2024-11-10T13:38:51.658+0000] {pipline.py:156} INFO - Author 'Jonny Holmström' added with ID 1542.
+[2024-11-10T13:38:51.664+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:51.675+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Engineering Management': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:51.676+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Engineering Management' was not inserted.
+[2024-11-10T13:38:51.682+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:51.709+0000] {pipline.py:156} INFO - Author 'Mehdi Sadi' added with ID 1543.
+[2024-11-10T13:38:51.721+0000] {pipline.py:156} INFO - Author 'Ujjwal Guin' added with ID 1544.
+[2024-11-10T13:38:51.727+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:51.738+0000] {logging_mixin.py:188} INFO - quartils est une chaîne de caractères
+[2024-11-10T13:38:51.756+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems': 'str' object has no attribute 'get'
+[2024-11-10T13:38:51.757+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems' was not inserted.
+[2024-11-10T13:38:51.763+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:51.784+0000] {pipline.py:156} INFO - Author 'Wissam Salhab' added with ID 1545.
+[2024-11-10T13:38:51.799+0000] {pipline.py:156} INFO - Author 'Darine Ameyed' added with ID 1546.
+[2024-11-10T13:38:51.818+0000] {pipline.py:156} INFO - Author 'Fehmi Jaafar' added with ID 1547.
+[2024-11-10T13:38:51.830+0000] {pipline.py:156} INFO - Author 'Hamid Mcheick' added with ID 1548.
+[2024-11-10T13:38:51.836+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:51.848+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:51.849+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:51.854+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:51.878+0000] {pipline.py:156} INFO - Author 'Ettore Mariotti' added with ID 1549.
+[2024-11-10T13:38:51.890+0000] {pipline.py:156} INFO - Author 'Anna Arias-Duart' added with ID 1550.
+[2024-11-10T13:38:51.901+0000] {pipline.py:156} INFO - Author 'Michele Cafagna' added with ID 1551.
+[2024-11-10T13:38:51.916+0000] {pipline.py:156} INFO - Author 'Albert Gatt' added with ID 1552.
+[2024-11-10T13:38:51.935+0000] {pipline.py:156} INFO - Author 'Dario Garcia-Gasulla' added with ID 1553.
+[2024-11-10T13:38:51.950+0000] {pipline.py:156} INFO - Author 'Jose Maria Alonso-Moral' added with ID 1554.
+[2024-11-10T13:38:51.956+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:51.968+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:51.969+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:51.975+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:52.000+0000] {pipline.py:156} INFO - Author 'Inseok Oh' added with ID 1555.
+[2024-11-10T13:38:52.027+0000] {pipline.py:156} INFO - Author 'Seungeun Rho' added with ID 1556.
+[2024-11-10T13:38:52.060+0000] {pipline.py:156} INFO - Author 'Sangbin Moon' added with ID 1557.
+[2024-11-10T13:38:52.071+0000] {pipline.py:156} INFO - Author 'Seongho Son' added with ID 1558.
+[2024-11-10T13:38:52.083+0000] {pipline.py:156} INFO - Author 'Hyoil Lee' added with ID 1559.
+[2024-11-10T13:38:52.096+0000] {pipline.py:156} INFO - Author 'Jinyun Chung' added with ID 1560.
+[2024-11-10T13:38:52.102+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:52.115+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Games': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:52.115+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Games' was not inserted.
+[2024-11-10T13:38:52.122+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:52.153+0000] {pipline.py:156} INFO - Author 'Tomisin Awosika' added with ID 1561.
+[2024-11-10T13:38:52.172+0000] {pipline.py:156} INFO - Author 'Raj Mani Shukla' added with ID 1562.
+[2024-11-10T13:38:52.188+0000] {pipline.py:156} INFO - Author 'Bernardi Pranggono' added with ID 1563.
+[2024-11-10T13:38:52.194+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:52.206+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:52.207+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:52.212+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:52.233+0000] {pipline.py:156} INFO - Author 'Ali K. Raz' added with ID 1564.
+[2024-11-10T13:38:52.254+0000] {pipline.py:156} INFO - Author 'Kshitij Mall' added with ID 1565.
+[2024-11-10T13:38:52.267+0000] {pipline.py:156} INFO - Author 'Sean Matthew Nolan' added with ID 1566.
+[2024-11-10T13:38:52.282+0000] {pipline.py:156} INFO - Author 'Winston Levin' added with ID 1567.
+[2024-11-10T13:38:52.296+0000] {pipline.py:156} INFO - Author 'Linas Mockus' added with ID 1568.
+[2024-11-10T13:38:52.318+0000] {pipline.py:156} INFO - Author 'Kris Ezra' added with ID 1569.
+[2024-11-10T13:38:52.324+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:52.335+0000] {logging_mixin.py:188} INFO - quartils est une chaîne de caractères
+[2024-11-10T13:38:52.346+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Aerospace and Electronic Systems': 'str' object has no attribute 'get'
+[2024-11-10T13:38:52.347+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Aerospace and Electronic Systems' was not inserted.
+[2024-11-10T13:38:52.352+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:52.377+0000] {pipline.py:156} INFO - Author 'Md. Zahid Hasan' added with ID 1570.
+[2024-11-10T13:38:52.387+0000] {pipline.py:156} INFO - Author 'Sidratul Montaha' added with ID 1571.
+[2024-11-10T13:38:52.398+0000] {pipline.py:156} INFO - Author 'Inam Ullah Khan' added with ID 1572.
+[2024-11-10T13:38:52.410+0000] {pipline.py:156} INFO - Author 'Md. Mehedi Hassan' added with ID 1573.
+[2024-11-10T13:38:52.420+0000] {pipline.py:156} INFO - Author 'Abdullah Al Mahmud' added with ID 1574.
+[2024-11-10T13:38:52.437+0000] {pipline.py:156} INFO - Author 'A. K. M. Rakibul Haque Rafid' added with ID 1575.
+[2024-11-10T13:38:52.443+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:52.454+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:52.455+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:52.460+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:52.481+0000] {pipline.py:156} INFO - Author 'Haohui Chen' added with ID 1576.
+[2024-11-10T13:38:52.493+0000] {pipline.py:156} INFO - Author 'Claire M. Mason' added with ID 1577.
+[2024-11-10T13:38:52.499+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:52.510+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:52.511+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:52.517+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:52.539+0000] {pipline.py:156} INFO - Author 'Ammar Oad' added with ID 1578.
+[2024-11-10T13:38:52.552+0000] {pipline.py:156} INFO - Author 'Syed Shoaib Abbas' added with ID 1579.
+[2024-11-10T13:38:52.565+0000] {pipline.py:156} INFO - Author 'Amna Zafar' added with ID 1580.
+[2024-11-10T13:38:52.581+0000] {pipline.py:156} INFO - Author 'Beenish Ayesha Akram' added with ID 1581.
+[2024-11-10T13:38:52.592+0000] {pipline.py:156} INFO - Author 'Feng Dong' added with ID 1582.
+[2024-11-10T13:38:52.607+0000] {pipline.py:156} INFO - Author 'Mir Sajjad Hussain Talpur' added with ID 1583.
+[2024-11-10T13:38:52.614+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:52.625+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:52.626+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:52.631+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:52.652+0000] {pipline.py:156} INFO - Author 'Syeda Fiza Rubab' added with ID 1584.
+[2024-11-10T13:38:52.673+0000] {pipline.py:156} INFO - Author 'Arslan Abdul Ghaffar' added with ID 1585.
+[2024-11-10T13:38:52.684+0000] {pipline.py:156} INFO - Author 'Gyu Sang Choi' added with ID 1586.
+[2024-11-10T13:38:52.691+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:52.701+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:52.702+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:52.708+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:52.732+0000] {pipline.py:156} INFO - Author 'Greeshma Arya' added with ID 1587.
+[2024-11-10T13:38:52.745+0000] {pipline.py:156} INFO - Author 'Ashish Bagwari' added with ID 1588.
+[2024-11-10T13:38:52.758+0000] {pipline.py:156} INFO - Author 'Hiteshi Saini' added with ID 1589.
+[2024-11-10T13:38:52.772+0000] {pipline.py:156} INFO - Author 'Prachi Thakur' added with ID 1590.
+[2024-11-10T13:38:52.789+0000] {pipline.py:156} INFO - Author 'Ciro Rodriguez' added with ID 1591.
+[2024-11-10T13:38:52.801+0000] {pipline.py:156} INFO - Author 'Pedro Lezama' added with ID 1592.
+[2024-11-10T13:38:52.807+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:52.818+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:52.819+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:52.824+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:52.846+0000] {pipline.py:156} INFO - Author 'Henar Mike O. Canilang' added with ID 1593.
+[2024-11-10T13:38:52.858+0000] {pipline.py:156} INFO - Author 'Angela C. Caliwag' added with ID 1594.
+[2024-11-10T13:38:52.870+0000] {pipline.py:156} INFO - Author 'James Rigor C. Camacho' added with ID 1595.
+[2024-11-10T13:38:52.881+0000] {pipline.py:156} INFO - Author 'Wansu Lim' added with ID 1596.
+[2024-11-10T13:38:52.896+0000] {pipline.py:156} INFO - Author 'Martin Maier' added with ID 1597.
+[2024-11-10T13:38:52.902+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:52.914+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Internet of Things Journal': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:52.914+0000] {pipline.py:279} WARNING - Journal 'IEEE Internet of Things Journal' was not inserted.
+[2024-11-10T13:38:52.921+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:52.948+0000] {pipline.py:156} INFO - Author 'Danial Hooshyar' added with ID 1598.
+[2024-11-10T13:38:52.965+0000] {pipline.py:156} INFO - Author 'Yeongwook Yang' added with ID 1599.
+[2024-11-10T13:38:52.973+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:52.989+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:52.990+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:52.998+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:53.035+0000] {pipline.py:156} INFO - Author 'Daeeol Park' added with ID 1600.
+[2024-11-10T13:38:53.062+0000] {pipline.py:156} INFO - Author 'Hyunsik Na' added with ID 1601.
+[2024-11-10T13:38:53.081+0000] {pipline.py:156} INFO - Author 'Daeseon Choi' added with ID 1602.
+[2024-11-10T13:38:53.090+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:53.108+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:53.109+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:53.117+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:53.151+0000] {pipline.py:156} INFO - Author 'Alexander Smirnov' added with ID 1603.
+[2024-11-10T13:38:53.173+0000] {pipline.py:156} INFO - Author 'Andrew Ponomarev' added with ID 1604.
+[2024-11-10T13:38:53.196+0000] {pipline.py:156} INFO - Author 'Anton Agafonov' added with ID 1605.
+[2024-11-10T13:38:53.205+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:53.219+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:53.220+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:53.227+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:53.256+0000] {pipline.py:156} INFO - Author 'Haoxuan Ma' added with ID 1606.
+[2024-11-10T13:38:53.276+0000] {pipline.py:156} INFO - Author 'Yifan Liu' added with ID 1607.
+[2024-11-10T13:38:53.297+0000] {pipline.py:156} INFO - Author 'Qinhua Jiang' added with ID 1608.
+[2024-11-10T13:38:53.312+0000] {pipline.py:156} INFO - Author 'Brian Yueshuai He' added with ID 1609.
+[2024-11-10T13:38:53.322+0000] {pipline.py:156} INFO - Author 'Xishun Liao' added with ID 1610.
+[2024-11-10T13:38:53.335+0000] {pipline.py:156} INFO - Author 'Jiaqi Ma' added with ID 1611.
+[2024-11-10T13:38:53.341+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:53.352+0000] {logging_mixin.py:188} INFO - quartils est une liste
+[2024-11-10T13:38:53.367+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Intelligent Vehicles': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:53.368+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Intelligent Vehicles' was not inserted.
+[2024-11-10T13:38:53.373+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:53.395+0000] {pipline.py:156} INFO - Author 'J. Berengueres' added with ID 1612.
+[2024-11-10T13:38:53.401+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:53.413+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Technology and Society': 'str' object has no attribute 'get'
+[2024-11-10T13:38:53.414+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T13:38:53.420+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:53.447+0000] {pipline.py:156} INFO - Author 'Hendrik Strobelt' added with ID 1613.
+[2024-11-10T13:38:53.459+0000] {pipline.py:156} INFO - Author 'Jambay Kinley' added with ID 1614.
+[2024-11-10T13:38:53.471+0000] {pipline.py:156} INFO - Author 'Robert Krueger' added with ID 1615.
+[2024-11-10T13:38:53.482+0000] {pipline.py:156} INFO - Author 'Johanna Beyer' added with ID 1616.
+[2024-11-10T13:38:53.496+0000] {pipline.py:156} INFO - Author 'Hanspeter Pfister' added with ID 1617.
+[2024-11-10T13:38:53.512+0000] {pipline.py:156} INFO - Author 'Alexander M. Rush' added with ID 1618.
+[2024-11-10T13:38:53.518+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:53.529+0000] {logging_mixin.py:188} INFO - quartils est une chaîne de caractères
+[2024-11-10T13:38:53.541+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Visualization and Computer Graphics': 'str' object has no attribute 'get'
+[2024-11-10T13:38:53.542+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Visualization and Computer Graphics' was not inserted.
+[2024-11-10T13:38:53.547+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:53.569+0000] {pipline.py:156} INFO - Author 'Jordan J. Bird' added with ID 1619.
+[2024-11-10T13:38:53.582+0000] {pipline.py:156} INFO - Author 'Ahmad Lotfi' added with ID 1620.
+[2024-11-10T13:38:53.589+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:53.600+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:53.601+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:53.607+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:54.151+0000] {pipline.py:156} INFO - Author 'Carlos M. Parra' added with ID 1621.
+[2024-11-10T13:38:54.216+0000] {pipline.py:156} INFO - Author 'Manjul Gupta' added with ID 1622.
+[2024-11-10T13:38:54.245+0000] {pipline.py:156} INFO - Author 'Denis Dennehy' added with ID 1623.
+[2024-11-10T13:38:54.254+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:54.274+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Technology and Society': 'str' object has no attribute 'get'
+[2024-11-10T13:38:54.276+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T13:38:54.286+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:54.325+0000] {pipline.py:156} INFO - Author 'Abdul Karim Gizzini' added with ID 1624.
+[2024-11-10T13:38:54.345+0000] {pipline.py:156} INFO - Author 'Yahia Medjahdi' added with ID 1625.
+[2024-11-10T13:38:54.365+0000] {pipline.py:156} INFO - Author 'Ali J. Ghandour' added with ID 1626.
+[2024-11-10T13:38:54.385+0000] {pipline.py:156} INFO - Author 'Laurent Clavier' added with ID 1627.
+[2024-11-10T13:38:54.392+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:54.407+0000] {logging_mixin.py:188} INFO - quartils est une liste
+[2024-11-10T13:38:54.418+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Vehicular Technology': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:54.419+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Vehicular Technology' was not inserted.
+[2024-11-10T13:38:54.427+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:54.460+0000] {pipline.py:156} INFO - Author 'Chansol Hong' added with ID 1628.
+[2024-11-10T13:38:54.477+0000] {pipline.py:156} INFO - Author 'Inbae Jeong' added with ID 1629.
+[2024-11-10T13:38:54.493+0000] {pipline.py:156} INFO - Author 'Luiz Felipe Vecchietti' added with ID 1630.
+[2024-11-10T13:38:54.505+0000] {pipline.py:156} INFO - Author 'Dongsoo Har' added with ID 1631.
+[2024-11-10T13:38:54.520+0000] {pipline.py:156} INFO - Author 'Jong-Hwan Kim' added with ID 1632.
+[2024-11-10T13:38:54.527+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:54.538+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Games': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:54.539+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Games' was not inserted.
+[2024-11-10T13:38:54.545+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:54.566+0000] {pipline.py:156} INFO - Author 'IstvÁn Szita' added with ID 1633.
+[2024-11-10T13:38:54.580+0000] {pipline.py:156} INFO - Author 'Marc Ponsen' added with ID 1634.
+[2024-11-10T13:38:54.583+0000] {pipline.py:144} INFO - Author 'Pieter Spronck' already exists with ID 1433.
+[2024-11-10T13:38:54.589+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:54.600+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Computational Intelligence and AI in Games': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:54.600+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Computational Intelligence and AI in Games' was not inserted.
+[2024-11-10T13:38:54.606+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:54.630+0000] {pipline.py:156} INFO - Author 'Muhammad Ahmad Khan' added with ID 1635.
+[2024-11-10T13:38:54.649+0000] {pipline.py:156} INFO - Author 'Maqbool Khan' added with ID 1636.
+[2024-11-10T13:38:54.659+0000] {pipline.py:156} INFO - Author 'Hussain Dawood' added with ID 1637.
+[2024-11-10T13:38:54.671+0000] {pipline.py:156} INFO - Author 'Hassan Dawood' added with ID 1638.
+[2024-11-10T13:38:54.684+0000] {pipline.py:156} INFO - Author 'Ali Daud' added with ID 1639.
+[2024-11-10T13:38:54.689+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:54.702+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:54.702+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:54.708+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:54.729+0000] {pipline.py:156} INFO - Author 'Padmasri Turaka' added with ID 1640.
+[2024-11-10T13:38:54.743+0000] {pipline.py:156} INFO - Author 'Saroj Kumar Panigrahy' added with ID 1641.
+[2024-11-10T13:38:54.751+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:54.764+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:54.765+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:54.771+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:54.799+0000] {pipline.py:156} INFO - Author 'Dara Varam' added with ID 1642.
+[2024-11-10T13:38:54.811+0000] {pipline.py:156} INFO - Author 'Rohan Mitra' added with ID 1643.
+[2024-11-10T13:38:54.824+0000] {pipline.py:156} INFO - Author 'Meriam Mkadmi' added with ID 1644.
+[2024-11-10T13:38:54.838+0000] {pipline.py:156} INFO - Author 'Radi Aman Riyas' added with ID 1645.
+[2024-11-10T13:38:54.854+0000] {pipline.py:156} INFO - Author 'Diaa Addeen Abuhani' added with ID 1646.
+[2024-11-10T13:38:54.867+0000] {pipline.py:156} INFO - Author 'Salam Dhou' added with ID 1647.
+[2024-11-10T13:38:54.913+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:54.930+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:54.931+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:54.941+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:54.984+0000] {pipline.py:156} INFO - Author 'Djordje Batic' added with ID 1648.
+[2024-11-10T13:38:55.007+0000] {pipline.py:156} INFO - Author 'Vladimir Stankovic' added with ID 1649.
+[2024-11-10T13:38:55.038+0000] {pipline.py:156} INFO - Author 'Lina Stankovic' added with ID 1650.
+[2024-11-10T13:38:55.045+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:55.066+0000] {logging_mixin.py:188} INFO - quartils est une liste
+[2024-11-10T13:38:55.080+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Consumer Electronics': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:55.081+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Consumer Electronics' was not inserted.
+[2024-11-10T13:38:55.088+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:55.115+0000] {pipline.py:156} INFO - Author 'Yao Rong' added with ID 1651.
+[2024-11-10T13:38:55.129+0000] {pipline.py:156} INFO - Author 'Tobias Leemann' added with ID 1652.
+[2024-11-10T13:38:55.156+0000] {pipline.py:156} INFO - Author 'Thai-Trang Nguyen' added with ID 1653.
+[2024-11-10T13:38:55.172+0000] {pipline.py:156} INFO - Author 'Lisa Fiedler' added with ID 1654.
+[2024-11-10T13:38:55.190+0000] {pipline.py:156} INFO - Author 'Peizhu Qian' added with ID 1655.
+[2024-11-10T13:38:55.207+0000] {pipline.py:156} INFO - Author 'Vaibhav Unhelkar' added with ID 1656.
+[2024-11-10T13:38:55.214+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:55.230+0000] {logging_mixin.py:188} INFO - quartils est une chaîne de caractères
+[2024-11-10T13:38:55.247+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Pattern Analysis and Machine Intelligence': 'str' object has no attribute 'get'
+[2024-11-10T13:38:55.248+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Pattern Analysis and Machine Intelligence' was not inserted.
+[2024-11-10T13:38:55.255+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:55.278+0000] {pipline.py:156} INFO - Author 'Sara Narteni' added with ID 1657.
+[2024-11-10T13:38:55.291+0000] {pipline.py:156} INFO - Author 'Vanessa Orani' added with ID 1658.
+[2024-11-10T13:38:55.308+0000] {pipline.py:156} INFO - Author 'Enrico Cambiaso' added with ID 1659.
+[2024-11-10T13:38:55.330+0000] {pipline.py:156} INFO - Author 'Matteo Rucco' added with ID 1660.
+[2024-11-10T13:38:55.346+0000] {pipline.py:156} INFO - Author 'Maurizio Mongelli' added with ID 1661.
+[2024-11-10T13:38:55.392+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:55.407+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:55.408+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:55.415+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:55.451+0000] {pipline.py:156} INFO - Author 'Vanessa Echeverria' added with ID 1662.
+[2024-11-10T13:38:55.463+0000] {pipline.py:156} INFO - Author 'Kexin Yang' added with ID 1663.
+[2024-11-10T13:38:55.477+0000] {pipline.py:156} INFO - Author 'LuEttaMae Lawrence' added with ID 1664.
+[2024-11-10T13:38:55.492+0000] {pipline.py:156} INFO - Author 'Nikol Rummel' added with ID 1665.
+[2024-11-10T13:38:55.506+0000] {pipline.py:156} INFO - Author 'Vincent Aleven' added with ID 1666.
+[2024-11-10T13:38:55.512+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:55.524+0000] {logging_mixin.py:188} INFO - quartils est une liste
+[2024-11-10T13:38:55.535+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Learning Technologies': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:55.536+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Learning Technologies' was not inserted.
+[2024-11-10T13:38:55.542+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:55.569+0000] {pipline.py:156} INFO - Author 'Simon M. Lucas' added with ID 1667.
+[2024-11-10T13:38:55.576+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:55.588+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Computational Intelligence and AI in Games': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:55.589+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Computational Intelligence and AI in Games' was not inserted.
+[2024-11-10T13:38:55.595+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:55.617+0000] {pipline.py:156} INFO - Author 'Momotaz Begum' added with ID 1668.
+[2024-11-10T13:38:55.633+0000] {pipline.py:156} INFO - Author 'Mehedi Hasan Shuvo' added with ID 1669.
+[2024-11-10T13:38:55.645+0000] {pipline.py:156} INFO - Author 'Mostofa Kamal Nasir' added with ID 1670.
+[2024-11-10T13:38:55.659+0000] {pipline.py:156} INFO - Author 'Amran Hossain' added with ID 1671.
+[2024-11-10T13:38:55.677+0000] {pipline.py:156} INFO - Author 'Mohammad Jakir Hossain' added with ID 1672.
+[2024-11-10T13:38:55.693+0000] {pipline.py:156} INFO - Author 'Imran Ashraf' added with ID 1673.
+[2024-11-10T13:38:55.700+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:55.712+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:55.713+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:55.720+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:55.746+0000] {pipline.py:156} INFO - Author 'Smita Khairnar' added with ID 1674.
+[2024-11-10T13:38:55.760+0000] {pipline.py:156} INFO - Author 'Shilpa Gite' added with ID 1675.
+[2024-11-10T13:38:55.777+0000] {pipline.py:156} INFO - Author 'Kashish Mahajan' added with ID 1676.
+[2024-11-10T13:38:55.781+0000] {pipline.py:144} INFO - Author 'Biswajeet Pradhan' already exists with ID 1473.
+[2024-11-10T13:38:55.800+0000] {pipline.py:156} INFO - Author 'Abdullah Alamri' added with ID 1677.
+[2024-11-10T13:38:55.814+0000] {pipline.py:156} INFO - Author 'Sudeep D. Thepade' added with ID 1678.
+[2024-11-10T13:38:55.822+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:55.839+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:55.839+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:55.848+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:55.885+0000] {pipline.py:156} INFO - Author 'Jiayi Hong' added with ID 1679.
+[2024-11-10T13:38:55.908+0000] {pipline.py:156} INFO - Author 'Ross Maciejewski' added with ID 1680.
+[2024-11-10T13:38:55.922+0000] {pipline.py:156} INFO - Author 'Alain Trubuil' added with ID 1681.
+[2024-11-10T13:38:55.943+0000] {pipline.py:156} INFO - Author 'Tobias Isenberg' added with ID 1682.
+[2024-11-10T13:38:55.950+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:55.963+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Visualization and Computer Graphics': 'str' object has no attribute 'get'
+[2024-11-10T13:38:55.964+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Visualization and Computer Graphics' was not inserted.
+[2024-11-10T13:38:55.970+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:55.993+0000] {pipline.py:156} INFO - Author 'Ebtisam AlJalaud' added with ID 1683.
+[2024-11-10T13:38:56.039+0000] {pipline.py:156} INFO - Author 'Manar Hosny' added with ID 1684.
+[2024-11-10T13:38:56.047+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:56.061+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:56.061+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:56.068+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:56.089+0000] {pipline.py:156} INFO - Author 'Lorenzo Tronchin' added with ID 1685.
+[2024-11-10T13:38:56.105+0000] {pipline.py:156} INFO - Author 'Ermanno Cordelli' added with ID 1686.
+[2024-11-10T13:38:56.119+0000] {pipline.py:156} INFO - Author 'Lorenzo Ricciardi Celsi' added with ID 1687.
+[2024-11-10T13:38:56.133+0000] {pipline.py:156} INFO - Author 'Daniele Maccagnola' added with ID 1688.
+[2024-11-10T13:38:56.149+0000] {pipline.py:156} INFO - Author 'Massimo Natale' added with ID 1689.
+[2024-11-10T13:38:56.162+0000] {pipline.py:156} INFO - Author 'Paolo Soda' added with ID 1690.
+[2024-11-10T13:38:56.169+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:56.181+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:56.182+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:56.187+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:56.209+0000] {pipline.py:156} INFO - Author 'Greg Adamson' added with ID 1691.
+[2024-11-10T13:38:56.216+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:56.228+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Technology and Society': 'str' object has no attribute 'get'
+[2024-11-10T13:38:56.229+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T13:38:56.235+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:56.259+0000] {pipline.py:156} INFO - Author 'Wenchao Zhang' added with ID 1692.
+[2024-11-10T13:38:56.273+0000] {pipline.py:156} INFO - Author 'Ruonan Yan' added with ID 1693.
+[2024-11-10T13:38:56.291+0000] {pipline.py:156} INFO - Author 'Lei Yuan' added with ID 1694.
+[2024-11-10T13:38:56.299+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:56.312+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:56.313+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:56.318+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:56.340+0000] {pipline.py:156} INFO - Author 'Roberto V. Zicari' added with ID 1695.
+[2024-11-10T13:38:56.351+0000] {pipline.py:156} INFO - Author 'John Brodersen' added with ID 1696.
+[2024-11-10T13:38:56.364+0000] {pipline.py:156} INFO - Author 'James Brusseau' added with ID 1697.
+[2024-11-10T13:38:56.377+0000] {pipline.py:156} INFO - Author 'Boris Düdder' added with ID 1698.
+[2024-11-10T13:38:56.392+0000] {pipline.py:156} INFO - Author 'Timo Eichhorn' added with ID 1699.
+[2024-11-10T13:38:56.420+0000] {pipline.py:156} INFO - Author 'Todor Ivanov' added with ID 1700.
+[2024-11-10T13:38:56.427+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:56.440+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Transactions on Technology and Society': 'str' object has no attribute 'get'
+[2024-11-10T13:38:56.440+0000] {pipline.py:279} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T13:38:56.446+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:56.458+0000] {pipline.py:144} INFO - Author 'Abhishek Kumar' already exists with ID 1471.
+[2024-11-10T13:38:56.472+0000] {pipline.py:156} INFO - Author 'Benjamin Finley' added with ID 1701.
+[2024-11-10T13:38:56.484+0000] {pipline.py:156} INFO - Author 'Tristan Braud' added with ID 1702.
+[2024-11-10T13:38:56.497+0000] {pipline.py:156} INFO - Author 'Sasu Tarkoma' added with ID 1703.
+[2024-11-10T13:38:56.507+0000] {pipline.py:156} INFO - Author 'Pan Hui' added with ID 1704.
+[2024-11-10T13:38:56.513+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T13:38:56.524+0000] {pipline.py:231} ERROR - Error creating or retrieving journal 'IEEE Access': can only concatenate str (not "dict") to str
+[2024-11-10T13:38:56.525+0000] {pipline.py:279} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T13:38:56.525+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-11-10T13:38:56.525+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-11-10T13:38:56.533+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=pipeline, task_id=insert_data_into_data_warehouse, run_id=manual__2024-11-10T13:38:36.010340+00:00, execution_date=20241110T133836, start_date=20241110T133841, end_date=20241110T133856
+[2024-11-10T13:38:56.581+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-11-10T13:38:56.636+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-10T13:38:56.648+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

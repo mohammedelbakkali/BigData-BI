@@ -1,0 +1,41 @@
+[2024-11-09T14:32:36.287+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-11-09T14:32:36.314+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline.insert_data_into_data_warehouse manual__2024-11-09T14:32:32.988142+00:00 [queued]>
+[2024-11-09T14:32:36.321+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline.insert_data_into_data_warehouse manual__2024-11-09T14:32:32.988142+00:00 [queued]>
+[2024-11-09T14:32:36.328+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-11-09T14:32:36.343+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): insert_data_into_data_warehouse> on 2024-11-09 14:32:32.988142+00:00
+[2024-11-09T14:32:36.346+0000] {standard_task_runner.py:64} INFO - Started process 196 to run task
+[2024-11-09T14:32:36.349+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'pipeline', 'insert_data_into_data_warehouse', 'manual__2024-11-09T14:32:32.988142+00:00', '--job-id', '340', '--raw', '--subdir', 'DAGS_FOLDER/pipline.py', '--cfg-path', '/tmp/tmpqlkxq3fx']
+[2024-11-09T14:32:36.351+0000] {standard_task_runner.py:91} INFO - Job 340: Subtask insert_data_into_data_warehouse
+[2024-11-09T14:32:36.391+0000] {task_command.py:426} INFO - Running <TaskInstance: pipeline.insert_data_into_data_warehouse manual__2024-11-09T14:32:32.988142+00:00 [running]> on host 35b8b9bdba09
+[2024-11-09T14:32:36.504+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipeline' AIRFLOW_CTX_TASK_ID='insert_data_into_data_warehouse' AIRFLOW_CTX_EXECUTION_DATE='2024-11-09T14:32:32.988142+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-09T14:32:32.988142+00:00'
+[2024-11-09T14:32:36.505+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-11-09T14:32:36.513+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T14:32:36.548+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T14:32:36.563+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T14:32:36.578+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T14:32:36.594+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T14:32:36.610+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T14:32:36.624+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T14:32:36.639+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T14:32:36.653+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T14:32:36.668+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T14:32:36.683+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T14:32:36.698+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T14:32:36.712+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T14:32:36.726+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T14:32:36.740+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T14:32:36.754+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T14:32:36.769+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T14:32:36.783+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T14:32:36.799+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T14:32:36.818+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T14:32:36.833+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T14:32:36.847+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T14:32:36.861+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T14:32:36.876+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-09T14:32:36.886+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-11-09T14:32:36.887+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-11-09T14:32:36.894+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=pipeline, task_id=insert_data_into_data_warehouse, run_id=manual__2024-11-09T14:32:32.988142+00:00, execution_date=20241109T143232, start_date=20241109T143236, end_date=20241109T143236
+[2024-11-09T14:32:36.922+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-11-09T14:32:36.944+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-09T14:32:36.948+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

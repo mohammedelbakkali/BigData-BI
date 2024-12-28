@@ -1,0 +1,1089 @@
+[2024-11-10T12:50:48.924+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-11-10T12:50:48.961+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline.insert_data_into_data_warehouse manual__2024-11-10T12:50:43.836948+00:00 [queued]>
+[2024-11-10T12:50:48.972+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline.insert_data_into_data_warehouse manual__2024-11-10T12:50:43.836948+00:00 [queued]>
+[2024-11-10T12:50:48.973+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-11-10T12:50:48.987+0000] {taskinstance.py:2330} INFO - Executing <Task(_PythonDecoratedOperator): insert_data_into_data_warehouse> on 2024-11-10 12:50:43.836948+00:00
+[2024-11-10T12:50:48.992+0000] {standard_task_runner.py:64} INFO - Started process 712 to run task
+[2024-11-10T12:50:48.995+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'pipeline', 'insert_data_into_data_warehouse', 'manual__2024-11-10T12:50:43.836948+00:00', '--job-id', '515', '--raw', '--subdir', 'DAGS_FOLDER/pipline.py', '--cfg-path', '/tmp/tmp3vp2_qs5']
+[2024-11-10T12:50:48.997+0000] {standard_task_runner.py:91} INFO - Job 515: Subtask insert_data_into_data_warehouse
+[2024-11-10T12:50:49.045+0000] {task_command.py:426} INFO - Running <TaskInstance: pipeline.insert_data_into_data_warehouse manual__2024-11-10T12:50:43.836948+00:00 [running]> on host 945019f7a6f8
+[2024-11-10T12:50:49.688+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipeline' AIRFLOW_CTX_TASK_ID='insert_data_into_data_warehouse' AIRFLOW_CTX_EXECUTION_DATE='2024-11-10T12:50:43.836948+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-10T12:50:43.836948+00:00'
+[2024-11-10T12:50:49.691+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-11-10T12:50:49.726+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:49.881+0000] {pipline.py:144} INFO - Author 'Himanshi Allahabadi' already exists with ID 1.
+[2024-11-10T12:50:49.886+0000] {pipline.py:144} INFO - Author 'Julia Amann' already exists with ID 2.
+[2024-11-10T12:50:49.890+0000] {pipline.py:144} INFO - Author 'Isabelle Balot' already exists with ID 3.
+[2024-11-10T12:50:49.893+0000] {pipline.py:144} INFO - Author 'Andrea Beretta' already exists with ID 4.
+[2024-11-10T12:50:49.896+0000] {pipline.py:144} INFO - Author 'Charles Binkley' already exists with ID 5.
+[2024-11-10T12:50:49.900+0000] {pipline.py:144} INFO - Author 'Jonas Bozenhard' already exists with ID 6.
+[2024-11-10T12:50:49.914+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:49.942+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:50:49.943+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T12:50:49.949+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:49.960+0000] {pipline.py:144} INFO - Author 'Dragutin Petkovic' already exists with ID 7.
+[2024-11-10T12:50:49.967+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:49.978+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:50:49.979+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T12:50:49.984+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:49.995+0000] {pipline.py:144} INFO - Author 'Zishan Ahmed' already exists with ID 8.
+[2024-11-10T12:50:49.997+0000] {pipline.py:144} INFO - Author 'Shakib Sadat Shanto' already exists with ID 9.
+[2024-11-10T12:50:50.000+0000] {pipline.py:144} INFO - Author 'Most. Humayra Khanom Rime' already exists with ID 10.
+[2024-11-10T12:50:50.002+0000] {pipline.py:144} INFO - Author 'Md. Kishor Morol' already exists with ID 11.
+[2024-11-10T12:50:50.004+0000] {pipline.py:144} INFO - Author 'Nafiz Fahad' already exists with ID 12.
+[2024-11-10T12:50:50.007+0000] {pipline.py:144} INFO - Author 'Md. Jakir Hossen' already exists with ID 13.
+[2024-11-10T12:50:50.012+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:50.047+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:50.048+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:50.054+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:50.066+0000] {pipline.py:144} INFO - Author 'Rui Xie' already exists with ID 14.
+[2024-11-10T12:50:50.068+0000] {pipline.py:144} INFO - Author 'Asad Ul Haq' already exists with ID 15.
+[2024-11-10T12:50:50.070+0000] {pipline.py:144} INFO - Author 'Linsen Ma' already exists with ID 16.
+[2024-11-10T12:50:50.072+0000] {pipline.py:144} INFO - Author 'Krystal Sun' already exists with ID 17.
+[2024-11-10T12:50:50.075+0000] {pipline.py:144} INFO - Author 'Sanchari Sen' already exists with ID 18.
+[2024-11-10T12:50:50.077+0000] {pipline.py:144} INFO - Author 'Swagath Venkataramani' already exists with ID 19.
+[2024-11-10T12:50:50.082+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:50.094+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:50:50.095+0000] {pipline.py:270} WARNING - Journal 'IEEE Computer Architecture Letters' was not inserted.
+[2024-11-10T12:50:50.100+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:50.118+0000] {pipline.py:144} INFO - Author 'Yong Zheng' already exists with ID 20.
+[2024-11-10T12:50:50.121+0000] {pipline.py:144} INFO - Author 'Haigang Yang' already exists with ID 21.
+[2024-11-10T12:50:50.124+0000] {pipline.py:144} INFO - Author 'Yi Shu' already exists with ID 22.
+[2024-11-10T12:50:50.126+0000] {pipline.py:144} INFO - Author 'Yiping Jia' already exists with ID 23.
+[2024-11-10T12:50:50.129+0000] {pipline.py:144} INFO - Author 'Zhihong Huang' already exists with ID 24.
+[2024-11-10T12:50:50.136+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:50.148+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:50:50.149+0000] {pipline.py:270} WARNING - Journal 'IEEE Embedded Systems Letters' was not inserted.
+[2024-11-10T12:50:50.155+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:50.178+0000] {pipline.py:144} INFO - Author 'Santiago Ontañón' already exists with ID 25.
+[2024-11-10T12:50:50.181+0000] {pipline.py:144} INFO - Author 'Gabriel Synnaeve' already exists with ID 26.
+[2024-11-10T12:50:50.184+0000] {pipline.py:144} INFO - Author 'Alberto Uriarte' already exists with ID 27.
+[2024-11-10T12:50:50.186+0000] {pipline.py:144} INFO - Author 'Florian Richoux' already exists with ID 28.
+[2024-11-10T12:50:50.188+0000] {pipline.py:144} INFO - Author 'David Churchill' already exists with ID 29.
+[2024-11-10T12:50:50.190+0000] {pipline.py:144} INFO - Author 'Mike Preuss' already exists with ID 30.
+[2024-11-10T12:50:50.195+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:50.237+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:50.258+0000] {pipline.py:247} INFO - Publication 'A Survey of Real-Time Strategy Game AI Research and Competition in StarCraft' inserted successfully.
+[2024-11-10T12:50:50.264+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:50.275+0000] {pipline.py:144} INFO - Author 'Alexander Heimerl' already exists with ID 31.
+[2024-11-10T12:50:50.277+0000] {pipline.py:144} INFO - Author 'Katharina Weitz' already exists with ID 32.
+[2024-11-10T12:50:50.279+0000] {pipline.py:144} INFO - Author 'Tobias Baur' already exists with ID 33.
+[2024-11-10T12:50:50.282+0000] {pipline.py:144} INFO - Author 'Elisabeth André' already exists with ID 34.
+[2024-11-10T12:50:50.287+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:50.335+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:50.354+0000] {pipline.py:247} INFO - Publication 'Unraveling ML Models of Emotion With NOVA: Multi-Level Explainable AI for Non-Experts' inserted successfully.
+[2024-11-10T12:50:50.360+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:50.371+0000] {pipline.py:144} INFO - Author 'Jiaqiu Ai' already exists with ID 35.
+[2024-11-10T12:50:50.374+0000] {pipline.py:144} INFO - Author 'Weibao Xue' already exists with ID 36.
+[2024-11-10T12:50:50.376+0000] {pipline.py:144} INFO - Author 'Yanan Zhu' already exists with ID 37.
+[2024-11-10T12:50:50.378+0000] {pipline.py:144} INFO - Author 'Shuo Zhuang' already exists with ID 38.
+[2024-11-10T12:50:50.380+0000] {pipline.py:144} INFO - Author 'Congan Xu' already exists with ID 39.
+[2024-11-10T12:50:50.383+0000] {pipline.py:144} INFO - Author 'Hao Yan' already exists with ID 40.
+[2024-11-10T12:50:50.388+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:50.439+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:50.440+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Geoscience and Remote Sensing' was not inserted.
+[2024-11-10T12:50:50.445+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:50.457+0000] {pipline.py:144} INFO - Author 'Jianrong Tao' already exists with ID 41.
+[2024-11-10T12:50:50.459+0000] {pipline.py:144} INFO - Author 'Yu Xiong' already exists with ID 42.
+[2024-11-10T12:50:50.461+0000] {pipline.py:144} INFO - Author 'Shiwei Zhao' already exists with ID 43.
+[2024-11-10T12:50:50.463+0000] {pipline.py:144} INFO - Author 'Runze Wu' already exists with ID 44.
+[2024-11-10T12:50:50.466+0000] {pipline.py:144} INFO - Author 'Xudong Shen' already exists with ID 45.
+[2024-11-10T12:50:50.468+0000] {pipline.py:144} INFO - Author 'Tangjie Lyu' already exists with ID 46.
+[2024-11-10T12:50:50.474+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:50.526+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:50.548+0000] {pipline.py:247} INFO - Publication 'Explainable AI for Cheating Detection and Churn Prediction in Online Games' inserted successfully.
+[2024-11-10T12:50:50.554+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:50.569+0000] {pipline.py:144} INFO - Author 'Caner Hazirbas' already exists with ID 47.
+[2024-11-10T12:50:50.573+0000] {pipline.py:144} INFO - Author 'Joanna Bitton' already exists with ID 48.
+[2024-11-10T12:50:50.576+0000] {pipline.py:144} INFO - Author 'Brian Dolhansky' already exists with ID 49.
+[2024-11-10T12:50:50.580+0000] {pipline.py:144} INFO - Author 'Jacqueline Pan' already exists with ID 50.
+[2024-11-10T12:50:50.583+0000] {pipline.py:144} INFO - Author 'Albert Gordo' already exists with ID 51.
+[2024-11-10T12:50:50.586+0000] {pipline.py:144} INFO - Author 'Cristian Canton Ferrer' already exists with ID 52.
+[2024-11-10T12:50:50.593+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:50.636+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:50.659+0000] {pipline.py:247} INFO - Publication 'Towards Measuring Fairness in AI: The Casual Conversations Dataset' inserted successfully.
+[2024-11-10T12:50:50.666+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:50.681+0000] {pipline.py:144} INFO - Author 'Andreas Holzinger' already exists with ID 53.
+[2024-11-10T12:50:50.683+0000] {pipline.py:144} INFO - Author 'Michaela Kargl' already exists with ID 54.
+[2024-11-10T12:50:50.686+0000] {pipline.py:144} INFO - Author 'Bettina Kipperer' already exists with ID 55.
+[2024-11-10T12:50:50.688+0000] {pipline.py:144} INFO - Author 'Peter Regitnig' already exists with ID 56.
+[2024-11-10T12:50:50.691+0000] {pipline.py:144} INFO - Author 'Markus Plass' already exists with ID 57.
+[2024-11-10T12:50:50.693+0000] {pipline.py:144} INFO - Author 'Heimo Müller' already exists with ID 58.
+[2024-11-10T12:50:50.699+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:50.725+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:50.726+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:50.734+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:50.758+0000] {pipline.py:144} INFO - Author 'Ana Salta' already exists with ID 59.
+[2024-11-10T12:50:50.761+0000] {pipline.py:144} INFO - Author 'Rui Prada' already exists with ID 60.
+[2024-11-10T12:50:50.764+0000] {pipline.py:144} INFO - Author 'Francisco S. Melo' already exists with ID 61.
+[2024-11-10T12:50:50.772+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:50.850+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:50.880+0000] {pipline.py:247} INFO - Publication 'A Game AI Competition to Foster Collaborative AI Research and Development' inserted successfully.
+[2024-11-10T12:50:50.888+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:50.904+0000] {pipline.py:144} INFO - Author 'Dayoung Kim' already exists with ID 62.
+[2024-11-10T12:50:50.908+0000] {pipline.py:144} INFO - Author 'Qin Zhu' already exists with ID 63.
+[2024-11-10T12:50:50.912+0000] {pipline.py:144} INFO - Author 'Hoda Eldardiry' already exists with ID 64.
+[2024-11-10T12:50:50.919+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:50.936+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:50:50.937+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T12:50:50.944+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:50.962+0000] {pipline.py:144} INFO - Author 'Anna Namrita Gummadi' already exists with ID 65.
+[2024-11-10T12:50:50.965+0000] {pipline.py:144} INFO - Author 'Jerry C. Napier' already exists with ID 66.
+[2024-11-10T12:50:50.968+0000] {pipline.py:144} INFO - Author 'Mustafa Abdallah' already exists with ID 67.
+[2024-11-10T12:50:50.976+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:51.006+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:51.007+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:51.014+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:51.032+0000] {pipline.py:144} INFO - Author 'Andreas Holzinger' already exists with ID 53.
+[2024-11-10T12:50:51.035+0000] {pipline.py:144} INFO - Author 'Iztok Fister' already exists with ID 68.
+[2024-11-10T12:50:51.038+0000] {pipline.py:144} INFO - Author 'Iztok Fister' already exists with ID 68.
+[2024-11-10T12:50:51.042+0000] {pipline.py:144} INFO - Author 'Hans-Peter Kaul' already exists with ID 69.
+[2024-11-10T12:50:51.045+0000] {pipline.py:144} INFO - Author 'Senthold Asseng' already exists with ID 70.
+[2024-11-10T12:50:51.052+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:51.086+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:51.086+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:51.093+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:51.110+0000] {pipline.py:144} INFO - Author 'Hayoung Lee' already exists with ID 71.
+[2024-11-10T12:50:51.113+0000] {pipline.py:144} INFO - Author 'Jongho Park' already exists with ID 72.
+[2024-11-10T12:50:51.117+0000] {pipline.py:144} INFO - Author 'Sungho Kang' already exists with ID 73.
+[2024-11-10T12:50:51.127+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:51.236+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:51.265+0000] {pipline.py:247} INFO - Publication 'An Area-Efficient Systolic Array Redundancy Architecture for Reliable AI Accelerator' inserted successfully.
+[2024-11-10T12:50:51.272+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:51.285+0000] {pipline.py:144} INFO - Author 'Minrui Xu' already exists with ID 74.
+[2024-11-10T12:50:51.288+0000] {pipline.py:144} INFO - Author 'Hongyang Du' already exists with ID 75.
+[2024-11-10T12:50:51.291+0000] {pipline.py:144} INFO - Author 'Dusit Niyato' already exists with ID 76.
+[2024-11-10T12:50:51.293+0000] {pipline.py:144} INFO - Author 'Jiawen Kang' already exists with ID 77.
+[2024-11-10T12:50:51.297+0000] {pipline.py:144} INFO - Author 'Zehui Xiong' already exists with ID 78.
+[2024-11-10T12:50:51.300+0000] {pipline.py:144} INFO - Author 'Shiwen Mao' already exists with ID 79.
+[2024-11-10T12:50:51.306+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:51.391+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:51.422+0000] {pipline.py:247} INFO - Publication 'Unleashing the Power of Edge-Cloud Generative AI in Mobile Networks: A Survey of AIGC Services' inserted successfully.
+[2024-11-10T12:50:51.431+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:51.446+0000] {pipline.py:144} INFO - Author 'Mostafa Al-Emran' already exists with ID 80.
+[2024-11-10T12:50:51.449+0000] {pipline.py:144} INFO - Author 'Bassam Abu-Hijleh' already exists with ID 81.
+[2024-11-10T12:50:51.452+0000] {pipline.py:144} INFO - Author 'AbdulRahman A. Alsewari' already exists with ID 82.
+[2024-11-10T12:50:51.459+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:51.520+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:51.520+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Engineering Management' was not inserted.
+[2024-11-10T12:50:51.527+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:51.542+0000] {pipline.py:144} INFO - Author 'David Melhart' already exists with ID 83.
+[2024-11-10T12:50:51.544+0000] {pipline.py:144} INFO - Author 'Julian Togelius' already exists with ID 84.
+[2024-11-10T12:50:51.548+0000] {pipline.py:144} INFO - Author 'Benedikte Mikkelsen' already exists with ID 85.
+[2024-11-10T12:50:51.551+0000] {pipline.py:144} INFO - Author 'Christoffer Holmgård' already exists with ID 86.
+[2024-11-10T12:50:51.553+0000] {pipline.py:144} INFO - Author 'Georgios N. Yannakakis' already exists with ID 87.
+[2024-11-10T12:50:51.559+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:51.611+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:51.989+0000] {pipline.py:247} INFO - Publication 'The Ethics of AI in Games' inserted successfully.
+[2024-11-10T12:50:52.016+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:52.070+0000] {pipline.py:144} INFO - Author 'Osvaldo Arreche' already exists with ID 88.
+[2024-11-10T12:50:52.083+0000] {pipline.py:144} INFO - Author 'Tanish R. Guntur' already exists with ID 89.
+[2024-11-10T12:50:52.095+0000] {pipline.py:144} INFO - Author 'Jack W. Roberts' already exists with ID 90.
+[2024-11-10T12:50:52.105+0000] {pipline.py:144} INFO - Author 'Mustafa Abdallah' already exists with ID 67.
+[2024-11-10T12:50:52.133+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:52.196+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:52.197+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:52.203+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:52.218+0000] {pipline.py:144} INFO - Author 'Tanish Patel' already exists with ID 91.
+[2024-11-10T12:50:52.221+0000] {pipline.py:144} INFO - Author 'Ramalingam Murugan' already exists with ID 92.
+[2024-11-10T12:50:52.223+0000] {pipline.py:144} INFO - Author 'Gokul Yenduri' already exists with ID 93.
+[2024-11-10T12:50:52.226+0000] {pipline.py:144} INFO - Author 'Rutvij H. Jhaveri' already exists with ID 94.
+[2024-11-10T12:50:52.230+0000] {pipline.py:144} INFO - Author 'Hichem Snoussi' already exists with ID 95.
+[2024-11-10T12:50:52.233+0000] {pipline.py:144} INFO - Author 'Tarek Gaber' already exists with ID 96.
+[2024-11-10T12:50:52.240+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:52.263+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:52.264+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:52.269+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:52.282+0000] {pipline.py:144} INFO - Author 'Tariq Shahzad' already exists with ID 97.
+[2024-11-10T12:50:52.284+0000] {pipline.py:144} INFO - Author 'Muhammad Saleem' already exists with ID 98.
+[2024-11-10T12:50:52.286+0000] {pipline.py:144} INFO - Author 'Muhammad Sajid Farooq' already exists with ID 99.
+[2024-11-10T12:50:52.289+0000] {pipline.py:144} INFO - Author 'Sagheer Abbas' already exists with ID 100.
+[2024-11-10T12:50:52.291+0000] {pipline.py:144} INFO - Author 'Muhammad Adnan Khan' already exists with ID 101.
+[2024-11-10T12:50:52.293+0000] {pipline.py:144} INFO - Author 'Khmaies Ouahada' already exists with ID 102.
+[2024-11-10T12:50:52.300+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:52.323+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:52.323+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:52.330+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:52.342+0000] {pipline.py:144} INFO - Author 'Pranith Shetty' already exists with ID 103.
+[2024-11-10T12:50:52.348+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:52.371+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:52.371+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:52.377+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:52.389+0000] {pipline.py:144} INFO - Author 'Kazuo Okamura' already exists with ID 104.
+[2024-11-10T12:50:52.391+0000] {pipline.py:144} INFO - Author 'Seiji Yamada' already exists with ID 105.
+[2024-11-10T12:50:52.397+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:52.419+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:52.420+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:52.425+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:52.437+0000] {pipline.py:144} INFO - Author 'Himanshi Allahabadi' already exists with ID 1.
+[2024-11-10T12:50:52.439+0000] {pipline.py:144} INFO - Author 'Julia Amann' already exists with ID 2.
+[2024-11-10T12:50:52.442+0000] {pipline.py:144} INFO - Author 'Isabelle Balot' already exists with ID 3.
+[2024-11-10T12:50:52.444+0000] {pipline.py:144} INFO - Author 'Andrea Beretta' already exists with ID 4.
+[2024-11-10T12:50:52.447+0000] {pipline.py:144} INFO - Author 'Charles Binkley' already exists with ID 5.
+[2024-11-10T12:50:52.449+0000] {pipline.py:144} INFO - Author 'Jonas Bozenhard' already exists with ID 6.
+[2024-11-10T12:50:52.455+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:52.467+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:50:52.468+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T12:50:52.474+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:52.491+0000] {pipline.py:144} INFO - Author 'Dragutin Petkovic' already exists with ID 7.
+[2024-11-10T12:50:52.497+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:52.509+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:50:52.510+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T12:50:52.515+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:52.526+0000] {pipline.py:144} INFO - Author 'Himanshi Allahabadi' already exists with ID 1.
+[2024-11-10T12:50:52.529+0000] {pipline.py:144} INFO - Author 'Julia Amann' already exists with ID 2.
+[2024-11-10T12:50:52.531+0000] {pipline.py:144} INFO - Author 'Isabelle Balot' already exists with ID 3.
+[2024-11-10T12:50:52.533+0000] {pipline.py:144} INFO - Author 'Andrea Beretta' already exists with ID 4.
+[2024-11-10T12:50:52.536+0000] {pipline.py:144} INFO - Author 'Charles Binkley' already exists with ID 5.
+[2024-11-10T12:50:52.539+0000] {pipline.py:144} INFO - Author 'Jonas Bozenhard' already exists with ID 6.
+[2024-11-10T12:50:52.544+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:52.557+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:50:52.558+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T12:50:52.564+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:52.575+0000] {pipline.py:144} INFO - Author 'Dragutin Petkovic' already exists with ID 7.
+[2024-11-10T12:50:52.581+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:52.592+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:50:52.593+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T12:50:52.598+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:52.610+0000] {pipline.py:144} INFO - Author 'Zishan Ahmed' already exists with ID 8.
+[2024-11-10T12:50:52.613+0000] {pipline.py:144} INFO - Author 'Shakib Sadat Shanto' already exists with ID 9.
+[2024-11-10T12:50:52.615+0000] {pipline.py:144} INFO - Author 'Most. Humayra Khanom Rime' already exists with ID 10.
+[2024-11-10T12:50:52.617+0000] {pipline.py:144} INFO - Author 'Md. Kishor Morol' already exists with ID 11.
+[2024-11-10T12:50:52.619+0000] {pipline.py:144} INFO - Author 'Nafiz Fahad' already exists with ID 12.
+[2024-11-10T12:50:52.622+0000] {pipline.py:144} INFO - Author 'Md. Jakir Hossen' already exists with ID 13.
+[2024-11-10T12:50:52.628+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:52.649+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:52.650+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:52.655+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:52.667+0000] {pipline.py:144} INFO - Author 'Rui Xie' already exists with ID 14.
+[2024-11-10T12:50:52.669+0000] {pipline.py:144} INFO - Author 'Asad Ul Haq' already exists with ID 15.
+[2024-11-10T12:50:52.671+0000] {pipline.py:144} INFO - Author 'Linsen Ma' already exists with ID 16.
+[2024-11-10T12:50:52.673+0000] {pipline.py:144} INFO - Author 'Krystal Sun' already exists with ID 17.
+[2024-11-10T12:50:52.675+0000] {pipline.py:144} INFO - Author 'Sanchari Sen' already exists with ID 18.
+[2024-11-10T12:50:52.678+0000] {pipline.py:144} INFO - Author 'Swagath Venkataramani' already exists with ID 19.
+[2024-11-10T12:50:52.684+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:52.696+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:50:52.697+0000] {pipline.py:270} WARNING - Journal 'IEEE Computer Architecture Letters' was not inserted.
+[2024-11-10T12:50:52.703+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:52.714+0000] {pipline.py:144} INFO - Author 'Yong Zheng' already exists with ID 20.
+[2024-11-10T12:50:52.716+0000] {pipline.py:144} INFO - Author 'Haigang Yang' already exists with ID 21.
+[2024-11-10T12:50:52.719+0000] {pipline.py:144} INFO - Author 'Yi Shu' already exists with ID 22.
+[2024-11-10T12:50:52.721+0000] {pipline.py:144} INFO - Author 'Yiping Jia' already exists with ID 23.
+[2024-11-10T12:50:52.723+0000] {pipline.py:144} INFO - Author 'Zhihong Huang' already exists with ID 24.
+[2024-11-10T12:50:52.729+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:52.741+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:50:52.741+0000] {pipline.py:270} WARNING - Journal 'IEEE Embedded Systems Letters' was not inserted.
+[2024-11-10T12:50:52.747+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:52.758+0000] {pipline.py:144} INFO - Author 'Santiago Ontañón' already exists with ID 25.
+[2024-11-10T12:50:52.761+0000] {pipline.py:144} INFO - Author 'Gabriel Synnaeve' already exists with ID 26.
+[2024-11-10T12:50:52.763+0000] {pipline.py:144} INFO - Author 'Alberto Uriarte' already exists with ID 27.
+[2024-11-10T12:50:52.766+0000] {pipline.py:144} INFO - Author 'Florian Richoux' already exists with ID 28.
+[2024-11-10T12:50:52.768+0000] {pipline.py:144} INFO - Author 'David Churchill' already exists with ID 29.
+[2024-11-10T12:50:52.770+0000] {pipline.py:144} INFO - Author 'Mike Preuss' already exists with ID 30.
+[2024-11-10T12:50:52.776+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:53.232+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:53.397+0000] {pipline.py:247} INFO - Publication 'A Survey of Real-Time Strategy Game AI Research and Competition in StarCraft' inserted successfully.
+[2024-11-10T12:50:53.407+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:53.423+0000] {pipline.py:144} INFO - Author 'Alexander Heimerl' already exists with ID 31.
+[2024-11-10T12:50:53.426+0000] {pipline.py:144} INFO - Author 'Katharina Weitz' already exists with ID 32.
+[2024-11-10T12:50:53.430+0000] {pipline.py:144} INFO - Author 'Tobias Baur' already exists with ID 33.
+[2024-11-10T12:50:53.433+0000] {pipline.py:144} INFO - Author 'Elisabeth André' already exists with ID 34.
+[2024-11-10T12:50:53.440+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:53.599+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:53.621+0000] {pipline.py:247} INFO - Publication 'Unraveling ML Models of Emotion With NOVA: Multi-Level Explainable AI for Non-Experts' inserted successfully.
+[2024-11-10T12:50:53.627+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:53.638+0000] {pipline.py:144} INFO - Author 'Jiaqiu Ai' already exists with ID 35.
+[2024-11-10T12:50:53.640+0000] {pipline.py:144} INFO - Author 'Weibao Xue' already exists with ID 36.
+[2024-11-10T12:50:53.643+0000] {pipline.py:144} INFO - Author 'Yanan Zhu' already exists with ID 37.
+[2024-11-10T12:50:53.645+0000] {pipline.py:144} INFO - Author 'Shuo Zhuang' already exists with ID 38.
+[2024-11-10T12:50:53.647+0000] {pipline.py:144} INFO - Author 'Congan Xu' already exists with ID 39.
+[2024-11-10T12:50:53.649+0000] {pipline.py:144} INFO - Author 'Hao Yan' already exists with ID 40.
+[2024-11-10T12:50:53.655+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:53.705+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:53.705+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Geoscience and Remote Sensing' was not inserted.
+[2024-11-10T12:50:53.711+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:53.722+0000] {pipline.py:144} INFO - Author 'Jianrong Tao' already exists with ID 41.
+[2024-11-10T12:50:53.725+0000] {pipline.py:144} INFO - Author 'Yu Xiong' already exists with ID 42.
+[2024-11-10T12:50:53.727+0000] {pipline.py:144} INFO - Author 'Shiwei Zhao' already exists with ID 43.
+[2024-11-10T12:50:53.729+0000] {pipline.py:144} INFO - Author 'Runze Wu' already exists with ID 44.
+[2024-11-10T12:50:53.731+0000] {pipline.py:144} INFO - Author 'Xudong Shen' already exists with ID 45.
+[2024-11-10T12:50:53.734+0000] {pipline.py:144} INFO - Author 'Tangjie Lyu' already exists with ID 46.
+[2024-11-10T12:50:53.740+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:53.789+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:53.814+0000] {pipline.py:247} INFO - Publication 'Explainable AI for Cheating Detection and Churn Prediction in Online Games' inserted successfully.
+[2024-11-10T12:50:53.821+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:53.836+0000] {pipline.py:144} INFO - Author 'Caner Hazirbas' already exists with ID 47.
+[2024-11-10T12:50:53.838+0000] {pipline.py:144} INFO - Author 'Joanna Bitton' already exists with ID 48.
+[2024-11-10T12:50:53.840+0000] {pipline.py:144} INFO - Author 'Brian Dolhansky' already exists with ID 49.
+[2024-11-10T12:50:53.843+0000] {pipline.py:144} INFO - Author 'Jacqueline Pan' already exists with ID 50.
+[2024-11-10T12:50:53.845+0000] {pipline.py:144} INFO - Author 'Albert Gordo' already exists with ID 51.
+[2024-11-10T12:50:53.847+0000] {pipline.py:144} INFO - Author 'Cristian Canton Ferrer' already exists with ID 52.
+[2024-11-10T12:50:53.853+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:53.886+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:53.906+0000] {pipline.py:247} INFO - Publication 'Towards Measuring Fairness in AI: The Casual Conversations Dataset' inserted successfully.
+[2024-11-10T12:50:53.912+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:53.923+0000] {pipline.py:144} INFO - Author 'Andreas Holzinger' already exists with ID 53.
+[2024-11-10T12:50:53.925+0000] {pipline.py:144} INFO - Author 'Michaela Kargl' already exists with ID 54.
+[2024-11-10T12:50:53.927+0000] {pipline.py:144} INFO - Author 'Bettina Kipperer' already exists with ID 55.
+[2024-11-10T12:50:53.929+0000] {pipline.py:144} INFO - Author 'Peter Regitnig' already exists with ID 56.
+[2024-11-10T12:50:53.931+0000] {pipline.py:144} INFO - Author 'Markus Plass' already exists with ID 57.
+[2024-11-10T12:50:53.934+0000] {pipline.py:144} INFO - Author 'Heimo Müller' already exists with ID 58.
+[2024-11-10T12:50:53.940+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:53.961+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:53.961+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:53.967+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:53.978+0000] {pipline.py:144} INFO - Author 'Ana Salta' already exists with ID 59.
+[2024-11-10T12:50:53.980+0000] {pipline.py:144} INFO - Author 'Rui Prada' already exists with ID 60.
+[2024-11-10T12:50:53.982+0000] {pipline.py:144} INFO - Author 'Francisco S. Melo' already exists with ID 61.
+[2024-11-10T12:50:53.988+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.051+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.074+0000] {pipline.py:247} INFO - Publication 'A Game AI Competition to Foster Collaborative AI Research and Development' inserted successfully.
+[2024-11-10T12:50:54.080+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.090+0000] {pipline.py:144} INFO - Author 'Dayoung Kim' already exists with ID 62.
+[2024-11-10T12:50:54.093+0000] {pipline.py:144} INFO - Author 'Qin Zhu' already exists with ID 63.
+[2024-11-10T12:50:54.095+0000] {pipline.py:144} INFO - Author 'Hoda Eldardiry' already exists with ID 64.
+[2024-11-10T12:50:54.101+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.112+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:50:54.113+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T12:50:54.119+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.135+0000] {pipline.py:144} INFO - Author 'Anna Namrita Gummadi' already exists with ID 65.
+[2024-11-10T12:50:54.138+0000] {pipline.py:144} INFO - Author 'Jerry C. Napier' already exists with ID 66.
+[2024-11-10T12:50:54.140+0000] {pipline.py:144} INFO - Author 'Mustafa Abdallah' already exists with ID 67.
+[2024-11-10T12:50:54.147+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.172+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:54.172+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:54.178+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.189+0000] {pipline.py:144} INFO - Author 'Andreas Holzinger' already exists with ID 53.
+[2024-11-10T12:50:54.191+0000] {pipline.py:144} INFO - Author 'Iztok Fister' already exists with ID 68.
+[2024-11-10T12:50:54.193+0000] {pipline.py:144} INFO - Author 'Iztok Fister' already exists with ID 68.
+[2024-11-10T12:50:54.195+0000] {pipline.py:144} INFO - Author 'Hans-Peter Kaul' already exists with ID 69.
+[2024-11-10T12:50:54.197+0000] {pipline.py:144} INFO - Author 'Senthold Asseng' already exists with ID 70.
+[2024-11-10T12:50:54.203+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.226+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:54.226+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:54.232+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.243+0000] {pipline.py:144} INFO - Author 'Hayoung Lee' already exists with ID 71.
+[2024-11-10T12:50:54.245+0000] {pipline.py:144} INFO - Author 'Jongho Park' already exists with ID 72.
+[2024-11-10T12:50:54.247+0000] {pipline.py:144} INFO - Author 'Sungho Kang' already exists with ID 73.
+[2024-11-10T12:50:54.253+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.324+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.348+0000] {pipline.py:247} INFO - Publication 'An Area-Efficient Systolic Array Redundancy Architecture for Reliable AI Accelerator' inserted successfully.
+[2024-11-10T12:50:54.354+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.367+0000] {pipline.py:144} INFO - Author 'Minrui Xu' already exists with ID 74.
+[2024-11-10T12:50:54.369+0000] {pipline.py:144} INFO - Author 'Hongyang Du' already exists with ID 75.
+[2024-11-10T12:50:54.371+0000] {pipline.py:144} INFO - Author 'Dusit Niyato' already exists with ID 76.
+[2024-11-10T12:50:54.373+0000] {pipline.py:144} INFO - Author 'Jiawen Kang' already exists with ID 77.
+[2024-11-10T12:50:54.375+0000] {pipline.py:144} INFO - Author 'Zehui Xiong' already exists with ID 78.
+[2024-11-10T12:50:54.377+0000] {pipline.py:144} INFO - Author 'Shiwen Mao' already exists with ID 79.
+[2024-11-10T12:50:54.383+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.469+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.492+0000] {pipline.py:247} INFO - Publication 'Unleashing the Power of Edge-Cloud Generative AI in Mobile Networks: A Survey of AIGC Services' inserted successfully.
+[2024-11-10T12:50:54.498+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.514+0000] {pipline.py:144} INFO - Author 'Mostafa Al-Emran' already exists with ID 80.
+[2024-11-10T12:50:54.517+0000] {pipline.py:144} INFO - Author 'Bassam Abu-Hijleh' already exists with ID 81.
+[2024-11-10T12:50:54.519+0000] {pipline.py:144} INFO - Author 'AbdulRahman A. Alsewari' already exists with ID 82.
+[2024-11-10T12:50:54.526+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.580+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:54.581+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Engineering Management' was not inserted.
+[2024-11-10T12:50:54.587+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.598+0000] {pipline.py:144} INFO - Author 'David Melhart' already exists with ID 83.
+[2024-11-10T12:50:54.601+0000] {pipline.py:144} INFO - Author 'Julian Togelius' already exists with ID 84.
+[2024-11-10T12:50:54.602+0000] {pipline.py:144} INFO - Author 'Benedikte Mikkelsen' already exists with ID 85.
+[2024-11-10T12:50:54.604+0000] {pipline.py:144} INFO - Author 'Christoffer Holmgård' already exists with ID 86.
+[2024-11-10T12:50:54.606+0000] {pipline.py:144} INFO - Author 'Georgios N. Yannakakis' already exists with ID 87.
+[2024-11-10T12:50:54.612+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.670+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.690+0000] {pipline.py:247} INFO - Publication 'The Ethics of AI in Games' inserted successfully.
+[2024-11-10T12:50:54.696+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.706+0000] {pipline.py:144} INFO - Author 'Osvaldo Arreche' already exists with ID 88.
+[2024-11-10T12:50:54.709+0000] {pipline.py:144} INFO - Author 'Tanish R. Guntur' already exists with ID 89.
+[2024-11-10T12:50:54.711+0000] {pipline.py:144} INFO - Author 'Jack W. Roberts' already exists with ID 90.
+[2024-11-10T12:50:54.713+0000] {pipline.py:144} INFO - Author 'Mustafa Abdallah' already exists with ID 67.
+[2024-11-10T12:50:54.719+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.740+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:54.741+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:54.746+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.758+0000] {pipline.py:144} INFO - Author 'Tanish Patel' already exists with ID 91.
+[2024-11-10T12:50:54.760+0000] {pipline.py:144} INFO - Author 'Ramalingam Murugan' already exists with ID 92.
+[2024-11-10T12:50:54.762+0000] {pipline.py:144} INFO - Author 'Gokul Yenduri' already exists with ID 93.
+[2024-11-10T12:50:54.765+0000] {pipline.py:144} INFO - Author 'Rutvij H. Jhaveri' already exists with ID 94.
+[2024-11-10T12:50:54.767+0000] {pipline.py:144} INFO - Author 'Hichem Snoussi' already exists with ID 95.
+[2024-11-10T12:50:54.769+0000] {pipline.py:144} INFO - Author 'Tarek Gaber' already exists with ID 96.
+[2024-11-10T12:50:54.775+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.796+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:54.797+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:54.802+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.813+0000] {pipline.py:144} INFO - Author 'Tariq Shahzad' already exists with ID 97.
+[2024-11-10T12:50:54.816+0000] {pipline.py:144} INFO - Author 'Muhammad Saleem' already exists with ID 98.
+[2024-11-10T12:50:54.818+0000] {pipline.py:144} INFO - Author 'Muhammad Sajid Farooq' already exists with ID 99.
+[2024-11-10T12:50:54.820+0000] {pipline.py:144} INFO - Author 'Sagheer Abbas' already exists with ID 100.
+[2024-11-10T12:50:54.822+0000] {pipline.py:144} INFO - Author 'Muhammad Adnan Khan' already exists with ID 101.
+[2024-11-10T12:50:54.825+0000] {pipline.py:144} INFO - Author 'Khmaies Ouahada' already exists with ID 102.
+[2024-11-10T12:50:54.830+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.851+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:54.852+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:54.858+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.869+0000] {pipline.py:144} INFO - Author 'Pranith Shetty' already exists with ID 103.
+[2024-11-10T12:50:54.875+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.898+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:54.899+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:54.904+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:54.926+0000] {pipline.py:156} INFO - Author 'Sangjun Lee' added with ID 106.
+[2024-11-10T12:50:54.929+0000] {pipline.py:144} INFO - Author 'Jongho Park' already exists with ID 72.
+[2024-11-10T12:50:54.942+0000] {pipline.py:156} INFO - Author 'Sungwhan Park' added with ID 107.
+[2024-11-10T12:50:54.956+0000] {pipline.py:156} INFO - Author 'Hyemin Kim' added with ID 108.
+[2024-11-10T12:50:54.958+0000] {pipline.py:144} INFO - Author 'Sungho Kang' already exists with ID 73.
+[2024-11-10T12:50:54.964+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:55.049+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:55.070+0000] {pipline.py:247} INFO - Publication 'A New Zero-Overhead Test Method for Low-Power AI Accelerators' inserted successfully.
+[2024-11-10T12:50:55.076+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:55.087+0000] {pipline.py:144} INFO - Author 'Kazuo Okamura' already exists with ID 104.
+[2024-11-10T12:50:55.089+0000] {pipline.py:144} INFO - Author 'Seiji Yamada' already exists with ID 105.
+[2024-11-10T12:50:55.095+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:55.116+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:55.117+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:55.122+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:55.145+0000] {pipline.py:156} INFO - Author 'Kashif Alam' added with ID 109.
+[2024-11-10T12:50:55.161+0000] {pipline.py:156} INFO - Author 'Kashif Kifayat' added with ID 110.
+[2024-11-10T12:50:55.178+0000] {pipline.py:156} INFO - Author 'Gabriel Avelino Sampedro' added with ID 111.
+[2024-11-10T12:50:55.189+0000] {pipline.py:156} INFO - Author 'Vincent Karovič' added with ID 112.
+[2024-11-10T12:50:55.201+0000] {pipline.py:156} INFO - Author 'Tariq Naeem' added with ID 113.
+[2024-11-10T12:50:55.208+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:55.234+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:55.235+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:55.240+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:55.263+0000] {pipline.py:156} INFO - Author 'Sunyoung Park' added with ID 114.
+[2024-11-10T12:50:55.278+0000] {pipline.py:156} INFO - Author 'Hyun K. Kim' added with ID 115.
+[2024-11-10T12:50:55.289+0000] {pipline.py:156} INFO - Author 'Jaehyun Park' added with ID 116.
+[2024-11-10T12:50:55.303+0000] {pipline.py:156} INFO - Author 'Yuryeon Lee' added with ID 117.
+[2024-11-10T12:50:55.309+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:55.330+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:55.331+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:55.337+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:55.366+0000] {pipline.py:156} INFO - Author 'S. Shridevi' added with ID 118.
+[2024-11-10T12:50:55.379+0000] {pipline.py:156} INFO - Author 'Susan Elias' added with ID 119.
+[2024-11-10T12:50:55.385+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:55.409+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:55.410+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:55.416+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:55.438+0000] {pipline.py:156} INFO - Author 'Omar Ibrahim Aboulola' added with ID 120.
+[2024-11-10T12:50:55.448+0000] {pipline.py:156} INFO - Author 'Ebtisam Abdullah Alabdulqader' added with ID 121.
+[2024-11-10T12:50:55.460+0000] {pipline.py:156} INFO - Author 'Aisha Ahmed AlArfaj' added with ID 122.
+[2024-11-10T12:50:55.470+0000] {pipline.py:156} INFO - Author 'Shtwai Alsubai' added with ID 123.
+[2024-11-10T12:50:55.482+0000] {pipline.py:156} INFO - Author 'Tai-Hoon Kim' added with ID 124.
+[2024-11-10T12:50:55.489+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:55.516+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:55.516+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:55.524+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:55.550+0000] {pipline.py:156} INFO - Author 'Deepak Bhaskar Acharya' added with ID 125.
+[2024-11-10T12:50:55.560+0000] {pipline.py:156} INFO - Author 'B. Divya' added with ID 126.
+[2024-11-10T12:50:55.575+0000] {pipline.py:156} INFO - Author 'Karthigeyan Kuppan' added with ID 127.
+[2024-11-10T12:50:55.582+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:55.611+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:55.612+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:55.619+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:55.643+0000] {pipline.py:156} INFO - Author 'Sin Kit Lo' added with ID 128.
+[2024-11-10T12:50:55.656+0000] {pipline.py:156} INFO - Author 'Yue Liu' added with ID 129.
+[2024-11-10T12:50:55.668+0000] {pipline.py:156} INFO - Author 'Qinghua Lu' added with ID 130.
+[2024-11-10T12:50:55.680+0000] {pipline.py:156} INFO - Author 'Chen Wang' added with ID 131.
+[2024-11-10T12:50:55.694+0000] {pipline.py:156} INFO - Author 'Xiwei Xu' added with ID 132.
+[2024-11-10T12:50:55.706+0000] {pipline.py:156} INFO - Author 'Hye-Young Paik' added with ID 133.
+[2024-11-10T12:50:55.712+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:55.743+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:55.744+0000] {pipline.py:270} WARNING - Journal 'IEEE Internet of Things Journal' was not inserted.
+[2024-11-10T12:50:55.749+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:55.770+0000] {pipline.py:156} INFO - Author 'Wan Jou She' added with ID 134.
+[2024-11-10T12:50:55.794+0000] {pipline.py:156} INFO - Author 'Chee Siang Ang' added with ID 135.
+[2024-11-10T12:50:55.808+0000] {pipline.py:156} INFO - Author 'Robert A. Neimeyer' added with ID 136.
+[2024-11-10T12:50:55.823+0000] {pipline.py:156} INFO - Author 'Laurie A. Burke' added with ID 137.
+[2024-11-10T12:50:55.836+0000] {pipline.py:156} INFO - Author 'Yihong Zhang' added with ID 138.
+[2024-11-10T12:50:55.851+0000] {pipline.py:156} INFO - Author 'Adam Jatowt' added with ID 139.
+[2024-11-10T12:50:55.857+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:55.878+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:55.879+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:55.884+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:55.906+0000] {pipline.py:156} INFO - Author 'Elias G. Carayannis' added with ID 140.
+[2024-11-10T12:50:55.923+0000] {pipline.py:156} INFO - Author 'Roman Dumitrescu' added with ID 141.
+[2024-11-10T12:50:55.934+0000] {pipline.py:156} INFO - Author 'Tommy Falkowski' added with ID 142.
+[2024-11-10T12:50:55.949+0000] {pipline.py:156} INFO - Author 'Nikos-Rigert Zota' added with ID 143.
+[2024-11-10T12:50:55.955+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:56.009+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:56.010+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Engineering Management' was not inserted.
+[2024-11-10T12:50:56.016+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:56.036+0000] {pipline.py:156} INFO - Author 'Jiyeong Chae' added with ID 144.
+[2024-11-10T12:50:56.049+0000] {pipline.py:156} INFO - Author 'Sanghoon Lee' added with ID 145.
+[2024-11-10T12:50:56.059+0000] {pipline.py:156} INFO - Author 'Junhyung Jang' added with ID 146.
+[2024-11-10T12:50:56.070+0000] {pipline.py:156} INFO - Author 'Seohyung Hong' added with ID 147.
+[2024-11-10T12:50:56.082+0000] {pipline.py:156} INFO - Author 'Kyung-Joon Park' added with ID 148.
+[2024-11-10T12:50:56.089+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:56.113+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:50:56.113+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Industrial Cyber-Physical Systems' was not inserted.
+[2024-11-10T12:50:56.119+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:56.143+0000] {pipline.py:156} INFO - Author 'Vikas Hassija' added with ID 149.
+[2024-11-10T12:50:56.156+0000] {pipline.py:156} INFO - Author 'Arjab Chakrabarti' added with ID 150.
+[2024-11-10T12:50:56.169+0000] {pipline.py:156} INFO - Author 'Anushka Singh' added with ID 151.
+[2024-11-10T12:50:56.180+0000] {pipline.py:156} INFO - Author 'Vinay Chamola' added with ID 152.
+[2024-11-10T12:50:56.191+0000] {pipline.py:156} INFO - Author 'Biplab Sikdar' added with ID 153.
+[2024-11-10T12:50:56.197+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:56.221+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:56.222+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:56.227+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:56.249+0000] {pipline.py:156} INFO - Author 'Sander Bakkes' added with ID 154.
+[2024-11-10T12:50:56.260+0000] {pipline.py:156} INFO - Author 'Pieter Spronck' added with ID 155.
+[2024-11-10T12:50:56.275+0000] {pipline.py:156} INFO - Author 'Jaap van den Herik' added with ID 156.
+[2024-11-10T12:50:56.281+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:56.324+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:56.346+0000] {pipline.py:247} INFO - Publication 'Rapid and Reliable Adaptation of Video Game AI' inserted successfully.
+[2024-11-10T12:50:56.351+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:56.372+0000] {pipline.py:156} INFO - Author 'Ronan Hamon' added with ID 157.
+[2024-11-10T12:50:56.383+0000] {pipline.py:156} INFO - Author 'Henrik Junklewitz' added with ID 158.
+[2024-11-10T12:50:56.396+0000] {pipline.py:156} INFO - Author 'Josep Soler Garrido' added with ID 159.
+[2024-11-10T12:50:56.413+0000] {pipline.py:156} INFO - Author 'Ignacio Sanchez' added with ID 160.
+[2024-11-10T12:50:56.419+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:56.441+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:56.441+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:56.447+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:56.467+0000] {pipline.py:156} INFO - Author 'Nancy Ambritta P.' added with ID 161.
+[2024-11-10T12:50:56.481+0000] {pipline.py:156} INFO - Author 'Parikshit N. Mahalle' added with ID 162.
+[2024-11-10T12:50:56.492+0000] {pipline.py:156} INFO - Author 'Rajkumar V. Patil' added with ID 163.
+[2024-11-10T12:50:56.504+0000] {pipline.py:156} INFO - Author 'Nilanjan Dey' added with ID 164.
+[2024-11-10T12:50:56.516+0000] {pipline.py:156} INFO - Author 'Rubén González Crespo' added with ID 165.
+[2024-11-10T12:50:56.529+0000] {pipline.py:156} INFO - Author 'R. Simon Sherratt' added with ID 166.
+[2024-11-10T12:50:56.534+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:56.587+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:56.615+0000] {pipline.py:247} INFO - Publication 'Explainable AI for Human-Centric Ethical IoT Systems' inserted successfully.
+[2024-11-10T12:50:56.621+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:56.641+0000] {pipline.py:156} INFO - Author 'Volker Bilgram' added with ID 167.
+[2024-11-10T12:50:56.655+0000] {pipline.py:156} INFO - Author 'Felix Laarmann' added with ID 168.
+[2024-11-10T12:50:56.661+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:56.683+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:50:56.684+0000] {pipline.py:270} WARNING - Journal 'IEEE Engineering Management Review' was not inserted.
+[2024-11-10T12:50:56.689+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:56.713+0000] {pipline.py:156} INFO - Author 'Arif Ali Khan' added with ID 169.
+[2024-11-10T12:50:56.725+0000] {pipline.py:156} INFO - Author 'Muhammad Azeem Akbar' added with ID 170.
+[2024-11-10T12:50:56.739+0000] {pipline.py:156} INFO - Author 'Mahdi Fahmideh' added with ID 171.
+[2024-11-10T12:50:56.750+0000] {pipline.py:156} INFO - Author 'Peng Liang' added with ID 172.
+[2024-11-10T12:50:56.763+0000] {pipline.py:156} INFO - Author 'Muhammad Waseem' added with ID 173.
+[2024-11-10T12:50:56.776+0000] {pipline.py:156} INFO - Author 'Aakash Ahmad' added with ID 174.
+[2024-11-10T12:50:56.782+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:56.823+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:56.845+0000] {pipline.py:247} INFO - Publication 'AI Ethics: An Empirical Study on the Views of Practitioners and Lawmakers' inserted successfully.
+[2024-11-10T12:50:56.851+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:56.873+0000] {pipline.py:156} INFO - Author 'Yosuke Fukuchi' added with ID 175.
+[2024-11-10T12:50:56.875+0000] {pipline.py:144} INFO - Author 'Seiji Yamada' already exists with ID 105.
+[2024-11-10T12:50:56.881+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:56.902+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:56.903+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:56.909+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:56.931+0000] {pipline.py:156} INFO - Author 'Aparna Sinha' added with ID 176.
+[2024-11-10T12:50:56.946+0000] {pipline.py:156} INFO - Author 'Debanjan Das' added with ID 177.
+[2024-11-10T12:50:56.951+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:56.997+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:57.022+0000] {pipline.py:247} INFO - Publication 'XAI-LCS: Explainable AI-Based Fault Diagnosis of Low-Cost Sensors' inserted successfully.
+[2024-11-10T12:50:57.028+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:57.053+0000] {pipline.py:156} INFO - Author 'Abdulkadir Celik' added with ID 178.
+[2024-11-10T12:50:57.066+0000] {pipline.py:156} INFO - Author 'Ahmed M. Eltawil' added with ID 179.
+[2024-11-10T12:50:57.072+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:57.117+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:57.141+0000] {pipline.py:247} INFO - Publication 'At the Dawn of Generative AI Era: A Tutorial-cum-Survey on New Frontiers in 6G Wireless Intelligence' inserted successfully.
+[2024-11-10T12:50:57.147+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:57.172+0000] {pipline.py:156} INFO - Author 'Joseph R. Carvalko' added with ID 180.
+[2024-11-10T12:50:57.179+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:57.190+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:50:57.191+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T12:50:57.197+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:57.221+0000] {pipline.py:156} INFO - Author 'Yiyun Wang' added with ID 181.
+[2024-11-10T12:50:57.234+0000] {pipline.py:156} INFO - Author 'Jin Wu' added with ID 182.
+[2024-11-10T12:50:57.246+0000] {pipline.py:156} INFO - Author 'Fang Chen' added with ID 183.
+[2024-11-10T12:50:57.259+0000] {pipline.py:156} INFO - Author 'Zhu Wang' added with ID 184.
+[2024-11-10T12:50:57.271+0000] {pipline.py:156} INFO - Author 'Jingjing Li' added with ID 185.
+[2024-11-10T12:50:57.281+0000] {pipline.py:156} INFO - Author 'Liping Wang' added with ID 186.
+[2024-11-10T12:50:57.288+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:57.311+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:57.312+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:57.317+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:57.342+0000] {pipline.py:156} INFO - Author 'Alex P. James' added with ID 187.
+[2024-11-10T12:50:57.348+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:57.411+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:57.437+0000] {pipline.py:247} INFO - Publication 'The Why, What, and How of Artificial General Intelligence Chip Development' inserted successfully.
+[2024-11-10T12:50:57.442+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:57.464+0000] {pipline.py:156} INFO - Author 'Deafallah Alsadie' added with ID 188.
+[2024-11-10T12:50:57.472+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:57.505+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:57.506+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:57.513+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:57.545+0000] {pipline.py:156} INFO - Author 'Liang Ou' added with ID 189.
+[2024-11-10T12:50:57.565+0000] {pipline.py:156} INFO - Author 'Yu-Chen Chang' added with ID 190.
+[2024-11-10T12:50:57.585+0000] {pipline.py:156} INFO - Author 'Yu-Kai Wang' added with ID 191.
+[2024-11-10T12:50:57.599+0000] {pipline.py:156} INFO - Author 'Chin-Teng Lin' added with ID 192.
+[2024-11-10T12:50:57.606+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:57.643+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:50:57.644+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Fuzzy Systems' was not inserted.
+[2024-11-10T12:50:57.650+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:57.677+0000] {pipline.py:156} INFO - Author 'Abhishek Kumar' added with ID 193.
+[2024-11-10T12:50:57.690+0000] {pipline.py:156} INFO - Author 'Upendra K. Singh' added with ID 194.
+[2024-11-10T12:50:57.704+0000] {pipline.py:156} INFO - Author 'Biswajeet Pradhan' added with ID 195.
+[2024-11-10T12:50:57.711+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:57.740+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:50:57.741+0000] {pipline.py:270} WARNING - Journal 'IEEE Geoscience and Remote Sensing Letters' was not inserted.
+[2024-11-10T12:50:57.747+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:57.773+0000] {pipline.py:156} INFO - Author 'Francisco Maciá-Pérez' added with ID 196.
+[2024-11-10T12:50:57.790+0000] {pipline.py:156} INFO - Author 'Iren Lorenzo-Fonseca' added with ID 197.
+[2024-11-10T12:50:57.804+0000] {pipline.py:156} INFO - Author 'José-Vicente Berná-Martínez' added with ID 198.
+[2024-11-10T12:50:57.811+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:57.825+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:50:57.827+0000] {pipline.py:270} WARNING - Journal 'IEEE Embedded Systems Letters' was not inserted.
+[2024-11-10T12:50:57.833+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:57.861+0000] {pipline.py:156} INFO - Author 'Shen Wang' added with ID 199.
+[2024-11-10T12:50:57.878+0000] {pipline.py:156} INFO - Author 'M. Atif Qureshi' added with ID 200.
+[2024-11-10T12:50:57.889+0000] {pipline.py:156} INFO - Author 'Luis Miralles-Pechuán' added with ID 201.
+[2024-11-10T12:50:57.903+0000] {pipline.py:156} INFO - Author 'Thien Huynh-The' added with ID 202.
+[2024-11-10T12:50:57.922+0000] {pipline.py:156} INFO - Author 'Thippa Reddy Gadekallu' added with ID 203.
+[2024-11-10T12:50:57.942+0000] {pipline.py:156} INFO - Author 'Madhusanka Liyanage' added with ID 204.
+[2024-11-10T12:50:57.949+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:57.995+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:58.024+0000] {pipline.py:247} INFO - Publication 'Explainable AI for 6G Use Cases: Technical Aspects and Research Challenges' inserted successfully.
+[2024-11-10T12:50:58.031+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:58.062+0000] {pipline.py:156} INFO - Author 'Yuyi Mao' added with ID 205.
+[2024-11-10T12:50:58.080+0000] {pipline.py:156} INFO - Author 'Xianghao Yu' added with ID 206.
+[2024-11-10T12:50:58.100+0000] {pipline.py:156} INFO - Author 'Kaibin Huang' added with ID 207.
+[2024-11-10T12:50:58.116+0000] {pipline.py:156} INFO - Author 'Ying-Jun Angela Zhang' added with ID 208.
+[2024-11-10T12:50:58.133+0000] {pipline.py:156} INFO - Author 'Jun Zhang' added with ID 209.
+[2024-11-10T12:50:58.141+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:58.253+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:58.278+0000] {pipline.py:247} INFO - Publication 'Green Edge AI: A Contemporary Survey' inserted successfully.
+[2024-11-10T12:50:58.285+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:58.309+0000] {pipline.py:156} INFO - Author 'Simona Tiribelli' added with ID 210.
+[2024-11-10T12:50:58.322+0000] {pipline.py:156} INFO - Author 'Sofia Pansoni' added with ID 211.
+[2024-11-10T12:50:58.340+0000] {pipline.py:156} INFO - Author 'Emanuele Frontoni' added with ID 212.
+[2024-11-10T12:50:58.357+0000] {pipline.py:156} INFO - Author 'Benedetta Giovanola' added with ID 213.
+[2024-11-10T12:50:58.366+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:58.383+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:50:58.384+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T12:50:58.392+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:58.422+0000] {pipline.py:156} INFO - Author 'Recep Ozalp' added with ID 214.
+[2024-11-10T12:50:58.442+0000] {pipline.py:156} INFO - Author 'Aysegul Ucar' added with ID 215.
+[2024-11-10T12:50:58.457+0000] {pipline.py:156} INFO - Author 'Cuneyt Guzelis' added with ID 216.
+[2024-11-10T12:50:58.464+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:58.491+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:58.492+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:58.498+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:58.522+0000] {pipline.py:156} INFO - Author 'Shaojun Wei' added with ID 217.
+[2024-11-10T12:50:58.539+0000] {pipline.py:156} INFO - Author 'Xinhan Lin' added with ID 218.
+[2024-11-10T12:50:58.552+0000] {pipline.py:156} INFO - Author 'Fengbin Tu' added with ID 219.
+[2024-11-10T12:50:58.564+0000] {pipline.py:156} INFO - Author 'Yang Wang' added with ID 220.
+[2024-11-10T12:50:58.577+0000] {pipline.py:156} INFO - Author 'Leibo Liu' added with ID 221.
+[2024-11-10T12:50:58.589+0000] {pipline.py:156} INFO - Author 'Shouyi Yin' added with ID 222.
+[2024-11-10T12:50:58.596+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:58.621+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:50:58.621+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Circuits and Systems I: Regular Papers' was not inserted.
+[2024-11-10T12:50:58.628+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:58.654+0000] {pipline.py:156} INFO - Author 'Giovanna Martínez-Arellano' added with ID 223.
+[2024-11-10T12:50:58.666+0000] {pipline.py:156} INFO - Author 'Richard Cant' added with ID 224.
+[2024-11-10T12:50:58.679+0000] {pipline.py:156} INFO - Author 'David Woods' added with ID 225.
+[2024-11-10T12:50:58.686+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:58.732+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:58.755+0000] {pipline.py:247} INFO - Publication 'Creating AI Characters for Fighting Games Using Genetic Programming' inserted successfully.
+[2024-11-10T12:50:58.761+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:58.784+0000] {pipline.py:156} INFO - Author 'Dongsoo Moon' added with ID 226.
+[2024-11-10T12:50:58.796+0000] {pipline.py:156} INFO - Author 'Seongjin Ahn' added with ID 227.
+[2024-11-10T12:50:58.796+0000] {pipline.py:278} ERROR - Error processing publication 'A Study on Functional Requirements and Inspection Items for AI System Change Management and Model Improvement on the Web Platform': time data 'September 2024' does not match format '%d %B %Y'
+[2024-11-10T12:50:58.802+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:58.825+0000] {pipline.py:156} INFO - Author 'Ishaya Gambo' added with ID 228.
+[2024-11-10T12:50:58.837+0000] {pipline.py:156} INFO - Author 'Rhodes Massenon' added with ID 229.
+[2024-11-10T12:50:58.851+0000] {pipline.py:156} INFO - Author 'Chia-Chen Lin' added with ID 230.
+[2024-11-10T12:50:58.862+0000] {pipline.py:156} INFO - Author 'Roseline Oluwaseun Ogundokun' added with ID 231.
+[2024-11-10T12:50:58.876+0000] {pipline.py:156} INFO - Author 'Saurabh Agarwal' added with ID 232.
+[2024-11-10T12:50:58.892+0000] {pipline.py:156} INFO - Author 'Wooguil Pak' added with ID 233.
+[2024-11-10T12:50:58.897+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:58.919+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:58.920+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:58.925+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:58.948+0000] {pipline.py:156} INFO - Author 'Ship Peng Xu' added with ID 234.
+[2024-11-10T12:50:58.960+0000] {pipline.py:156} INFO - Author 'Ke Wang' added with ID 235.
+[2024-11-10T12:50:58.973+0000] {pipline.py:156} INFO - Author 'Md. Rafiul Hassan' added with ID 236.
+[2024-11-10T12:50:58.986+0000] {pipline.py:156} INFO - Author 'Mohammad Mehedi Hassan' added with ID 237.
+[2024-11-10T12:50:59.006+0000] {pipline.py:156} INFO - Author 'Chien-Ming Chen' added with ID 238.
+[2024-11-10T12:50:59.013+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:59.038+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:50:59.039+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Industrial Informatics' was not inserted.
+[2024-11-10T12:50:59.045+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:59.070+0000] {pipline.py:156} INFO - Author 'M. Raihan' added with ID 239.
+[2024-11-10T12:50:59.089+0000] {pipline.py:156} INFO - Author 'Anjan Debnath' added with ID 240.
+[2024-11-10T12:50:59.101+0000] {pipline.py:156} INFO - Author 'Prokash Chondra Adhikary' added with ID 241.
+[2024-11-10T12:50:59.114+0000] {pipline.py:156} INFO - Author 'Mehedi Masud' added with ID 242.
+[2024-11-10T12:50:59.129+0000] {pipline.py:156} INFO - Author 'Hossam Meshref' added with ID 243.
+[2024-11-10T12:50:59.141+0000] {pipline.py:156} INFO - Author 'Anupam Kumar Bairagi' added with ID 244.
+[2024-11-10T12:50:59.147+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:59.168+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:59.169+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:59.175+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:59.196+0000] {pipline.py:156} INFO - Author 'Putthiporn Thanathamathee' added with ID 245.
+[2024-11-10T12:50:59.209+0000] {pipline.py:156} INFO - Author 'Siriporn Sawangarreerak' added with ID 246.
+[2024-11-10T12:50:59.224+0000] {pipline.py:156} INFO - Author 'Dinna Nina Mohd Nizam' added with ID 247.
+[2024-11-10T12:50:59.230+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:59.254+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:59.255+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:50:59.260+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:59.282+0000] {pipline.py:156} INFO - Author 'Jonathan Burton-Barr' added with ID 248.
+[2024-11-10T12:50:59.296+0000] {pipline.py:156} INFO - Author 'Basura Fernando' added with ID 249.
+[2024-11-10T12:50:59.312+0000] {pipline.py:156} INFO - Author 'Deepu Rajan' added with ID 250.
+[2024-11-10T12:50:59.320+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:59.376+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:59.404+0000] {pipline.py:247} INFO - Publication 'Activation Control of Vision Models for Sustainable AI Systems' inserted successfully.
+[2024-11-10T12:50:59.411+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:59.443+0000] {pipline.py:156} INFO - Author 'Nathan J. McNeese' added with ID 251.
+[2024-11-10T12:50:59.461+0000] {pipline.py:156} INFO - Author 'Beau G. Schelble' added with ID 252.
+[2024-11-10T12:50:59.473+0000] {pipline.py:156} INFO - Author 'Lorenzo Barberis Canonico' added with ID 253.
+[2024-11-10T12:50:59.487+0000] {pipline.py:156} INFO - Author 'Mustafa Demir' added with ID 254.
+[2024-11-10T12:50:59.493+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:59.519+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:50:59.520+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Human-Machine Systems' was not inserted.
+[2024-11-10T12:50:59.525+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:59.551+0000] {pipline.py:156} INFO - Author 'Deheng Ye' added with ID 255.
+[2024-11-10T12:50:59.562+0000] {pipline.py:156} INFO - Author 'Guibin Chen' added with ID 256.
+[2024-11-10T12:50:59.589+0000] {pipline.py:156} INFO - Author 'Peilin Zhao' added with ID 257.
+[2024-11-10T12:50:59.602+0000] {pipline.py:156} INFO - Author 'Fuhao Qiu' added with ID 258.
+[2024-11-10T12:50:59.619+0000] {pipline.py:156} INFO - Author 'Bo Yuan' added with ID 259.
+[2024-11-10T12:50:59.633+0000] {pipline.py:156} INFO - Author 'Wen Zhang' added with ID 260.
+[2024-11-10T12:50:59.639+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:59.731+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:59.752+0000] {pipline.py:247} INFO - Publication 'Supervised Learning Achieves Human-Level Performance in MOBA Games: A Case Study of Honor of Kings' inserted successfully.
+[2024-11-10T12:50:59.759+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:59.781+0000] {pipline.py:156} INFO - Author 'Angelos Kostis' added with ID 261.
+[2024-11-10T12:50:59.796+0000] {pipline.py:156} INFO - Author 'Johan Lidström' added with ID 262.
+[2024-11-10T12:50:59.811+0000] {pipline.py:156} INFO - Author 'Sujith Nair' added with ID 263.
+[2024-11-10T12:50:59.824+0000] {pipline.py:156} INFO - Author 'Jonny Holmström' added with ID 264.
+[2024-11-10T12:50:59.831+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:59.901+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:50:59.902+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Engineering Management' was not inserted.
+[2024-11-10T12:50:59.910+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:59.941+0000] {pipline.py:156} INFO - Author 'Mehdi Sadi' added with ID 265.
+[2024-11-10T12:50:59.959+0000] {pipline.py:156} INFO - Author 'Ujjwal Guin' added with ID 266.
+[2024-11-10T12:50:59.967+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:50:59.996+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:50:59.997+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems' was not inserted.
+[2024-11-10T12:51:00.004+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:00.036+0000] {pipline.py:156} INFO - Author 'Wissam Salhab' added with ID 267.
+[2024-11-10T12:51:00.053+0000] {pipline.py:156} INFO - Author 'Darine Ameyed' added with ID 268.
+[2024-11-10T12:51:00.070+0000] {pipline.py:156} INFO - Author 'Fehmi Jaafar' added with ID 269.
+[2024-11-10T12:51:00.089+0000] {pipline.py:156} INFO - Author 'Hamid Mcheick' added with ID 270.
+[2024-11-10T12:51:00.096+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:00.124+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:51:00.124+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:51:00.130+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:00.152+0000] {pipline.py:156} INFO - Author 'Ettore Mariotti' added with ID 271.
+[2024-11-10T12:51:00.165+0000] {pipline.py:156} INFO - Author 'Anna Arias-Duart' added with ID 272.
+[2024-11-10T12:51:00.177+0000] {pipline.py:156} INFO - Author 'Michele Cafagna' added with ID 273.
+[2024-11-10T12:51:00.190+0000] {pipline.py:156} INFO - Author 'Albert Gatt' added with ID 274.
+[2024-11-10T12:51:00.201+0000] {pipline.py:156} INFO - Author 'Dario Garcia-Gasulla' added with ID 275.
+[2024-11-10T12:51:00.213+0000] {pipline.py:156} INFO - Author 'Jose Maria Alonso-Moral' added with ID 276.
+[2024-11-10T12:51:00.220+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:00.242+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:51:00.243+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:51:00.249+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:00.272+0000] {pipline.py:156} INFO - Author 'Inseok Oh' added with ID 277.
+[2024-11-10T12:51:00.283+0000] {pipline.py:156} INFO - Author 'Seungeun Rho' added with ID 278.
+[2024-11-10T12:51:00.295+0000] {pipline.py:156} INFO - Author 'Sangbin Moon' added with ID 279.
+[2024-11-10T12:51:00.311+0000] {pipline.py:156} INFO - Author 'Seongho Son' added with ID 280.
+[2024-11-10T12:51:00.322+0000] {pipline.py:156} INFO - Author 'Hyoil Lee' added with ID 281.
+[2024-11-10T12:51:00.333+0000] {pipline.py:156} INFO - Author 'Jinyun Chung' added with ID 282.
+[2024-11-10T12:51:00.339+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:00.387+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:00.415+0000] {pipline.py:247} INFO - Publication 'Creating Pro-Level AI for a Real-Time Fighting Game Using Deep Reinforcement Learning' inserted successfully.
+[2024-11-10T12:51:00.421+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:00.444+0000] {pipline.py:156} INFO - Author 'Tomisin Awosika' added with ID 283.
+[2024-11-10T12:51:00.457+0000] {pipline.py:156} INFO - Author 'Raj Mani Shukla' added with ID 284.
+[2024-11-10T12:51:00.469+0000] {pipline.py:156} INFO - Author 'Bernardi Pranggono' added with ID 285.
+[2024-11-10T12:51:00.475+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:00.496+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:51:00.497+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:51:00.502+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:00.524+0000] {pipline.py:156} INFO - Author 'Ali K. Raz' added with ID 286.
+[2024-11-10T12:51:00.537+0000] {pipline.py:156} INFO - Author 'Kshitij Mall' added with ID 287.
+[2024-11-10T12:51:00.549+0000] {pipline.py:156} INFO - Author 'Sean Matthew Nolan' added with ID 288.
+[2024-11-10T12:51:00.564+0000] {pipline.py:156} INFO - Author 'Winston Levin' added with ID 289.
+[2024-11-10T12:51:00.581+0000] {pipline.py:156} INFO - Author 'Linas Mockus' added with ID 290.
+[2024-11-10T12:51:00.600+0000] {pipline.py:156} INFO - Author 'Kris Ezra' added with ID 291.
+[2024-11-10T12:51:00.609+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:00.645+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:51:00.647+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Aerospace and Electronic Systems' was not inserted.
+[2024-11-10T12:51:00.656+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:00.687+0000] {pipline.py:156} INFO - Author 'Md. Zahid Hasan' added with ID 292.
+[2024-11-10T12:51:00.703+0000] {pipline.py:156} INFO - Author 'Sidratul Montaha' added with ID 293.
+[2024-11-10T12:51:00.720+0000] {pipline.py:156} INFO - Author 'Inam Ullah Khan' added with ID 294.
+[2024-11-10T12:51:00.733+0000] {pipline.py:156} INFO - Author 'Md. Mehedi Hassan' added with ID 295.
+[2024-11-10T12:51:00.749+0000] {pipline.py:156} INFO - Author 'Abdullah Al Mahmud' added with ID 296.
+[2024-11-10T12:51:00.763+0000] {pipline.py:156} INFO - Author 'A. K. M. Rakibul Haque Rafid' added with ID 297.
+[2024-11-10T12:51:00.771+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:00.797+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:51:00.798+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:51:00.805+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:00.832+0000] {pipline.py:156} INFO - Author 'Haohui Chen' added with ID 298.
+[2024-11-10T12:51:00.852+0000] {pipline.py:156} INFO - Author 'Claire M. Mason' added with ID 299.
+[2024-11-10T12:51:00.859+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:00.883+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:51:00.884+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:51:00.892+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:00.924+0000] {pipline.py:156} INFO - Author 'Ammar Oad' added with ID 300.
+[2024-11-10T12:51:00.938+0000] {pipline.py:156} INFO - Author 'Syed Shoaib Abbas' added with ID 301.
+[2024-11-10T12:51:00.950+0000] {pipline.py:156} INFO - Author 'Amna Zafar' added with ID 302.
+[2024-11-10T12:51:00.960+0000] {pipline.py:156} INFO - Author 'Beenish Ayesha Akram' added with ID 303.
+[2024-11-10T12:51:00.970+0000] {pipline.py:156} INFO - Author 'Feng Dong' added with ID 304.
+[2024-11-10T12:51:00.981+0000] {pipline.py:156} INFO - Author 'Mir Sajjad Hussain Talpur' added with ID 305.
+[2024-11-10T12:51:00.987+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:01.010+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:51:01.011+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:51:01.016+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:01.043+0000] {pipline.py:156} INFO - Author 'Syeda Fiza Rubab' added with ID 306.
+[2024-11-10T12:51:01.059+0000] {pipline.py:156} INFO - Author 'Arslan Abdul Ghaffar' added with ID 307.
+[2024-11-10T12:51:01.071+0000] {pipline.py:156} INFO - Author 'Gyu Sang Choi' added with ID 308.
+[2024-11-10T12:51:01.077+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:01.101+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:51:01.101+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:51:01.107+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:01.127+0000] {pipline.py:156} INFO - Author 'Greeshma Arya' added with ID 309.
+[2024-11-10T12:51:01.140+0000] {pipline.py:156} INFO - Author 'Ashish Bagwari' added with ID 310.
+[2024-11-10T12:51:01.152+0000] {pipline.py:156} INFO - Author 'Hiteshi Saini' added with ID 311.
+[2024-11-10T12:51:01.167+0000] {pipline.py:156} INFO - Author 'Prachi Thakur' added with ID 312.
+[2024-11-10T12:51:01.180+0000] {pipline.py:156} INFO - Author 'Ciro Rodriguez' added with ID 313.
+[2024-11-10T12:51:01.191+0000] {pipline.py:156} INFO - Author 'Pedro Lezama' added with ID 314.
+[2024-11-10T12:51:01.196+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:01.217+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:51:01.218+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:51:01.223+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:01.245+0000] {pipline.py:156} INFO - Author 'Henar Mike O. Canilang' added with ID 315.
+[2024-11-10T12:51:01.263+0000] {pipline.py:156} INFO - Author 'Angela C. Caliwag' added with ID 316.
+[2024-11-10T12:51:01.277+0000] {pipline.py:156} INFO - Author 'James Rigor C. Camacho' added with ID 317.
+[2024-11-10T12:51:01.289+0000] {pipline.py:156} INFO - Author 'Wansu Lim' added with ID 318.
+[2024-11-10T12:51:01.300+0000] {pipline.py:156} INFO - Author 'Martin Maier' added with ID 319.
+[2024-11-10T12:51:01.306+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:01.325+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:51:01.325+0000] {pipline.py:270} WARNING - Journal 'IEEE Internet of Things Journal' was not inserted.
+[2024-11-10T12:51:01.331+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:01.350+0000] {pipline.py:156} INFO - Author 'Danial Hooshyar' added with ID 320.
+[2024-11-10T12:51:01.377+0000] {pipline.py:156} INFO - Author 'Yeongwook Yang' added with ID 321.
+[2024-11-10T12:51:01.383+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:01.409+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:51:01.410+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:51:01.417+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:01.443+0000] {pipline.py:156} INFO - Author 'Daeeol Park' added with ID 322.
+[2024-11-10T12:51:01.456+0000] {pipline.py:156} INFO - Author 'Hyunsik Na' added with ID 323.
+[2024-11-10T12:51:01.471+0000] {pipline.py:156} INFO - Author 'Daeseon Choi' added with ID 324.
+[2024-11-10T12:51:01.477+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:01.498+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:51:01.499+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:51:01.505+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:01.531+0000] {pipline.py:156} INFO - Author 'Alexander Smirnov' added with ID 325.
+[2024-11-10T12:51:01.541+0000] {pipline.py:156} INFO - Author 'Andrew Ponomarev' added with ID 326.
+[2024-11-10T12:51:01.553+0000] {pipline.py:156} INFO - Author 'Anton Agafonov' added with ID 327.
+[2024-11-10T12:51:01.559+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:01.581+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:51:01.581+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:51:01.588+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:01.608+0000] {pipline.py:156} INFO - Author 'Haoxuan Ma' added with ID 328.
+[2024-11-10T12:51:01.621+0000] {pipline.py:156} INFO - Author 'Yifan Liu' added with ID 329.
+[2024-11-10T12:51:01.631+0000] {pipline.py:156} INFO - Author 'Qinhua Jiang' added with ID 330.
+[2024-11-10T12:51:01.646+0000] {pipline.py:156} INFO - Author 'Brian Yueshuai He' added with ID 331.
+[2024-11-10T12:51:01.658+0000] {pipline.py:156} INFO - Author 'Xishun Liao' added with ID 332.
+[2024-11-10T12:51:01.673+0000] {pipline.py:156} INFO - Author 'Jiaqi Ma' added with ID 333.
+[2024-11-10T12:51:01.679+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:01.725+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:01.748+0000] {pipline.py:247} INFO - Publication 'Mobility AI Agents and Networks' inserted successfully.
+[2024-11-10T12:51:01.754+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:01.775+0000] {pipline.py:156} INFO - Author 'J. Berengueres' added with ID 334.
+[2024-11-10T12:51:01.783+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:01.794+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:51:01.795+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T12:51:01.801+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:01.824+0000] {pipline.py:156} INFO - Author 'Hendrik Strobelt' added with ID 335.
+[2024-11-10T12:51:01.839+0000] {pipline.py:156} INFO - Author 'Jambay Kinley' added with ID 336.
+[2024-11-10T12:51:01.850+0000] {pipline.py:156} INFO - Author 'Robert Krueger' added with ID 337.
+[2024-11-10T12:51:01.865+0000] {pipline.py:156} INFO - Author 'Johanna Beyer' added with ID 338.
+[2024-11-10T12:51:01.878+0000] {pipline.py:156} INFO - Author 'Hanspeter Pfister' added with ID 339.
+[2024-11-10T12:51:01.889+0000] {pipline.py:156} INFO - Author 'Alexander M. Rush' added with ID 340.
+[2024-11-10T12:51:01.896+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:01.920+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:51:01.921+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Visualization and Computer Graphics' was not inserted.
+[2024-11-10T12:51:01.926+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:01.948+0000] {pipline.py:156} INFO - Author 'Jordan J. Bird' added with ID 341.
+[2024-11-10T12:51:01.961+0000] {pipline.py:156} INFO - Author 'Ahmad Lotfi' added with ID 342.
+[2024-11-10T12:51:01.967+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:01.990+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:51:01.991+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:51:01.997+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:02.019+0000] {pipline.py:156} INFO - Author 'Carlos M. Parra' added with ID 343.
+[2024-11-10T12:51:02.031+0000] {pipline.py:156} INFO - Author 'Manjul Gupta' added with ID 344.
+[2024-11-10T12:51:02.043+0000] {pipline.py:156} INFO - Author 'Denis Dennehy' added with ID 345.
+[2024-11-10T12:51:02.049+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:02.062+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:51:02.062+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T12:51:02.068+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:02.094+0000] {pipline.py:156} INFO - Author 'Abdul Karim Gizzini' added with ID 346.
+[2024-11-10T12:51:02.107+0000] {pipline.py:156} INFO - Author 'Yahia Medjahdi' added with ID 347.
+[2024-11-10T12:51:02.121+0000] {pipline.py:156} INFO - Author 'Ali J. Ghandour' added with ID 348.
+[2024-11-10T12:51:02.132+0000] {pipline.py:156} INFO - Author 'Laurent Clavier' added with ID 349.
+[2024-11-10T12:51:02.139+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:02.216+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:51:02.216+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Vehicular Technology' was not inserted.
+[2024-11-10T12:51:02.222+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:02.250+0000] {pipline.py:156} INFO - Author 'Chansol Hong' added with ID 350.
+[2024-11-10T12:51:02.267+0000] {pipline.py:156} INFO - Author 'Inbae Jeong' added with ID 351.
+[2024-11-10T12:51:02.282+0000] {pipline.py:156} INFO - Author 'Luiz Felipe Vecchietti' added with ID 352.
+[2024-11-10T12:51:02.299+0000] {pipline.py:156} INFO - Author 'Dongsoo Har' added with ID 353.
+[2024-11-10T12:51:02.310+0000] {pipline.py:156} INFO - Author 'Jong-Hwan Kim' added with ID 354.
+[2024-11-10T12:51:02.316+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:02.366+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:02.388+0000] {pipline.py:247} INFO - Publication 'AI World Cup: Robot-Soccer-Based Competitions' inserted successfully.
+[2024-11-10T12:51:02.394+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:02.419+0000] {pipline.py:156} INFO - Author 'IstvÁn Szita' added with ID 355.
+[2024-11-10T12:51:02.430+0000] {pipline.py:156} INFO - Author 'Marc Ponsen' added with ID 356.
+[2024-11-10T12:51:02.432+0000] {pipline.py:144} INFO - Author 'Pieter Spronck' already exists with ID 155.
+[2024-11-10T12:51:02.438+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:02.487+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:02.508+0000] {pipline.py:247} INFO - Publication 'Effective and Diverse Adaptive Game AI' inserted successfully.
+[2024-11-10T12:51:02.514+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:02.536+0000] {pipline.py:156} INFO - Author 'Muhammad Ahmad Khan' added with ID 357.
+[2024-11-10T12:51:02.549+0000] {pipline.py:156} INFO - Author 'Maqbool Khan' added with ID 358.
+[2024-11-10T12:51:02.561+0000] {pipline.py:156} INFO - Author 'Hussain Dawood' added with ID 359.
+[2024-11-10T12:51:02.571+0000] {pipline.py:156} INFO - Author 'Hassan Dawood' added with ID 360.
+[2024-11-10T12:51:02.581+0000] {pipline.py:156} INFO - Author 'Ali Daud' added with ID 361.
+[2024-11-10T12:51:02.587+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:02.608+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:51:02.609+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:51:02.615+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:02.636+0000] {pipline.py:156} INFO - Author 'Padmasri Turaka' added with ID 362.
+[2024-11-10T12:51:02.652+0000] {pipline.py:156} INFO - Author 'Saroj Kumar Panigrahy' added with ID 363.
+[2024-11-10T12:51:02.657+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:02.678+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:51:02.679+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:51:02.685+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:02.707+0000] {pipline.py:156} INFO - Author 'Dara Varam' added with ID 364.
+[2024-11-10T12:51:02.718+0000] {pipline.py:156} INFO - Author 'Rohan Mitra' added with ID 365.
+[2024-11-10T12:51:02.730+0000] {pipline.py:156} INFO - Author 'Meriam Mkadmi' added with ID 366.
+[2024-11-10T12:51:02.740+0000] {pipline.py:156} INFO - Author 'Radi Aman Riyas' added with ID 367.
+[2024-11-10T12:51:02.753+0000] {pipline.py:156} INFO - Author 'Diaa Addeen Abuhani' added with ID 368.
+[2024-11-10T12:51:02.764+0000] {pipline.py:156} INFO - Author 'Salam Dhou' added with ID 369.
+[2024-11-10T12:51:02.770+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:02.794+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:51:02.794+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:51:02.800+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:02.822+0000] {pipline.py:156} INFO - Author 'Djordje Batic' added with ID 370.
+[2024-11-10T12:51:02.835+0000] {pipline.py:156} INFO - Author 'Vladimir Stankovic' added with ID 371.
+[2024-11-10T12:51:02.850+0000] {pipline.py:156} INFO - Author 'Lina Stankovic' added with ID 372.
+[2024-11-10T12:51:02.856+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:02.946+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:02.969+0000] {pipline.py:247} INFO - Publication 'Toward Transparent Load Disaggregation—A Framework for Quantitative Evaluation of Explainability Using Explainable AI' inserted successfully.
+[2024-11-10T12:51:02.974+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:02.998+0000] {pipline.py:156} INFO - Author 'Yao Rong' added with ID 373.
+[2024-11-10T12:51:03.010+0000] {pipline.py:156} INFO - Author 'Tobias Leemann' added with ID 374.
+[2024-11-10T12:51:03.021+0000] {pipline.py:156} INFO - Author 'Thai-Trang Nguyen' added with ID 375.
+[2024-11-10T12:51:03.031+0000] {pipline.py:156} INFO - Author 'Lisa Fiedler' added with ID 376.
+[2024-11-10T12:51:03.041+0000] {pipline.py:156} INFO - Author 'Peizhu Qian' added with ID 377.
+[2024-11-10T12:51:03.055+0000] {pipline.py:156} INFO - Author 'Vaibhav Unhelkar' added with ID 378.
+[2024-11-10T12:51:03.061+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:03.084+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:51:03.085+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Pattern Analysis and Machine Intelligence' was not inserted.
+[2024-11-10T12:51:03.090+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:03.120+0000] {pipline.py:156} INFO - Author 'Sara Narteni' added with ID 379.
+[2024-11-10T12:51:03.136+0000] {pipline.py:156} INFO - Author 'Vanessa Orani' added with ID 380.
+[2024-11-10T12:51:03.149+0000] {pipline.py:156} INFO - Author 'Enrico Cambiaso' added with ID 381.
+[2024-11-10T12:51:03.173+0000] {pipline.py:156} INFO - Author 'Matteo Rucco' added with ID 382.
+[2024-11-10T12:51:03.187+0000] {pipline.py:156} INFO - Author 'Maurizio Mongelli' added with ID 383.
+[2024-11-10T12:51:03.193+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:03.214+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:51:03.215+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:51:03.221+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:03.242+0000] {pipline.py:156} INFO - Author 'Vanessa Echeverria' added with ID 384.
+[2024-11-10T12:51:03.252+0000] {pipline.py:156} INFO - Author 'Kexin Yang' added with ID 385.
+[2024-11-10T12:51:03.267+0000] {pipline.py:156} INFO - Author 'LuEttaMae Lawrence' added with ID 386.
+[2024-11-10T12:51:03.282+0000] {pipline.py:156} INFO - Author 'Nikol Rummel' added with ID 387.
+[2024-11-10T12:51:03.293+0000] {pipline.py:156} INFO - Author 'Vincent Aleven' added with ID 388.
+[2024-11-10T12:51:03.299+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:03.369+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:03.395+0000] {pipline.py:247} INFO - Publication 'Designing Hybrid Human–AI Orchestration Tools for Individual and Collaborative Activities: A Technology Probe Study' inserted successfully.
+[2024-11-10T12:51:03.402+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:03.432+0000] {pipline.py:156} INFO - Author 'Simon M. Lucas' added with ID 389.
+[2024-11-10T12:51:03.439+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:03.501+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:03.529+0000] {pipline.py:247} INFO - Publication 'Computational Intelligence and AI in Games: A New IEEE Transactions' inserted successfully.
+[2024-11-10T12:51:03.537+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:03.565+0000] {pipline.py:156} INFO - Author 'Momotaz Begum' added with ID 390.
+[2024-11-10T12:51:03.579+0000] {pipline.py:156} INFO - Author 'Mehedi Hasan Shuvo' added with ID 391.
+[2024-11-10T12:51:03.595+0000] {pipline.py:156} INFO - Author 'Mostofa Kamal Nasir' added with ID 392.
+[2024-11-10T12:51:03.610+0000] {pipline.py:156} INFO - Author 'Amran Hossain' added with ID 393.
+[2024-11-10T12:51:03.623+0000] {pipline.py:156} INFO - Author 'Mohammad Jakir Hossain' added with ID 394.
+[2024-11-10T12:51:03.642+0000] {pipline.py:156} INFO - Author 'Imran Ashraf' added with ID 395.
+[2024-11-10T12:51:03.681+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:03.722+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:51:03.723+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:51:03.733+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:03.774+0000] {pipline.py:156} INFO - Author 'Smita Khairnar' added with ID 396.
+[2024-11-10T12:51:03.791+0000] {pipline.py:156} INFO - Author 'Shilpa Gite' added with ID 397.
+[2024-11-10T12:51:03.811+0000] {pipline.py:156} INFO - Author 'Kashish Mahajan' added with ID 398.
+[2024-11-10T12:51:03.815+0000] {pipline.py:144} INFO - Author 'Biswajeet Pradhan' already exists with ID 195.
+[2024-11-10T12:51:03.830+0000] {pipline.py:156} INFO - Author 'Abdullah Alamri' added with ID 399.
+[2024-11-10T12:51:03.850+0000] {pipline.py:156} INFO - Author 'Sudeep D. Thepade' added with ID 400.
+[2024-11-10T12:51:03.857+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:03.887+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:51:03.887+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:51:03.894+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:03.927+0000] {pipline.py:156} INFO - Author 'Jiayi Hong' added with ID 401.
+[2024-11-10T12:51:03.946+0000] {pipline.py:156} INFO - Author 'Ross Maciejewski' added with ID 402.
+[2024-11-10T12:51:03.961+0000] {pipline.py:156} INFO - Author 'Alain Trubuil' added with ID 403.
+[2024-11-10T12:51:03.978+0000] {pipline.py:156} INFO - Author 'Tobias Isenberg' added with ID 404.
+[2024-11-10T12:51:03.985+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:04.001+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:51:04.003+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Visualization and Computer Graphics' was not inserted.
+[2024-11-10T12:51:04.010+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:04.037+0000] {pipline.py:156} INFO - Author 'Ebtisam AlJalaud' added with ID 405.
+[2024-11-10T12:51:04.055+0000] {pipline.py:156} INFO - Author 'Manar Hosny' added with ID 406.
+[2024-11-10T12:51:04.063+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:04.090+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:51:04.091+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:51:04.097+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:04.129+0000] {pipline.py:156} INFO - Author 'Lorenzo Tronchin' added with ID 407.
+[2024-11-10T12:51:04.145+0000] {pipline.py:156} INFO - Author 'Ermanno Cordelli' added with ID 408.
+[2024-11-10T12:51:04.164+0000] {pipline.py:156} INFO - Author 'Lorenzo Ricciardi Celsi' added with ID 409.
+[2024-11-10T12:51:04.181+0000] {pipline.py:156} INFO - Author 'Daniele Maccagnola' added with ID 410.
+[2024-11-10T12:51:04.200+0000] {pipline.py:156} INFO - Author 'Massimo Natale' added with ID 411.
+[2024-11-10T12:51:04.217+0000] {pipline.py:156} INFO - Author 'Paolo Soda' added with ID 412.
+[2024-11-10T12:51:04.226+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:04.262+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:51:04.263+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:51:04.360+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:04.401+0000] {pipline.py:156} INFO - Author 'Greg Adamson' added with ID 413.
+[2024-11-10T12:51:04.410+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:04.426+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:51:04.428+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T12:51:04.435+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:04.462+0000] {pipline.py:156} INFO - Author 'Wenchao Zhang' added with ID 414.
+[2024-11-10T12:51:04.481+0000] {pipline.py:156} INFO - Author 'Ruonan Yan' added with ID 415.
+[2024-11-10T12:51:04.498+0000] {pipline.py:156} INFO - Author 'Lei Yuan' added with ID 416.
+[2024-11-10T12:51:04.505+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:04.530+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:51:04.531+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:51:04.537+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:04.559+0000] {pipline.py:156} INFO - Author 'Roberto V. Zicari' added with ID 417.
+[2024-11-10T12:51:04.574+0000] {pipline.py:156} INFO - Author 'John Brodersen' added with ID 418.
+[2024-11-10T12:51:04.589+0000] {pipline.py:156} INFO - Author 'James Brusseau' added with ID 419.
+[2024-11-10T12:51:04.601+0000] {pipline.py:156} INFO - Author 'Boris Düdder' added with ID 420.
+[2024-11-10T12:51:04.615+0000] {pipline.py:156} INFO - Author 'Timo Eichhorn' added with ID 421.
+[2024-11-10T12:51:04.629+0000] {pipline.py:156} INFO - Author 'Todor Ivanov' added with ID 422.
+[2024-11-10T12:51:04.635+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:04.646+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: cannot access local variable 'sorted_quartils' where it is not associated with a value
+[2024-11-10T12:51:04.646+0000] {pipline.py:270} WARNING - Journal 'IEEE Transactions on Technology and Society' was not inserted.
+[2024-11-10T12:51:04.652+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:04.663+0000] {pipline.py:144} INFO - Author 'Abhishek Kumar' already exists with ID 193.
+[2024-11-10T12:51:04.680+0000] {pipline.py:156} INFO - Author 'Benjamin Finley' added with ID 423.
+[2024-11-10T12:51:04.690+0000] {pipline.py:156} INFO - Author 'Tristan Braud' added with ID 424.
+[2024-11-10T12:51:04.702+0000] {pipline.py:156} INFO - Author 'Sasu Tarkoma' added with ID 425.
+[2024-11-10T12:51:04.715+0000] {pipline.py:156} INFO - Author 'Pan Hui' added with ID 426.
+[2024-11-10T12:51:04.721+0000] {base.py:84} INFO - Using connection ID 'mysql_default' for task execution.
+[2024-11-10T12:51:04.743+0000] {logging_mixin.py:188} INFO - Error in get_or_create_journal: (1406, "Data too long for column 'quartil' at row 1")
+[2024-11-10T12:51:04.744+0000] {pipline.py:270} WARNING - Journal 'IEEE Access' was not inserted.
+[2024-11-10T12:51:04.744+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-11-10T12:51:04.745+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-11-10T12:51:04.753+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=pipeline, task_id=insert_data_into_data_warehouse, run_id=manual__2024-11-10T12:50:43.836948+00:00, execution_date=20241110T125043, start_date=20241110T125048, end_date=20241110T125104
+[2024-11-10T12:51:04.777+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2024-11-10T12:51:04.802+0000] {taskinstance.py:3503} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-10T12:51:04.806+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
